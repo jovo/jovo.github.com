@@ -3,7 +3,7 @@
 setTransparentGifURL('Media/transparent.gif');function hostedOnDM()
 {return false;}
 function onPageLoad()
-{loadMozillaCSS('sbg_files/sbgMoz.css')
+{loadMozillaCSS('brain-graph_files/brain-graphMoz.css')
 adjustLineHeightIfTooBig('id1');adjustFontSizeIfTooBig('id1');adjustLineHeightIfTooBig('id2');adjustFontSizeIfTooBig('id2');Widget.onload();performPostEffectsFixups()}
 function onPageUnload()
 {Widget.onunload();}
