@@ -93,9 +93,9 @@ white-space:nowrap;
 #navigation li a, #navigation li span {
 display:block;
 padding:0 10px;
-font-size:0.8em;
+font-size:1.0em;
 font-weight:normal;
-text-transform:uppercase;
+text-transform:lowercase;
 text-decoration:none;
 background-color:inherit;
 color: #ffffff;
