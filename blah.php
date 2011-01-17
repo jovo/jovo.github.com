@@ -1,3 +1,0 @@
-<?
-  echo "i have php!;"
-?>
