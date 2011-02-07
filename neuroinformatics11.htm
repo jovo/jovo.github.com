@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+  <title>Statistical Inference in Hierarchical Bayesian Latent Position Model</title>
+  <script type="text/javascript" src="/Users/jovo/Sites/MathJax//MathJax.js"></script> 
+  <link rel="stylesheet" href="/Users/jovo/Research/latex/draftstyle.css">
+
+</head>
+
+<body>
+
+<div id="projecttitle">
+<h3>Statistical Inference in Time-Varying Hierarchical Bayesian Brain-Graph Models</h3>
+	<br>
+by Joshua T. Vogelstein, et al, cep
+
+<!-- Dominique, daniel, brother, marchette -->
+</div>
+
+
+$
+\newcommand{\bth}{\boldsymbol{\theta}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mb}[1]{\boldsymbol{#1}}
+\newcommand{\mbb}[1]{\mathbb{#1}}
+\newcommand{\mv}[1]{\vec{#1}}
+\newcommand{\mh}[1]{\hat{#1}}
+\newcommand{\mt}[1]{\widetilde{#1}}
+\newcommand{\mhc}[1]{\hat{\mathcal{#1}}}
+\newcommand{\mhb}[1]{\hat{\boldsymbol{#1}}}
+\newcommand{\mvb}[1]{\vec{\boldsymbol{#1}}}
+\newcommand{\mtb}[1]{\widetilde{\boldsymbol{#1}}}
+\newcommand{\PP}{\mathbb{P}}         
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\T}{^{\ensuremath{\mathsf{T}}}}           
+\newcommand{\bTh}{\mb{\Theta}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\DeclareMathOperator*{\argmax}{arg \hspace{1pt} max}
+$
+
+
+<div id="content">
+
+<p>
+
+
+<font size="-1">
+
+Recently, the development of several high-throughput neuroimaging experimental modalities have enabled the acquisition of neural-connectivity data.  These methods range in spatial scales from cubic nanometers (serial electron-microscopy [jeff, clay, denk]) to cubic millimeters (MRI [Basser, book]), and range in temporal scales from minutes (fMRI [cite]) to months (DTI [changes reference]).  Therefore, there is a pressing urgency to develop computational tools that facilitate rigorous statistical analysis of these data, such that the data may be used to its utmost potential and power.  To this end, we have developed a statistical model of brain-graphs (connectomes) sufficiently general to be applicable to data from these myriad and varied data sets.
+
+<br><br>
+
+More specifically, we propose a Time-Varying Hierarchical Bayesian Brain-Graph Model [LP09].  At any given time, the brain-graph, $G(t)$, is characterized by a set of vertices, each of which is endowed with a vertex-vector.  The probability of an edge forming between any pair of vertices is merely a function of the pair of vertex-vectors incident to that edge.  Thus, at time $t$, we have $G(t)=(V(t),A(t),X(t))$, where $V(t)$ is the set of vertices, $A(t)$ is the set of edges, and $X(t)$ is the set of vertex-vectors. While we typically assume that the vertex set is stationary for a particular brain-graph, we make no such assumption regarding the vertex-vectors, rather, we assume they are governed by a Markov process.
+
+<br><br>
+
+In this model, the vertices correspond to neural units, which may represent an individual neuron, or a large collection of neurons (for instance, a whole voxel or neuroanatomical region).  The edges between vertices could therefore represent synapses, fibers, or large white matter tracts.  The time could be indexed within an experiment when using functional imaging, or across experiments, as necessary when measuring structural changes.  
+
+<br><br>
+
+Given this model, we can address a number of statistical inference tasks.  For example, via in simulo experiments, we demonstrate the ability to infer the hierarchical structure of the whole brain.  Moreover, using diffusion MRI derived connectomes, we can classify gender with accuracy approaching $98\%$ [ohbm].  Other inference tasks, such as anomaly detection in a time-series are also readily performed [LP10].  Thus, we believe this framework for analysis of neural connectivity data will likely be fruitful in many domains, whether the desideratum is to better understand brain structure, or changes in brain-structure over time, or across subjects.  
+
+<br><br>
+
+References:
+<br><br>
+
+[1] jeff
+<br>
+[2] clay
+<br>
+[3] denk
+<br>
+[4] basser
+<br>
+[5] book
+<br>
+[6] LP09
+<br>
+[7] OHBM
+<br>
+[8] LP10
+
+
+<!-- Moreover, we can write:
+
+\begin{align}
+\PP[G(t)] &= \PP[V(t),A(t),Z(t)] = \PP[A(t) | V(t), Z(t)] \PP[Z(t) | V(t)] \PP[V(t)] 
+\\&= \prod_{uv} \PP[A_{uv}(t) | Z_u(t),Z_v(t)] \prod_u \PP[Z_u(t)] \PP[V_u(t)]
+\end{align}
+
+
+\begin{align}
+\PP[Z_u(0:T)] = \PP[Z_u(0)] \prod_t \PP[Z_u(t) | Z_u(t-\Delta)] 
+\end{align}
+
+where $\Delta$ indicates a finite time step size.  To ensure that all the above probabilities are valid distributions, we must impose various constraints on these distributions.   -->
+
+</font>
+</p>
+
+
+</div>
+
+</bodu>
+</html>
+
+
