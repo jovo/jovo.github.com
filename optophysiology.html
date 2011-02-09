@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
@@ -21,6 +20,17 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+ <script src="http://www.mathjax.org/mathjax/MathJax.js" type="text/javascript"> 
+    if (window.location.protocol == "https:") {
+      MathJax.OutputJax.fontDir = "http://www.mathjax.org/mathjax/fonts"
+    } else {
+      MathJax.OutputJax.fontDir = "http://www.mathjax.org/mathjax/fonts"
+    }
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+      jax: ["input/TeX", "output/HTML-CSS"]
+    })
  
 </script> 
  
