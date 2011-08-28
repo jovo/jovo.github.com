@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>currentDocument</key>
+	<string>Sites/jovo.me/index.html</string>
+	<key>documents</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>cv.html</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>index.html</string>
+			<key>lastUsed</key>
+			<date>2011-08-28T05:48:59Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>me.html</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>neuroinformatics11.htm</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>optophysiology.html</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>research.html</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>research2011.html</string>
+		</dict>
+	</array>
+	<key>fileHierarchyDrawerWidth</key>
+	<integer>200</integer>
+	<key>metaData</key>
+	<dict>
+		<key>Sites/jovo.me/index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>8</integer>
+				<key>line</key>
+				<integer>51</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>Sites/jovo.me/index.html</string>
+	</array>
+	<key>showFileHierarchyDrawer</key>
+	<true/>
+	<key>windowFrame</key>
+	<string>{{619, -56}, {912, 1028}}</string>
+</dict>
+</plist>
