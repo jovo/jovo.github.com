@@ -3,18 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>Sites/jovo.me/index.html</string>
+	<string>index.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
+			<key>lastUsed</key>
+			<date>2011-08-28T05:58:18Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2011-08-28T05:48:59Z</date>
+			<date>2011-08-28T05:58:18Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -43,14 +45,28 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Sites/jovo.me/index.html</key>
+		<key>cv.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>8</integer>
+				<integer>321</integer>
 				<key>line</key>
-				<integer>51</integer>
+				<integer>114</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>75</integer>
+		</dict>
+		<key>index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>40</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -60,11 +76,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>Sites/jovo.me/index.html</string>
+		<string>index.html</string>
+		<string>cv.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{619, -56}, {912, 1028}}</string>
+	<string>{{4, 0}, {838, 1028}}</string>
 </dict>
 </plist>
