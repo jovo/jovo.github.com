@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>cv.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2011-08-28T05:58:18Z</date>
+			<date>2011-09-01T13:38:46Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2011-08-28T05:58:18Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-09-01T13:38:46Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -50,14 +50,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>321</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>114</integer>
+				<integer>68</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>75</integer>
+			<integer>51</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
@@ -66,12 +66,12 @@
 				<key>column</key>
 				<integer>1</integer>
 				<key>line</key>
-				<integer>40</integer>
+				<integer>57</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>31</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -80,7 +80,7 @@
 		<string>cv.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>windowFrame</key>
 	<string>{{4, 0}, {838, 1028}}</string>
 </dict>
