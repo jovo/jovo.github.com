@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>cv.html</string>
+	<string>optophysiology.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2011-11-16T23:55:28Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-12-01T05:27:24Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -31,6 +29,10 @@
 		<dict>
 			<key>filename</key>
 			<string>optophysiology.html</string>
+			<key>lastUsed</key>
+			<date>2011-12-01T05:27:24Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -77,6 +79,20 @@
 			<key>firstVisibleLine</key>
 			<integer>25</integer>
 		</dict>
+		<key>optophysiology.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>73</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>422</integer>
+			<key>firstVisibleLine</key>
+			<integer>64</integer>
+		</dict>
 		<key>research2011.html</key>
 		<dict>
 			<key>caret</key>
@@ -95,6 +111,7 @@
 	<key>openDocuments</key>
 	<array>
 		<string>cv.html</string>
+		<string>optophysiology.html</string>
 		<string>index.html</string>
 		<string>research2011.html</string>
 	</array>
