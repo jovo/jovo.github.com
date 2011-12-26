@@ -10,7 +10,11 @@
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2011-12-07T23:31:07Z</date>
+=======
+			<date>2011-12-04T23:46:50Z</date>
+>>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -44,7 +48,11 @@
 			<key>filename</key>
 			<string>research2011.html</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2011-12-07T23:31:07Z</date>
+=======
+			<date>2011-10-23T03:28:21Z</date>
+>>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -56,6 +64,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>34</integer>
 				<key>line</key>
 				<integer>298</integer>
@@ -64,15 +73,31 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>296</integer>
+=======
+				<integer>53</integer>
+				<key>line</key>
+				<integer>96</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>208</integer>
+			<key>firstVisibleLine</key>
+			<integer>75</integer>
+>>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>0</integer>
 				<key>line</key>
 				<integer>0</integer>
+=======
+				<integer>85</integer>
+				<key>line</key>
+				<integer>57</integer>
+>>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -86,7 +111,11 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
+<<<<<<< HEAD
 				<integer>0</integer>
+=======
+				<integer>73</integer>
+>>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>422</integer>
@@ -116,7 +145,11 @@
 		<string>research2011.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
+<<<<<<< HEAD
 	<false/>
+=======
+	<true/>
+>>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 	<key>windowFrame</key>
 	<string>{{4, 0}, {838, 1028}}</string>
 </dict>
