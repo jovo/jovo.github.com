@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>research.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -16,9 +16,7 @@
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-02-07T04:32:31Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-02-07T04:37:25Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -26,19 +24,17 @@
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>neuroinformatics11.htm</string>
-		</dict>
-		<dict>
-			<key>filename</key>
 			<string>optophysiology.html</string>
 			<key>lastUsed</key>
 			<date>2011-12-04T23:46:50Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>research.html</string>
 			<key>lastUsed</key>
-			<date>2012-02-07T04:32:31Z</date>
+			<date>2012-02-07T12:27:06Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -64,7 +60,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>555</integer>
+				<integer>144</integer>
 				<key>line</key>
 				<integer>69</integer>
 			</dict>
@@ -92,14 +88,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>441</integer>
 				<key>line</key>
-				<integer>91</integer>
+				<integer>84</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>74</integer>
+			<integer>71</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -112,6 +108,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{4, 0}, {838, 746}}</string>
+	<string>{{4, 0}, {681, 746}}</string>
 </dict>
 </plist>
