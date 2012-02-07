@@ -10,11 +10,7 @@
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-<<<<<<< HEAD
-			<date>2011-12-07T23:31:07Z</date>
-=======
-			<date>2011-12-04T23:46:50Z</date>
->>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
+			<date>2011-12-26T02:55:18Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -22,7 +18,7 @@
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2011-11-16T23:55:28Z</date>
+			<date>2011-12-26T02:55:18Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -48,11 +44,7 @@
 			<key>filename</key>
 			<string>research2011.html</string>
 			<key>lastUsed</key>
-<<<<<<< HEAD
 			<date>2011-12-07T23:31:07Z</date>
-=======
-			<date>2011-10-23T03:28:21Z</date>
->>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -64,45 +56,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-<<<<<<< HEAD
-				<integer>34</integer>
+				<integer>154</integer>
 				<key>line</key>
-				<integer>298</integer>
+				<integer>66</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>0</integer>
+			<integer>294</integer>
 			<key>firstVisibleLine</key>
-			<integer>296</integer>
-=======
-				<integer>53</integer>
-				<key>line</key>
-				<integer>96</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>208</integer>
-			<key>firstVisibleLine</key>
-			<integer>75</integer>
->>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
+			<integer>55</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-<<<<<<< HEAD
 				<integer>0</integer>
 				<key>line</key>
-				<integer>0</integer>
-=======
-				<integer>85</integer>
-				<key>line</key>
-				<integer>57</integer>
->>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
+				<integer>61</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>25</integer>
+			<integer>42</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -111,11 +86,7 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-<<<<<<< HEAD
 				<integer>0</integer>
-=======
-				<integer>73</integer>
->>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>422</integer>
@@ -145,12 +116,8 @@
 		<string>research2011.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-<<<<<<< HEAD
-	<false/>
-=======
 	<true/>
->>>>>>> 2a585652e6d7e297e619b6e6f6f4d35df7ccda9c
 	<key>windowFrame</key>
-	<string>{{4, 0}, {838, 1028}}</string>
+	<string>{{4, 0}, {838, 746}}</string>
 </dict>
 </plist>

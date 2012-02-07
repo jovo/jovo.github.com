@@ -47,38 +47,47 @@
 
 	     <div id="content"> 
 
-	<h2 id="research-topics"><strong>statistical connectomics</strong>: brain-graph modeling, inference and analysis</h2> 
+	<h2><strong>statistics</strong></h2> 
 
-	<p>Connectomes, or brain-graphs, can be inferred using a wide variety of neuroscientific experimental paradigms, spanning both spatial and temporal scales.  We are currently engaged in developing methods for: 
+	<ul>
+	<li><h3 id="research-topics">nonparametric inference in "icky" spaces</h3> 
+
+	<p>the bulk of statistical theory and practice developed in the last century deals with Euclidean (e.g., vector-valued) data with "small p, large n"; that is, lots of simple data.  the incoming century seems to be filled with a whole new class of data.  some is "large p, small n", that is, still Euclidean space, but high-dimensiona.  other data is even more complex, living in function space or graph space, for example.  we develop theory and algorithms for performing inference in these more interesting (to us) data scenarios.  one might think of this as "statistical manifold learning", if one were prone to making up new names for stuff.</p> </li>
+
+	<li><h3 id="research-topics"><strong>graph statistics</strong></h3>
+
+	<p>a particularly interesting class of data for us is graph-valued data.  graphs are fun because they are combinatorial objects, so the dimensionality of the space, while finite, explodes super-exponentially.  the numbers are just silly, with only 10 vertices, there are more distinct binary graphs than particles in the universe.  we ask questions about inference in graphs or collections of graphs, such as: can we detect anomalous vertices? can we classify collections of graphs? can we label vertices? can we match graphs?  we care about answering all these questions from a probabilistic perspective, and we like our strategy to scale up to very large collections of very large graphs (e.g., billions of graphs, each with billions of vertices).  sometimes we endow our graphs with directed-edges, multi-edges, attributed-edges, etc.</p></li>
+
+	</ul>
+
+	<h2><strong>applications</strong></h2> 
+
 		<ul>
-			<li>connectome inference from <a href="optophysiology.html">calcium imaging</a>, diffusion and structural MRI (<a href="http://nitrc.org/projects/mrcap">Mr. Cap</a>), and fMRI.
-			<li>analysis of brain-graphs by refining statistical brain-graph models that admit efficient algorithms for various decision-theoretic tasks.
-		</ul>
-		</p> 
+		<li><h3 id="research-topics"><strong>neuroimaging analysis tools (aka, MR connectomes)</strong></h3>
 
-	<h2 id="research-topics"><strong>mentalomes</strong>: a complete collective consciousness</h2> 
-
-	<p>In analogy with connectomes, our <strong>mentalomes</strong> are the complete set of properties represented by our brains, one's beliefs, predispositions, psychiatric state, memories, etc.  By building upon the models developed for brain-graph analyses, and combining those insights with mentalome measurements (e.g., intelligence, gender, etc.), we can begin to unravel the relationship between our minds and our brains.</p> 
-
-	<h2 id="research-topics"><strong>shalomes</strong>: fusing all our 'omes</h2> 
-
-	<p>While our connectomes may encode much about our mentalomes, neither is a complete picture of any individual.  For instance, neither our connectomes nor our mentalomes may contain all available information about whether we are likely to develop caner.  Our genomes, however, do have this additional information.  We therefore introduce the notion of a <strong>shalome</strong>: the complete 'ome of an individual, containing their connectome, the genome of every cell, their mentalome, etc.  We hope to contribute to our ability to fuse data from these distinct domains to obtain novel insights with regard to the human condition.</p> 
-
-
-
-	<h2 id="research-topics"><strong>applications</strong></h2> 
-
-	<p>The above described tools are amenable to myriad neuropsychological and neuropsychiatric applications.  At the moment, we are pursuing applying them to various psychological properties (e.g., intelligence, creativity, etc.), psychiatric states (e.g., PTSD, MCI), and other properties (e.g., gender).  We are always interesting in establishing new collaborations.  Our brain-graph inference and analysis code bases are working and our servers have extra space, so please enquire if interested.</p> 
-
-	<h2 id="research-topics"><strong>philosophy</strong></h2> 
-
-	<p>We like to believe that our work is a natural extension of our philosophies of things.  Perhaps it is sometimes.  Regardless, we often find it fun and illuminating to attempt to serious write down our philosophy.  One current example is our work on <a href="http://arxiv.org/abs/0912.1672">supervenience</a>.  Stay tuned for more works on related topics that are current under development.</p>
-
-		<h2 id="research-topics"><strong>calcium imaging</strong></h2> 
-
-		<p>My PhD was devoted to developing tools for the analysis of dynamic calcium imaging data.  Please see <a href="optophysiology.html">optophysiology</a> for more details.
+		<p>imaging the brain, whether using 
+			<a href="http://fcon_1000.projects.nitrc.org/">MRI</a>, <a href = "http://optophysiology.org" >calcium</a>, or some other modality, is becoming increasingly popular as camera speeds and resolution continue to increase.  these data often live in "icky" spaces (e.g., graphs).  therefore, we can utilize all the theory and algorithms that we develop to help answer questions about the brain, such as: how are brains wired up? how does brain wiring change with various psychiatric conditions? or how does the brain change after learning something new? </p></li>
 		
-	</p> 
+		<li><h3 id="research-topics"><strong>computer vision for electron microscopy (aka, EM connectomes)</strong></h3>
+
+		<p>high-throughput electron microscopy images of brains yields both <a href="http://openconnecto.me">beautiful data</a> and a completely different set of inference tasks.  in particular, we'd love to be able to infer a graph where vertices are neurons and edges are synapses.  because the data are so large (e.g., 10TB) and noisy, this requires the development of novel computer vision strategies that are robust to noise and scale extremely well.</p></li>
+
+		<li><h3 id="research-topics"><strong>genomes</strong></h3>
+
+		<p>we've all got 'em, and they seem to determine some fraction of our experience in the world.  but how much? we can combine genetic, brain, and personality measurements to try to parse the relative contributions of genomes, connectomes, and noise. </p></li>
+		</ul>
+		
+
+		<h2><strong>misc</strong></h2> 
+
+		<ul>
+		<li><h3 id="research-topics"><strong>statistical philosophy of science</strong></h3>
+
+		<p>historically, philosophical questions are addressed by intellectual arguments, not backed by data.  but many philosophical questions can be mapped into statistical questions.  one special case of this is mind-brain <a href="http://www.nature.com/srep/2011/110926/srep00100/full/srep00100.html">supervenience</a>: can a pair of mental-states differ without their corresponding pair of brain-states differing?  we are interested in this question, as well as related questions about causal inference.	</p></li>
+
+		<li><h3 id="research-topics"><strong>parallel programming and massive scientific databases</strong></h3>
+
+			<p>our motivating datasets are large or massive ("large" data can fit in disk-space on a workstation, "massive" data cannot).  thus, to perform inference in reasonable time, we take two complementary strategies.  first,  our code run on multi-processor machines in parallel.  sometimes this follows from embarrassingly parallel code (e.g., looping over different data sets).  other times we develop/utilize parallel algorithms (e.g., <a href="http://www.stanford.edu/~boyd/papers/admm_distr_stats.html">alternating direction method of multipliers</a>).  second, we run our algorithms on scientific databases (e.g., <a href="http://www.scidb.org/">SciDB</a>) designed specifically for our queries. </p>
 
 
 	      </div>
