@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>research.html</string>
+	<string>index.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-04T17:41:36Z</date>
+			<date>2012-04-05T02:02:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-04T17:42:01Z</date>
+			<date>2012-04-05T02:02:17Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -26,15 +28,13 @@
 			<key>filename</key>
 			<string>optophysiology.html</string>
 			<key>lastUsed</key>
-			<date>2011-12-04T23:46:50Z</date>
+			<date>2012-04-05T02:02:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>research.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-04T17:42:01Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-04-05T02:00:48Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -46,44 +46,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>75</integer>
+				<integer>294</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>56</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>2</integer>
-				<key>line</key>
-				<integer>74</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>75</integer>
-			</dict>
+			<integer>263</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>78</integer>
 				<key>line</key>
-				<integer>58</integer>
+				<integer>80</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>38</integer>
+			<integer>63</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -95,7 +79,7 @@
 				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>422</integer>
+			<integer>377</integer>
 			<key>firstVisibleLine</key>
 			<integer>64</integer>
 		</dict>
