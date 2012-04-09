@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>cv.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-05T02:02:17Z</date>
+			<date>2012-04-06T21:35:23Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-05T02:02:17Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-04-06T21:35:23Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -46,14 +46,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>294</integer>
+				<integer>92</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>0</integer>
+			<integer>228</integer>
 			<key>firstVisibleLine</key>
-			<integer>263</integer>
+			<integer>70</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
