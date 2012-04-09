@@ -3,22 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>cv.html</string>
+	<string>research.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-06T21:35:23Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-04-09T15:33:22Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-06T21:35:23Z</date>
+			<date>2012-04-09T14:55:57Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -28,13 +26,15 @@
 			<key>filename</key>
 			<string>optophysiology.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-05T02:02:17Z</date>
+			<date>2012-04-09T15:43:35Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>research.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-05T02:00:48Z</date>
+			<date>2012-04-09T20:59:45Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -46,12 +46,12 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>92</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>228</integer>
+			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>70</integer>
 		</dict>
@@ -60,14 +60,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>78</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>80</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>63</integer>
+			<integer>53</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -79,23 +79,23 @@
 				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>377</integer>
+			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>64</integer>
+			<integer>0</integer>
 		</dict>
 		<key>research.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>46</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>15</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>0</integer>
+			<integer>160</integer>
 			<key>firstVisibleLine</key>
-			<integer>8</integer>
+			<integer>54</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -106,8 +106,8 @@
 		<string>research.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>windowFrame</key>
-	<string>{{4, 12}, {981, 734}}</string>
+	<string>{{685, 0}, {681, 746}}</string>
 </dict>
 </plist>
