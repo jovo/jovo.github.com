@@ -1,0 +1,147 @@
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+  <head> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="Home page for joshua vogelstein" /> 
+    <meta name="keywords" content="joshua vogelstein, graph theory, connectome, brain-graph, machine learning, statistics" /> 
+    <meta name="generator" content="webgen - http://webgen.rubyforge.org" /> 
+    <link rel="stylesheet" href="default.css" type="text/css" media="screen,projection" /> 
+    <title>JoVo Research</title> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18916263-3']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+ 
+ 
+  </head> 
+ 
+  <body> 
+    <div id="container" > 
+ 
+      <div id="header"> 
+        <h1><a href="index.html"><font color="white">joshua t. vogelstein</font></a></h1> 
+        <h2><font color="white">dept. of applied mathematics & statistics, johns hopkins university</font></h2> 
+      </div> 
+ 
+      <div id="navigation"> 
+        <ul>
+	<li class="webgen-menu-level1 webgen-menu-submenu"><a href="index.html">home</a></li>
+	<li class="webgen-menu-level1 webgen-menu-item-selected"><a href="research.html">research</a></li>
+	<li class="webgen-menu-level1 webgen-menu-submenu"><a href="cv.html">cv</a></li>
+	<li class="webgen-menu-level1 webgen-menu-submenu"><a href="http://blog.jovo.me">blog</a></li>
+	</ul> 
+      </div> 
+ 
+
+	     <div id="content"> 
+
+	<h2><strong>statistics</strong></h2> 
+
+	<ul>
+	<li><h3 id="research-topics">nonparametric inference in "icky" spaces</h3> 
+
+	<p>the bulk of statistical theory and practice developed in the last century deals with Euclidean (e.g., vector-valued) data with "small p, large n"; that is, lots of simple data.  the incoming century seems to be filled with a whole new class of data.  some is "large p, small n", that is, still Euclidean space, but high-dimensional.  other data is even more complex, living in function space or graph space, for example.  we develop theory and algorithms for performing inference in these more interesting (to us) data scenarios.  one might think of this as "statistical manifold learning", if one were prone to making up new names for stuff.</p> </li>
+
+	<li><h3 id="research-topics"><strong>graph statistics</strong></h3>
+
+	<p>a particularly interesting class of data for us is graph-valued data.  graphs are fun because they are combinatorial objects, so the dimensionality of the space, while finite, explodes super-exponentially.  the numbers are just silly, with only 10 vertices, there are more distinct binary graphs than particles in the universe.  we ask questions about inference in graphs or collections of graphs, such as: can we detect anomalous vertices? can we <a href="http://arxiv.org/abs/1108.1427">classify</a> collections of graphs? can we label vertices? can we <a href="http://arxiv.org/abs/1112.5507">match graphs</a>?  we care about answering all these questions from a probabilistic perspective, and we like our strategy to scale up to very large collections of very large graphs (e.g., billions of graphs, each with billions of vertices).  sometimes we endow our graphs with directed-edges, multi-edges, attributed-edges, etc.</p></li>
+
+	<li><h3 id="research-topics"><strong>graph inference</strong></h3>
+
+	<p>whether the raw data are time-series, repeated observations, or volumetric images, we often want to infer graphs underlying the measurements.  to this end, we develop tools to perform this inference, including from <a href = "http://optophysiology.org" >calcium</a>,  <a href="http://arxiv.org/abs/1111.2660">diffusion magnetic resonance</a>, and electron microscopy images of brains.
+
+	</ul>
+
+	<h2><strong>applications</strong></h2> 
+
+		<ul>
+		<li><h3 id="research-topics"><strong>neuroimaging analysis tools (aka, MR connectomes)</strong></h3>
+
+		<p>imaging the brain, whether using 
+			<a href="http://fcon_1000.projects.nitrc.org/">MRI</a>, <a href = "http://optophysiology.org" >calcium</a>, or some other modality, is becoming increasingly popular as camera speeds and resolution continue to increase.  these data often live in "icky" spaces (e.g., graphs).  therefore, we can utilize all the theory and algorithms that we develop to help answer questions about the brain, such as: how are brains wired up? how does brain wiring change with various psychiatric conditions? or how does the brain change after learning something new? </p></li>
+		
+		<li><h3 id="research-topics"><strong>computer vision for electron microscopy (aka, EM connectomes)</strong></h3>
+
+		<p>high-throughput electron microscopy images of brains yields both <a href="http://openconnecto.me">beautiful data</a> and a completely different set of inference tasks.  in particular, we'd love to be able to infer a graph where vertices are neurons and edges are synapses.  because the data are so large (e.g., 10TB) and noisy, this requires the development of novel computer vision strategies that are robust to noise and scale extremely well.</p></li>
+
+		<li><h3 id="research-topics"><strong>genomes</strong></h3>
+
+		<p>we've all got 'em, and they seem to determine some fraction of our experience in the world, and some of the diseases we get.  but how much? we use our high-dimensional data analysis tools to address a number of pressing genetics questions, such as, what are the gene networks responsible for various forms of cancer. </p></li>
+	
+			<li><h3 id="research-topics"><strong>shalomes</strong></h3>
+
+			<p>in light of the recent investigation of various 'omes, we coin the word "shalomes" to mean the complete "ome" of a person, including their connectome, genome, and mentalome.  our interests here lie in parsing the relative contribution of genetics and learning (aka, nature and nuture).  answering these questions relies upon our ability to deal with multiple disparate massive data sets, including genomes, connectomes, and mentalomes. </p></li>
+
+	
+	
+	
+		</ul>
+		
+
+		<h2><strong>misc</strong></h2> 
+
+		<ul>
+		<li><h3 id="research-topics"><strong>statistical philosophy of science</strong></h3>
+
+		<p>historically, philosophical questions are addressed by intellectual arguments, not backed by data.  but many philosophical questions can be mapped into statistical questions.  one special case of this is mind-brain <a href="http://www.nature.com/srep/2011/110926/srep00100/full/srep00100.html">supervenience</a>: can a pair of mental-states differ without their corresponding pair of brain-states differing?  we are interested in this question, as well as related questions about causal inference.	</p></li>
+
+		<li><h3 id="research-topics"><strong>parallel programming and massive scientific databases</strong></h3>
+
+			<p>our motivating datasets are large or massive ("large" data can fit in disk-space on a workstation, "massive" data cannot).  thus, to perform inference in reasonable time, we take two complementary strategies.  first,  our code run on multi-processor machines in parallel.  sometimes this follows from embarrassingly parallel code (e.g., looping over different data sets).  other times we develop/utilize parallel algorithms (e.g., <a href="http://www.stanford.edu/~boyd/papers/admm_distr_stats.html">alternating direction method of multipliers</a>).  second, we run our algorithms on scientific databases (e.g., <a href="http://www.scidb.org/">SciDB</a>) designed specifically for our queries. </p>
+
+		</ul>
+
+<p>if any of this stuff is interesting to you, and you might want to work with me, shoot me an <a href="mailto:joshuav_at_jhu_edu">email</a>.  we are always hiring smart people that we like working with :)</p>
+	
+	      </div>
+ 
+      <div id="subcontent"> 
+	      
+<div class="small box"> 
+<p><strong>email: </strong> 
+joshuav at jhu dot edu<br /> 
+<strong>office:</strong> 105c whitehead hall<br /> 
+<strong>phone:</strong> 443.858.9911<br /> 
+<strong>social networking: </strong><br /> 
+<a href="http://www.facebook.com/jovo1">facebook</a>, 
+<a href="https://github.com/jovo">github</a>,
+<a href="http://www.linkedin.com/in/jovo1">LinkedIn</a>
+<br /> 
+<strong>skype:</strong> joshyv<br /> 
+<strong>twitter:</strong> <a href="https://twitter.com/jovo">jovo</a><br /> 
+<strong>address:</strong> <br /> 
+3400 n charles st<br />
+dept applied math & stats <br />
+100 whitehead hall<br /> 
+baltimore, md 21218, usa
+</div> 
+ 
+	<!-- <h2>Links</h2>
+        <ul class="linkblock">
+          <li><a href="http://webgen.rubyforge.org">webgen</a></li>
+          <li><a href="http://andreasviklund.com/templates">Website templates</a></li>
+          <li><a href="http://openwebdesign.org">Open Web Design</a></li>
+          <li><a href="http://oswd.org">OSWD.org</a></li>
+        </ul>--> 
+ 
+      </div> 
+ 
+      <div id="footer"> 
+        <p>&copy; 2010 <a href="#">joshua vogelstein</a> | Generated by <a href="http://webgen.rubyforge.org">webgen</a> | Design copied from <a href="http://www.stat.columbia.edu/~fwood/index.html">Frank Wood</a></p> 
+      </div> 
+ 
+    </div> 
+  </body> 
+</html>
