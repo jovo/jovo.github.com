@@ -3,38 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>research.html</string>
+	<string>index.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-09T15:33:22Z</date>
+			<date>2012-09-09T01:14:04Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-09T14:55:57Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>me.html</string>
+			<date>2012-09-09T01:14:04Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>optophysiology.html</string>
 			<key>lastUsed</key>
 			<date>2012-04-09T15:43:35Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>research.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-09T20:59:45Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-09-09T01:06:37Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -48,26 +44,26 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>82</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>70</integer>
+			<integer>0</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>266</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>71</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>53</integer>
+			<integer>82</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -93,7 +89,7 @@
 				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>160</integer>
+			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>54</integer>
 		</dict>
@@ -106,8 +102,8 @@
 		<string>research.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<false/>
+	<true/>
 	<key>windowFrame</key>
-	<string>{{685, 0}, {681, 746}}</string>
+	<string>{{359, -3}, {681, 746}}</string>
 </dict>
 </plist>
