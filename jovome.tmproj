@@ -10,13 +10,13 @@
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2012-09-19T05:20:00Z</date>
+			<date>2012-09-23T16:04:38Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-09-19T05:20:00Z</date>
+			<date>2012-09-23T16:04:38Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -24,13 +24,13 @@
 			<key>filename</key>
 			<string>optophysiology.html</string>
 			<key>lastUsed</key>
-			<date>2012-04-09T15:43:35Z</date>
+			<date>2012-09-23T16:04:21Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>research.html</string>
 			<key>lastUsed</key>
-			<date>2012-09-09T01:06:37Z</date>
+			<date>2012-09-23T16:01:27Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -42,28 +42,44 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>276</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>92</integer>
+				<integer>93</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>194</integer>
 			<key>firstVisibleLine</key>
 			<integer>74</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>92</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>93</integer>
+			</dict>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>266</integer>
+				<integer>69</integer>
 				<key>line</key>
-				<integer>71</integer>
+				<integer>53</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>101</integer>
+			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>66</integer>
+			<integer>49</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -102,8 +118,8 @@
 		<string>research.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>windowFrame</key>
-	<string>{{4, 0}, {470, 746}}</string>
+	<string>{{4, -0}, {681, 746}}</string>
 </dict>
 </plist>
