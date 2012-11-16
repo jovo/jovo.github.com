@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>cv.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2012-10-28T22:06:39Z</date>
+			<date>2012-11-05T06:04:29Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-10-28T22:06:39Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-11-05T06:04:29Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -42,44 +42,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>145</integer>
 				<key>line</key>
 				<integer>70</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>63</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>191</integer>
-				<key>line</key>
-				<integer>72</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>70</integer>
-			</dict>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>189</integer>
+				<integer>45</integer>
 				<key>line</key>
-				<integer>68</integer>
+				<integer>96</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>51</integer>
+			<integer>22</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -120,6 +104,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{6, 168}, {681, 578}}</string>
+	<string>{{4, -0}, {681, 746}}</string>
 </dict>
 </plist>
