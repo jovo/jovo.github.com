@@ -46,24 +46,48 @@
 
 	     <div id="content"> 
 
-	<h2><strong>statistics</strong></h2> 
+	<h2><strong>motivating applications</strong></h2> 
+
+	<ul>
+		<li><h3 id="research-topics">machine-guided treatment plans for clinical psychiatry</h3> 
+	
+<p>			The American Psychiatry Association's most recent consensus report states, "there are currently no brain imaging biomarkers that are currently clinically useful for any diagnostic category in psychiatry".  We'd like to contribute to changing that. Our approach includes fusion and inference of massive multiple disparate dynamic data, including various brain imaging modalities and deep phenotypic assessments. 
+</p>
+
+
+	<li><h3 id="research-topics">brainomics</h3> 
+
+<p>Some of even the most basic questions about the organization of the brain remain totally open.  For example, we've not reconstructed the connectome of even a single mammalian neuron.  Moreover, we don't even know the spatial distribution of synapses in the brain of any species.  We utilize various imaging modalities and resolutions&mdash;ranging from nanometers to microns&mdash;to obtain estimates of aspects of brains.  Obtaining these estimates requires scaling up machine vision to operate on terabytes of data.  The estimates yield  representations of brain data in the form of non-Euclidean mathematical "objects".  We thusly extend statistical theory and methodology to operate on such data.  
+</p>
+
+	<li><h3 id="research-topics">information storage and processing in brains</h3> 
+
+<p>Our brains are about the size of a grapefruit, require only a few hundred calories a day, and weighs only 3 lbs.  In contrast, <a href="http://www-03.ibm.com/innovation/us/watson/">Watson</a>, IBM's supercomputer that recently won Jeopardy, is the size of a walk-in closet, exerts megawatts of power, and weighs a few tons.   We'd like to better understand how brains store and process information to shrink this gap.  </p>
+
+</ul>
+
+	<h2><strong>statistical theory and methodology</strong></h2> 
 
 	<ul>
 	<li><h3 id="research-topics">nonparametric inference in "icky" spaces</h3> 
 
-	<p>the bulk of statistical theory and practice developed in the last century deals with Euclidean (e.g., vector-valued) data with "small p, large n"; that is, lots of simple data.  the incoming century seems to be filled with a whole new class of data.  some is "large p, small n", that is, still Euclidean space, but high-dimensional.  other data is even more complex, living in function space or graph space, for example.  we develop theory and algorithms for performing inference in these more interesting (to us) data scenarios.  one might think of this as "statistical manifold learning", if one were prone to making up new names for stuff.</p> </li>
+	<p>The bulk of statistical theory and practice developed in the last century deals with Euclidean (e.g., vector-valued) data with "small p, large n"; that is, lots of simple data.  The incoming century seems to be filled with a whole new class of data.  Some is "large p, small n", that is, still Euclidean space, but high-dimensional. Other data is even more complex, living in function space or graph space, for example. We develop theory and algorithms for performing inference in these more interesting (to us) data scenarios. One might think of this as "statistical manifold learning", if one were prone to making up new names for stuff.</p> </li>
+
+	<li><h3 id="research-topics"><strong>scaling up statistics</strong></h3>
+
+<p>In addition to the data of interest being complex, it is also large, sometimes consisting of terabytes of data.  Thus, the tools that we build not only have strong theoretical support for inference in these spaces, but also have desirable computational properties, like sub-linear run time, one-pass algorithms, and the like.  
 
 	<li><h3 id="research-topics"><strong>graph statistics</strong></h3>
 
-	<p>a particularly interesting class of data for us is graph-valued data.  graphs are fun because they are combinatorial objects, so the dimensionality of the space, while finite, explodes super-exponentially.  the numbers are just silly, with only 10 vertices, there are more distinct binary graphs than particles in the universe.  we ask questions about inference in graphs or collections of graphs, such as: can we detect anomalous vertices? can we <a href="http://arxiv.org/abs/1108.1427">classify</a> collections of graphs? can we label vertices? can we <a href="http://arxiv.org/abs/1112.5507">match graphs</a>?  we care about answering all these questions from a probabilistic perspective, and we like our strategy to scale up to very large collections of very large graphs (e.g., billions of graphs, each with billions of vertices).  sometimes we endow our graphs with directed-edges, multi-edges, attributed-edges, etc.</p></li>
+	<p>A particularly interesting class of data for us is graph-valued data. Graphs are fun because they are combinatorial objects, so the dimensionality of the space, while finite, explodes super-exponentially. The numbers are just silly, with only 10 vertices, there are more distinct binary graphs than particles in the universe.  We ask questions about inference in graphs or collections of graphs, such as: can we detect anomalous vertices? can we <a href="http://arxiv.org/abs/1108.1427">classify</a> collections of graphs? can we label vertices? can we <a href="http://arxiv.org/abs/1112.5507">match graphs</a>?  we care about answering all these questions from a probabilistic perspective, and we like our strategy to scale up to very large collections of very large graphs (e.g., billions of graphs, each with billions of vertices). Sometimes we endow our graphs with directed-edges, multi-edges, attributed-edges, etc.</p></li>
 
 	<li><h3 id="research-topics"><strong>graph inference</strong></h3>
 
-	<p>whether the raw data are time-series, repeated observations, or volumetric images, we often want to infer graphs underlying the measurements.  to this end, we develop tools to perform this inference, including from <a href = "http://optophysiology.org" >calcium</a>,  <a href="http://arxiv.org/abs/1111.2660">diffusion magnetic resonance</a>, and electron microscopy images of brains.
+	<p>Whether the raw data are time-series, repeated observations, or volumetric images, we often want to infer graphs underlying the measurements.  To this end, we develop tools to perform this inference, including from <a href = "http://optophysiology.org" >calcium</a>,  <a href="http://arxiv.org/abs/1111.2660">diffusion magnetic resonance</a>, and electron microscopy images of brains.
 
 	</ul>
 
-	<h2><strong>applications</strong></h2> 
+	<!-- <h2><strong>applications</strong></h2> 
 
 		<ul>
 		<li><h3 id="research-topics"><strong>neuroimaging analysis tools (aka, MR connectomes)</strong></h3>
@@ -100,7 +124,7 @@
 
 			<p>our motivating datasets are large or massive ("large" data can fit in disk-space on a workstation, "massive" data cannot).  thus, to perform inference in reasonable time, we take two complementary strategies.  first,  our code run on multi-processor machines in parallel.  sometimes this follows from embarrassingly parallel code (e.g., looping over different data sets).  other times we develop/utilize parallel algorithms (e.g., <a href="http://www.stanford.edu/~boyd/papers/admm_distr_stats.html">alternating direction method of multipliers</a>).  second, we run our algorithms on scientific databases (e.g., <a href="http://www.scidb.org/">SciDB</a>) designed specifically for our queries. </p>
 
-		</ul>
+		</ul> -->
 
 <p>if any of this stuff is interesting to you, and you might want to work with me, shoot me an <a href="mailto:joshuav_at_jhu_edu">email</a>.  we are always hiring smart people that we like working with :)</p>
 	
