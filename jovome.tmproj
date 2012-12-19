@@ -16,7 +16,7 @@
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2012-11-28T01:17:07Z</date>
+			<date>2012-12-03T13:53:22Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -28,7 +28,7 @@
 			<key>filename</key>
 			<string>research.html</string>
 			<key>lastUsed</key>
-			<date>2012-12-02T15:15:13Z</date>
+			<date>2012-12-03T13:53:22Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -72,30 +72,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>709</integer>
+				<integer>1056</integer>
 				<key>line</key>
-				<integer>81</integer>
+				<integer>83</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>271</integer>
 			<key>firstVisibleLine</key>
 			<integer>74</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>556</integer>
-				<key>line</key>
-				<integer>81</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>709</integer>
-				<key>line</key>
-				<integer>81</integer>
-			</dict>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -116,30 +100,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>294</integer>
+				<integer>30</integer>
 				<key>line</key>
-				<integer>85</integer>
+				<integer>57</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>60</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>293</integer>
-				<key>line</key>
-				<integer>85</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>294</integer>
-				<key>line</key>
-				<integer>85</integer>
-			</dict>
+			<integer>45</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
