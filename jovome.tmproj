@@ -10,7 +10,7 @@
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2013-01-13T04:55:39Z</date>
+			<date>2013-01-19T22:14:52Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -42,14 +42,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>42</integer>
 				<key>line</key>
-				<integer>92</integer>
+				<integer>383</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>0</integer>
+			<integer>181</integer>
 			<key>firstVisibleLine</key>
-			<integer>67</integer>
+			<integer>359</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
