@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>cv.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>cv.html</string>
 			<key>lastUsed</key>
-			<date>2013-03-18T18:53:08Z</date>
+			<date>2013-04-13T17:29:57Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2013-03-18T19:24:30Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2013-04-13T17:29:57Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -42,14 +42,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>511</integer>
+				<integer>80</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>488</integer>
+			<integer>77</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
@@ -61,9 +61,9 @@
 				<integer>98</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>976</integer>
+			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>84</integer>
+			<integer>48</integer>
 		</dict>
 		<key>optophysiology.html</key>
 		<dict>
@@ -102,7 +102,7 @@
 		<string>research.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>windowFrame</key>
 	<string>{{4, -0}, {681, 746}}</string>
 </dict>
