@@ -132,18 +132,18 @@ background-color:inherit;
 display:block;
 margin:0 0 16px 0;
 font-size:1.7em;
-font-weight:normal;
+font-weight:bold;
 letter-spacing:-1px;
 color:#505050;
 background-color:inherit;
 }
 
-#content h2 a{font-weight:normal;}
-#content h3{margin:0 0 5px 0; font-size:1.4em; letter-spacing:-1px;}
+#content h2 a{font-weight:bold;}
+#content h3{margin:0 0 5px 0; font-size:1.4em; letter-spacing:-1px; font-weight:normal;}
 #content a:hover,#subcontent a:hover{text-decoration:underline;}
 #content ul,#content ol{margin:0 5px 16px 35px;}
 #content dl{margin:0 5px 10px 25px;}
-#content dt{font-weight:bold; margin-bottom:5px;}
+#content dt{font-weight:normal; margin-bottom:5px;}
 #content dd{margin:0 0 10px 15px;}
 
 /**************** Sidebar styles ****************/
