@@ -82,6 +82,7 @@ width:758px;
 margin:0 1px;
 background:#545454;
 color:#ffffff;
+font-size:0.9em;
 }
 
 #navigation li{
@@ -108,7 +109,6 @@ color: #ffffff;
 background:#909090;
 color:#ffffff;
 text-decoration:none;
-font-size:1.0em;
 }
 
 /**************** Content styles ****************/
