@@ -41,88 +41,59 @@
 	<li class="webgen-menu-level1 webgen-menu-submenu"><a href="index.html">home</a></li>
 	<li class="webgen-menu-level1 webgen-menu-item-selected"><a href="research.html">research</a></li>
 	<li class="webgen-menu-level1 webgen-menu-submenu"><a href="cv.html">cv</a></li>
+	<li class="webgen-menu-level1 webgen-menu-submenu"><a href="code.html">code</a></li>
 	</ul> 
       </div> 
  
 </body>
 
-	     <div id="content"> 
+	<div id="content"; style="width:600px"> 
 
 
-<p>if any of the below stuff is interesting to you, and you might want to work with me, shoot me an <a href="mailto:joshuav_at_jhu_edu">email</a>.  we are always hiring smart people that we like working with :)</p>
 	
 	
+	Our research for the last several years has been devoted to the extension and application of scalable statistical inference methodologies to discover structure from multiple multiscale multidimensional multispectral multimodal multifarious data.  Our primary motivation is the discovery of principles relating brain structure and dynamics to behavior and cognition.  Our work can be organized into computational statistical methods operating on objects in various domains, including graphs, time-series, shapes, images, and of course, classical Euclidean objects.
+
+<p></p>
+
+<ul>
 	
-	Our research for the last several years has been devoted to the extension and application of scalable statistical inference methodologies to discover structure from multiple multiscale multidimensional multispectral multimodal multifarious data.  Our primary motivation is the discovery of principles relating brain structure and dynamics to behavior and cognition.  As different spatiotemporal scales are optimal for different neurobiological questions, our work spans from single molecules to communities and from milliseconds to lifetimes.  To a first approximation, we characterize the brain as an attributed graph, where vertices are neurons and edges are synapses.  Thus, we explore brain structure, brain dynamics, and brain connectivity, as part of a brain graph exploration.
+	<li><strong>Graph Analysis: </strong>
+	We have developed a number of methodologies that operate directly on large graphs.  This includes hypothesis testing for graphs, classifying graphs, matching graphs, embedding graphs, computing distances between graphs, computing multivariate invariants of massive graphs,  vertex clustering, vertex classification, estimating the reliability of graphs, and optimal graph inference under constraints.  Our primary applications of this work including discovering the variability in brain-graphs as a function of various phenotypes, including species, sex, and skills.
 
-<p></p><h3>Brain Structure</h3>
+	<li><strong>Time-Series Analysis: </strong>
+		We have developed a number of methodologies that are essentially generalizations linear deconvolution, including non-negative constraints, integer constraints, and nonlinear and non-Gaussian observation functions. These include highly scalable methods for voxel-wise fMRI applications, real-time methods for spike sorting from neurophysiology data, and population calcium imaging methods.  We have also developed methods for clustering multivariate time-series to explore larval Drosophila behavior.
 
- 
-
-	The vertices and edges of brain graphs can be arbitrarily complex.  For example, at the microscale, array tomography data provides us with multispectral volumetric images at sub-micron resolution, where each color channel corresponds to the spatial distribution of \emph{in situ} protein expression.  We are using these data to learn a data-driven taxonomy of synaptic diversity. We have also developed scalable methods for synapse detection from nanoscale serial electron microscopy and histogram normalization for streaming gigabyte images.
-
-
-	<p></p><h3>Brain Dynamics</h3>
-
-
-	We have developed a number of methods to estimate single cell neural activity via calcium imaging of large populations of neurons and estimating connectivity amongst the neurons.  We have also developed methods for spike sorting and decoding electrophysiological signals. In complementary efforts, we are developing  time-series methods to analyze functional MRI data (with >100k dimensions)  that yield estimates of connectivity. 
+		<li><strong>Shape Analysis: </strong>
+		We are developing a number of tools for the analysis of shapes, including multispectral three-dimensional closed contours.  The primary applications of this work are studying the synaptic and cellular morphological diversity in the brain.
+		
+		<li><strong>Image Analysis: </strong>
+		We are developing scalable methods to perform a number of image processing tasks such as two- and three-dimensional image alignment, color correction, color compression, and multispectral alignment.  Similarly, we are working on a variety of  computer vision tasks, including three-dimensional (and sometimes multispectral and multi-resolution) object detection, tracking, and scene segmentation. The primary applications of this work are in automating image analysis for massive neuroscientific image stacks.  The data derivatives from this work, therefore, feed into the graph, time-series, and shape analyses mentioned above. 
 
 
-	<p></p><h3>Brain Connectivity</h3>
+		<li><strong>Euclidean Analysis: </strong>
+		We are also developing scalable methods to analyze Euclidean data, specializing in data where the dimensionality is far larger than the sample size, and potentially has outliers and/or missing data.  For example, we are currently developing scalable classification algorithms. Preliminary results suggest that are methods are more scalable, more accurate, and more simple, than previous efforts.
+
+		<li><strong>Multimodal Analysis: </strong>
+		We are also developing scalable methods to analyze data coming from multiple different modalities, such as graphs, text, and images.  Preliminary applications including cancer biomarker discovery from clinical, imaging, and genetic data as well as personality prediction from functional and structural connectomes.
 
 
-
-	We have developed a number of methodologies that operate directly on large graphs. These methods are agnostic with regard to the source (electrons or photons), modality (structural or dynamical), scale (nano, micro or meso), or size (thousands or millions of vertices) of the graphs.  This includes hypothesis testing for graphs, classifying graphs, matching graphs, embedding graphs, computing distances between graphs, computing multivariate invariants of massive graphs,   vertex clustering, vertex classification, estimating the reliability of graphs, and optimal graph inference under constraints.  
-
-
-<p></p>	<h3>Behavior</h3>
-
-
-
-	As a first foray into studying the behavior generated by neural circuits, we have been studying time-varying behavior of Drosophila larva under optogenetic stimulation of small subsets of neurons.  Similarly, we are exploring the relationship between whole-brain functional MRI activity and personality type.
-
-
-<p></p>	<h3>Scalable Infrastructure</h3>
+		<li><strong>Scalable Infrastructure: </strong>
+		We have built a scalable database cluster to support open access machine vision and statistical analysis of the kinds of data described above. This includes heterogeneous hardware architectures and distributed processing.  
+</ul>	
 
 
 
-	We have built a scalable database cluster to support open access machine vision and statistical analysis of such data.  On this system, we run our modular scalable computer vision pipeline for nano and microscale data.  Similarly, at the mesoscale, we have developed a similar pipelines for diffusion and functional MRI.   The output of all of these pipelines includes attributed brain-graphs.
 	
 <p></p>
+
+
+
+<p>if any of the above stuff is interesting to you, and you might want to work with me, shoot me an <a href="mailto:joshuav_at_jhu_edu">email</a>.  we are always hiring smart people that we like working with :)</p>
+
 	      </div>
  
-      <div id="subcontent"> 
-	      
-<div class="small box"> 
-<p><strong>email: </strong> 
-jo.vo@duke.edu<br /> 
-<strong>office:</strong> 3rd flr, gross chem<br /> 
 
-<strong>phone:</strong> 443.858.9911<br /> 
-<strong>social networking: </strong><br /> 
-<a href="http://www.facebook.com/jovo1">facebook</a>, 
-<a href="https://github.com/jovo">github</a>,
-<a href="http://www.linkedin.com/in/jovo1">LinkedIn</a>
-<br /> 
-<strong>skype:</strong> joshyv<br /> 
-<strong>twitter:</strong> <a href="https://twitter.com/jovo">jovo</a><br /> 
-<strong>address:</strong> <br /> 
-information initiative at duke<br /> 
-campus box 90984<br /> 
-140 science drive<br /> 
-duke university<br /> 
-durham, nc  27708-0984
-</div> 
- 
-	<!-- <h2>Links</h2>
-        <ul class="linkblock">
-          <li><a href="http://webgen.rubyforge.org">webgen</a></li>
-          <li><a href="http://andreasviklund.com/templates">Website templates</a></li>
-          <li><a href="http://openwebdesign.org">Open Web Design</a></li>
-          <li><a href="http://oswd.org">OSWD.org</a></li>
-        </ul>--> 
- 
-      </div> 
  
       <div id="footer"> 
         <p>&copy; 2013 <a href="#">joshua vogelstein</a> | Generated by <a href="http://webgen.rubyforge.org">webgen</a> | Design copied from <a href="http://www.stat.columbia.edu/~fwood/index.html">Frank Wood</a></p> 
