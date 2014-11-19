@@ -1,0 +1,610 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cv.html",
+			"settings":
+			{
+				"buffer_size": 41323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "links.html",
+			"settings":
+			{
+				"buffer_size": 974,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "philosophy.html",
+			"settings":
+			{
+				"buffer_size": 1562,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects.html",
+			"settings":
+			{
+				"buffer_size": 5706,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "contact.html",
+			"settings":
+			{
+				"buffer_size": 588,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code.html",
+			"settings":
+			{
+				"buffer_size": 4192,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"Package Control: La",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"reco",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 472.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jovo/Research/Other/jovo.github.com"
+	],
+	"file_history":
+	[
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_management.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_personnel.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_summary.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_administrivia.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_capabilities.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_goals_math.aux",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_datafy.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_discover.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_math.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_comp.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_data.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_overview.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/tech/JHU-SIMPLEX_tech_comp",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/tech/JHU-SIMPLEX_tech_math",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/goals/JHU-SIMPLEX_background.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-SIMPLEX.sublime-project",
+		"/Users/jovo/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/Default (OSX).sublime-keymap",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_datafy",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_local.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_remote.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_data",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_comp",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_remote",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_math",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_local",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_capabilities",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Proposal/JHU-SIMPLEX_personnel",
+		"/Users/jovo/Research/Working/A/preamble.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_cost.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_capabilities.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_technicalplan.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_overview",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_goals.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_summary.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_coversheet.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/preamble.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Figs/dolphin_v5.pdf",
+		"/Users/jovo/Research/Working/A/SIMPLEX/JHU-Abstract/JHU-SIMPLEX_summary",
+		"/Users/jovo/Research/Working/A/SIMPLEX/DUKE-SIMPLEX/jovo.tex",
+		"/Users/jovo/Research/Working/A/SIMPLEX/DUKE-SIMPLEX/NeuroX.tex",
+		"/Users/jovo/Research/Working/A/NeuroX/NeuroX.tex",
+		"/Users/jovo/Research/Working/A/NeuroX/LevelsOfInvestigation.jpg",
+		"/Users/jovo/Research/Working/A/LOL/Draft/preamble.tex",
+		"/Users/jovo/Research/Working/A/LOL/ShareLatex/LOL.tex",
+		"/Users/jovo/Research/Working/A/LOL/ShareLatex/preamble.tex",
+		"/Users/jovo/Research/Working/A/Stat-Conn/Draft/preamble",
+		"/Users/jovo/Research/Working/A/Stat-Conn/Draft/stat-conn.tex",
+		"/Users/jovo/Research/Grants/won/darpa_braingraphs_2013/tex/GRAPHS_SOW.tex",
+		"/Users/jovo/Research/Grants/won/darpa_braingraphs_2013/tex/rb.bib",
+		"/Users/jovo/Research/Grants/won/darpa_braingraphs_2013/tex/GRAPHS.tex",
+		"/Users/jovo/Research/Grants/won/darpa_braingraphs_2013/tex/GRAPHS.pdf",
+		"/Users/jovo/Dropbox/sharelatex/LOL/pnastmpl.tex",
+		"/Users/jovo/Dropbox/sharelatex/LOL/LOL.tex",
+		"/Users/jovo/Research/Working/A/Statistical Connectomics Review/Draft/stat-conn.tex",
+		"/Users/jovo/Research/Working/Primary/synaptic-diversity/Background/readme",
+		"/Users/jovo/Dropbox/sharelatex/Statistical Connectomics Review/stat-conn.tex",
+		"/Users/jovo/Downloads/let-ref-G-Kiar.tex",
+		"/Users/jovo/Research/Working/A/IDIES-grant/GrantApplication.tex",
+		"/Users/jovo/Research/Working/A/IDIES-grant/minh_cv.tex",
+		"/Users/jovo/Research/Other/jovo.github.com/cv.html",
+		"/Users/jovo/Dropbox/sharelatex/CV/cv.tex",
+		"/Users/jovo/Research/Sites/jovo.github.com/cv.html",
+		"/Users/jovo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jovo/Dropbox/sharelatex/CV/CV.tex",
+		"/Users/jovo/Dropbox/sharelatex/CV/CV-template_en.tex"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"compactitem"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Cell ",
+			"motif",
+			"fig:pipeline",
+			"comp.pdf",
+			"milestones",
+			"includegraphics",
+			"para",
+			"thurst",
+			"&",
+			"itemize",
+			"use case",
+			"emph",
+			"====",
+			"vince",
+			"====",
+			">>>>>>>>>>",
+			"Zheng14a",
+			"Ahrens14a",
+			"Craddock14a",
+			"Craddock",
+			"jason",
+			"1 History\n",
+			"1 H",
+			"1 History\n",
+			"[2] Accordingly, when La Pérouse charted most of the strait between Sakhalin and the mainland \"Chinese Tartary\" in 1787, the body of water received the name of the Strait (or Channel",
+			"{disa}",
+			"{da}",
+			"da",
+			"\\TODO{nam}",
+			"nam",
+			"\\subsection",
+			"\\subsect",
+			"\\clearpage",
+			"cep",
+			"includegra",
+			"includeg",
+			"smacof",
+			"section",
+			"}",
+			"− ",
+			"?",
+			"}",
+			"− ",
+			"fancy",
+			"$\\bullet$",
+			"\\item",
+			"Principles",
+			"\\subsubsection",
+			"inputenc",
+			"\\para",
+			"\\subpara",
+			"\\D",
+			"\\Del",
+			"\\D",
+			"$\\bullet$ ",
+			"subsubsection",
+			"\\rb",
+			"rbran",
+			"\\mark",
+			"color",
+			"=",
+			"\\def",
+			"lem}",
+			"fig:gen",
+			"fig:cig",
+			"lem",
+			"mnist",
+			"2-",
+			"iid",
+			"defi",
+			"Alg",
+			"\\Alg",
+			"\\GAM",
+			"itemize",
+			"algorithm",
+			"itemize",
+			"enumerate",
+			"Poster",
+			"\\href",
+			"\\ecv",
+			"?",
+			"Johns ",
+			"href"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"subsubsection",
+			"compactitem",
+			"",
+			"jason",
+			"?}",
+			"\\para{",
+			"}",
+			"\\para{",
+			"\\vspace{5pt}\\noindent $\\bullet$",
+			"$\\bullet$",
+			"Primitives",
+			"\\para",
+			"\\subsection",
+			"\\subsubsection",
+			"\\Del",
+			"",
+			"subsection",
+			"compactitem",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cv.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2263,
+								2263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 629.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "links.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "philosophy.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "projects.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "contact.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "code.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 143.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "website.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
