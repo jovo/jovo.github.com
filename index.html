@@ -15,12 +15,12 @@
         <h1>jovo.me</h1>
         <!-- <a href="projects.html">projects</a><br> -->
         <a class="page-scroll" href="#projects">projects</a><br>
-        <a href="philosophy.html">philosophy</a><br>
-        <a href="code.html">code</a><br>
-        <a href="links.html">links</a><br>
-        <a href="teaching.html">teaching</a><br>
-        <a href="contact.html">contact</a><br>
-        <a href="https://www.dropbox.com/s/xg96unmbvjurwa2/jovo_cv.pdf?dl=0">cv</a><br><!--  -->
+        <a class="page-scroll" href="#philosophy">philosophy</a><br>
+        <a class="page-scroll"href="#code">code</a><br>
+        <a class="page-scroll" href="#links">links</a><br>
+        <a class="page-scroll" href="#teaching">teaching</a><br>
+        <a class="page-scroll" href="#contact">contact</a><br>
+        <a href="https://www.dropbox.com/s/xg96unmbvjurwa2/jovo_cv.pdf?dl=0" target="_blank">cv</a><br><!--  -->
       </header>
     
     <section>
@@ -62,8 +62,82 @@ All projects are motivated by scientific questions, and result in open source co
 For more information about any of these projects, or to tell me about your awesome new project, <a href="mailto:jovo@jhu.edu">email me</a>, or swing by <a href="contact.html">my office</a> sometime!
 
     </section>
+
+    <section id="philosophy">
+    <h2>philosophy</h2>
+      
+This world is already an incredibly beautiful and lovely place to live (at least for me, for now).  We are motivated by a desire to make it even better for all of us, as well as our descendants, and our fellow inhabitants.  We do so via searching for <em>patterns</em>. Specifically, we seek patterns in our physical worlds (e.g., our bodies, our brains) as well as our mental worlds (e.g., our perceptions, experiences, memories, thoughts, emotions, psychiatric conditions).  More importantly, we seek to understand patterns in our mental worlds <em>in terms of</em> our physical worlds. Our hope and belief is that via developing a deeper understanding of the links between these worlds, we will be able to bring them into greater alignment. A primary motivating factor is that all humans/animals have brains and therefore, such ideas could directly benefit all of animalkind. Thus, all of our research products are freely available to all.  For more  details see my 
+<a href="cv.html">cv</a>.
+</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/FQjgsQ5G8ug?start=30" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="code">
+      <h2>code</h2>
+      <p>Essentially every project I embark on includes writing some code, if only to buttress the theoretical results with numerical examples.  Moreover, as an adherent to the philosophy of open science, code I write is always open source by the time of submission, and often sooner.  Thus, searching my <a href="cv.html">cv</a> is the most reliable method for discovering all of the code bases associated with any project I am a part of.  You can also check various github accounts that I regularly contribute to, including <a href="https://github.com/jovo">my own</a> and <a href="https://github.com/openconnectome/">open connectome project</a>'s, which we started. We are also contributing to <a href="https://github.com/igraph">igraph</a> these days. Nevertheless, here I will try to post the codes from various projects that I think are potentially useful for other applications.  </p>
+
+  <h3 id="research-topics"><strong>time series analysis</strong></h3> 
+
+  <ol>
+    <li>Fast Nonnegative Deconvolution for Spike Train Inference from Population Calcium Imaging. <a href="https://github.com/jovo/fast-oopsi/raw/master/fast-oopsi.pdf">manuscript</a>, <a href="https://github.com/jovo/fast-oopsi/raw/master/code/functions/fast_oopsi.m">code</a>, and <a href="https://github.com/jovo/fast-oopsi">repo</a> .
+      
+    <li>Spike inference from calcium imaging using sequential Monte Carlo methods.  <a href="https://github.com/jovo/smc-oopsi/raw/master/manuscript/VogelsteinPaninski09.pdf">article</a>,
+      <a href="https://github.com/jovo/oopsi">code</a>.
+      
+    <li> Real-Time Inference for a Gamma Process Model of Neural Spiking. <a href="http://papers.nips.cc/paper/5061-real-time-inference-for-a-gamma-process-model-of-neural-spiking">manuscript</a>, <a href="https://github.com/decarlson/opass">code</a>.
+
+  </ol>
+
+  <h3 id="research-topics"><strong>graph analysis</strong></h3> 
+
+  <ol>
+
+    <li>Graph Classification using Signal Subgraphs: Applications in Statistical Connectomics. 
+  <a href="http://arxiv.org/abs/1108.1427">arxiv</a>, 
+  <a href="https://github.com/jovo/MatGraphStat/tree/master/SignalSubgraphClassifier">code</a>, <a href="https://github.com/jovo/signal-subgraph-classifier">repo</a>, <a href="http://www.computer.org/csdl/trans/tp/2013/07/ttp2013071539-abs.html">article</a>.
+  <li>Fast Approximate Quadratic Programming for Large (Brain) Graph Matching. <a href="http://arxiv.org/abs/1112.5507">arxiv</a>, <a href="https://github.com/jovo/MatGraphStat">code</a>.
+  
+  
+  <li>Seeded Graph Matching Via Joint Optimization of Fidelity and Commensurability. <a href="http://arxiv.org/abs/1401.3813">arxiv</a>, <a href="https://github.com/igraph/xdata-igraph/blob/develop/interfaces/R/igraph/R/sgm.R">code</a>.
+  
+  <li>Robust Multimodal Graph Matching: Sparse Coding Meets Graph Matching. <a href="http://papers.nips.cc/paper/4925-robust-multimodal-graph-matching-sparse-coding-meets-graph-matching">nips</a>, <a href="http://arxiv.org/abs/1311.6425">arxiv</a>, <a href="http://www.fing.edu.uy/~mfiori/code/code_graph_matching.zip">code</a>. 
+      
+  <li>  DELTACON: Measuring Connectivity Differences in Large Networks. 
+    <a href="http://dx.doi.org/10.1137/1.9781611972832.18">article</a>.
+    <a href="http://arxiv.org/abs/1304.4657">arxiv</a>, <a href="http://www.cs.cmu.edu/~dkoutra/CODE/deltacon.zip">code</a>.
+
+
+    <li>MR Connectome Automated Pipeline. <a href="http://arxiv.org/abs/1111.2660">arxiv</a>, <a href="http://nitrc.org/projects/mrcap">code</a>, <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6173097&contentType=Journals+%26+Magazines&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6173090%29">abstract</a>, <a href="http://db.tt/BMEVlrpE">pdf</a>.</li>
+  
+      
+  </ol>
+    </section>
     
+    <section id="links">
+      <h2>links</h2>
+      <a href="http://scholar.google.com/citations?hl=en&user=DWPfdT4AAAAJ&sortby=pubdate&view_op=list_works&gmla=AJsN-F7eFaJivagMCwgIbNf4cOwHKPj8aFcIANb8rku8bPmHR88ZxVs8dbsn68pjjibAZ9I4KrtOJDCVC411dnpjg51-NPcMQ6SrgdFh3NXdXyjq9dimPVg">my google scholar page</a><br>
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=%22vogelstein+jt%22%5Bau%5D">my pubMed page</a><br>
+<a href="http://arxiv.org/find/all/1/au:+Vogelstein_J/0/1/0/all/0/1">my arXiv page</a><br>
+<a href="https://github.com/jovo">my github page</a><br>
+<a href="http://www.openconnectomeproject.org/">open connectome project</a><br>
+
+    </section>
     
+    <section id="teaching">
+      <h2>teaching</h2>
+      <a href="https://github.com/Statistical-Connectomics-Sp15/intro">Statistical Connectomics (Spring 2015)</a> 
+    </section>
+    <section id="contact">
+      <h2>contact</h2>
+      <p>jovo [at symbol] jhu [dot] edu<br>
+        <br>
+        Joshua T. Vogelstein<br>
+        Center for Imaging Science<br>
+        Clark Hall, Rm 317C<br>
+        3400 N. Charles St<br>
+        Baltimore, MD 21218
+    </section>
+
     </div>
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
