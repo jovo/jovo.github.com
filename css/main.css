@@ -21,10 +21,6 @@ html {
     width: 100%;
     height: 100%;
 }
-nav li{
-    display: inline;
-    float: left;
-}
 
 @media(min-width:767px) {
     .navbar {
@@ -45,16 +41,9 @@ nav li{
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
-.intro-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
-}
-
 .first-section {
     /*height: 40%;*/
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .generic-section {
