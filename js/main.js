@@ -22,3 +22,6 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+$('.navbar-header a').click(function() {
+     $('.navbar-toggle:visible').click();
+});
