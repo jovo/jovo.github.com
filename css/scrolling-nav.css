@@ -29,6 +29,9 @@ html {
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
+    .navbar-inner {
+    background:transparent;
+}
 
     .top-nav-collapse {
         padding: 0;
@@ -46,7 +49,7 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.philosophy-section {
+.first-section {
     /*height: 40%;*/
     padding-top: 150px;
 }
