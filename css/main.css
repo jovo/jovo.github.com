@@ -69,3 +69,9 @@ of those sections to manage the look and feel of the site. */
     padding-top: 40px;
     padding-bottom: 20px;
 }
+
+.img-responsive {
+    /* This really should just be part of bootstrap,
+       hence the globally applied style. */
+    margin: auto;
+}
