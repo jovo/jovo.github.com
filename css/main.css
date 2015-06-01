@@ -49,6 +49,9 @@ html {
     background-size: cover;
     -o-background-size: cover;
   }
+  .lineup-hack {
+    display: none;
+  }
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
