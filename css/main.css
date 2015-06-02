@@ -75,6 +75,6 @@ of those sections to manage the look and feel of the site. */
 
 
 .container {
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 10px #dedede;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 1px #dedede;
 }
