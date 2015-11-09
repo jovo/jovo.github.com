@@ -171,8 +171,8 @@
 
 class: center, middle, inverse
 
-# NeuroData:
-## Enabling Petascale Neuroscience
+# NeuroData: 
+# Enabling Petascale Neuroscience
 
 ### Joshua T. Vogelstein
 ### {[BME](http://bme.jhu.edu),[ICM](http://icm.jhu.edu),[CIS](http://cis.jhu.edu),[Kavli](http://kndi.jhu.edu)}@[jhu.edu](http://jhu.edu)
@@ -180,106 +180,104 @@ class: center, middle, inverse
 #### e: [jovo@jhu.edu](mailto:jovo@jhu.edu) | w: [neurodata.io](http://neurodata.io)
 
 
+---
+
+### Please consider the following _Gedankenexperiment_ 
+
+#### Experiment 1:  collect 10 images in a stack &rarr; find all ~100 synapses
+
+1. Look: Open in ImageJ on local computer
+2. Pre-process: Manually align images & adjust contrast
+3. Annotate: Manually label each synapse
+4. Analyze: Plot them all in a 3D scatter plot
+
+
+![](images/Denk04_fig.png "Denk")
 
 ---
 
-## Answering Scientific Questions from Data
+### Please consider another _Gedankenexperiment_ 
+
+#### Experiment 2:  collect 10K images in a stack &rarr; find all 10M synapses
+
+1. Look: Data too large to load into ImageJ on local computer
+2. Pre-process: Takes too long to manually pre-process
+3. Annotate: Takes even longer find find all synapses
+4. Analyze: Can't really see what is going on when plotting 10M synapses
+
+![](images/corrected2.png "Image-Stack")
+
+
+---
+
+### Oppurtunity: Datasets like this are popping up all over the place
+
+<!-- # Case Study -->
+
+<!-- <object id="flashObj" width="720" height="405" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object> -->
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU" frameborder="0" allowfullscreen></iframe>
+
+- Real Experiment: Serial Electron Microscopy 
+- Resolution: 4 x 4 x 40 nm^3
+- Volume: 350 x 450 x 50 micron^3
+- Size: ~10 TB
+
+Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are discussing are from Bock et al. (Nature, 2011)
+
+
+
+---
 
 .pull-left[
+### Challenge:  Can't perform any of the 4 steps to discovery
 
-### 4 Steps to Discovery:
+<br></br>
+
+#### 4 Steps to Discovery:
 
 1. Look
 1. Pre-Process
 1. Annotate
 1. Analyze
+
 ]
 
 
 .pull-right[
+### Action: Meet needs to achieve each step
 
-### 3 Needs to Achieve:
+<br></br>
+
+#### 3 Needs to Achieve:
 
 <ol type="A">
-  <li>Computer</li>
-  <li>Software</li>
   <li>Algorithms</li>
+  <li>Software</li>
+  <li>Computer</li>
 </ol>
+
 ]
 
 
 ---
 
-## Answering Scientific Questions from Data
-
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
+# Resolution: NeuroData!
 
 
----
+### We make the following open science contributions to the community:
+- reference datasets in a variety of modalities
+- reference pipelines for operating on such data
+- Web-services to enable using our data-intensive computing
+- A cloud computing stack to facilitate analysis
+- Detailed specs for plugging in different routines
+- Data derivatives at all stages of analysis
 
-
-## Answering Scientific Questions from Data
-
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
-
-
-### What do you need to achieve these things
-
-
-<br></br>
-
-|     | _Need_        | | _Example_  | _Sufficient?_ |
-| --- | :---: | ---    | :----: | :---: |
-| A.   | Computer      | | Dell Workstation    | :) |
-| B.   | Software      | | Local MATLAB        | :) |
-| C.   | Algorithms    | | deconvolution       | :) |
-<!-- | 4   | Data Exchange | | load image, save csv| :) |
- -->
-
----
-
-## Answering Scientific Questions from BIG Data
-
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
-
-
----
-## Answering Scientific Questions from BIG Data
-
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
-
-### What do you need to achieve these things
-
-
-<br></br>
-
-
-|     | _Need_        | | _Example_  | _Sufficient?_ |
-| --- | :---: | ---    | :----: | :---: |
-| A.   | Computer      | | Dell Workstation | :( |
-| B.   | Software      | | Local MATLAB |        :( |
-| C.   | Algorithms    | | deconvolution |       :( |
-<!-- | 4   | Data Exchange | | load image, save csv |:( | -->
-
-
-
-<br></br>
-
-
-I take it as given that everyone here understands *why* we do the first quadruple,
-and why we need the next quadruple to make them happen?
+### It is now easier to:
+- Bridge across scales and modalities 
+- Answer questions the require scale
+- Engage complementary expertise
+- Reproduce results
 
 
 ---
@@ -307,71 +305,6 @@ and why we need the next quadruple to make them happen?
 - Volume: 350 x 450 x 50 micron^3
 - Size: ~10 TB
 - Question: Are synapses distributed uniformly in space?
-
-<!-- ```Peter's Rule: the probability of connection between a pair of neurons is determined solely by their relative proximity``` -->
-
-Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are discussing are from Bock et al. (Nature, 2011)
-
----
-
-# The numbers
-
-- ~8 million cubic micron
-- => ~8 million synapses
-- Manual labeling requires ~10 sec / synapse
-- 60 sec x 60 min x 8 hrs x 250 days = 8 million seconds
-- a person can find all million synapses working for a year
-- but i'm inpatient, i want to do it .red[this week]
-
-### What would it take to find all synapses in a few days?
-
----
-
-# 4 Steps to Discovery
-
-.pull-left[
-
-### 1. Look (24 fps)
-<ol type="i">
-  <li>Pan in X, Y, Z</li>
-  <li>Zoom in & out</li>
-  <li>Overlay labels</li>
-</ol>
-]
-
-
-.pull-left[
-
-### 3. Annotate (< 3 days)
-<ol type="i">
-  <li>Label</li>
-  <li>Train</li>
-  <li>Spot check</li>
-  <li>Hyper-parameter sweep</li>
-  <li>Assess</li>
-  <li>Run at scale</li>
-</ol>
-]
-
-.pull-left[
-
-### 2. Pre-Process (< 1 day)
-<ol type="i">
-  <li>Volume reconstruct</li>
-  <li>Histogram normalize</li>
-  <li>(register to atlas)</li>
-</ol>
-]
-
-
-.pull-left[
-### 4. Analyze (< 1 days)
-<ol type="i">
-  <li>Query synapses</li>
-  <li>Estimate distribution</li>
-  <li>Compute p-value</li>
-</ol>
-]
 
 
 ---
@@ -412,19 +345,21 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 </ol>
 ]
 
-
-
+.footnote[
+### Note: each step to discovery has different specs with respect to each of these.
+]
 ---
+
 
 # Need #1: Computers
 
 <br></br>
 
-|     | _Sub-Need_                | | _Reason_  | _Example_ |
-| --- | :---                     | ---    | :---- | :--- |
-| 1   | Data intensive            | | fast IOPS           | DataScope |
-| 2   | High-Performance   | | fast FLOPS | MARCC |
-| 3   | Local Thin Client         | | Control them | MacBook Air |
+|     | _Sub-Need_          | | _Reason_  | _Example_ |
+| --- | :---                | ---    | :---- | :--- |
+| 1   | Data intensive 		| | Store TBs           | DataScope |
+| 2   | High-Performance   	| | Process TBs | MARCC |
+| 3   | Local Thin Client   | | Control them | MacBook Air |
 
 
 
@@ -438,104 +373,18 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <br></br>
 
 
-|     | _Sub-Need_                | | _Reason_  | _Runs On_ |
-| --- | :---                     | ---    | :---- | :--- |
+|     | _Sub-Need_                	| | _Reason_  | _Runs On_ |
+| --- | :---                     	| ---    | :---- | :--- |
 | 1   | Spatial Database            | | fast IOPS           | Data Intensive |
-| 2   | Distributed Analytics Stack   | | fast FLOPS | HPC |
-| 3   | Terminal/Web-Browser         | | Control them | Thin Client |
+| 2   | Annotation Database   		| | fast FLOPS | HPC |
+| 2   | Distributed Analytics Stack | | fast FLOPS | HPC |
+| 3   | Terminal/Web-Browser        | | Control them | Thin Client |
 
 
 
 
 <div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://www.lucidchart.com/documents/embeddedchart/d8725eac-b41f-403b-8820-f189483d33b0" id="uMmrHtqX_k1u"></iframe></div>
 
-
-
----
-
-
-### Big Data Challenges
-
-- hardware infrastructure to support data intensive & high performance computing
-- software optimized for these computing models
-- specs to 
-
-each stage is more complicated/difficult
-- classical approaches can be buttressed with modern ones
-- we provide a platform to facilitate
-
----
-
-# NeuroData: Capabilities
-
-### We provide the following:
-1. reference datasets
-2. reference pipelines for operating on such data
-3. Web-services to enable using our data-intensive computing
-4. A cloud computing stack to facilitate analysis
-5. Detailed specs for plugging in different routines
-6. Data derivatives at all stages of analysis
-
-### Implications:
-1. Domain experts can plug-in as appropriate to do their business
-2. Their output can automatically be stored in a fashion appropriate for the next stage of analysis
-
-
----
-
-# Expected Outcomes
-
-
-### Easier to:
-- Bridge across scales and modalities
-- Engage complementary expertise
-- Answer questions the require scale
-- Reproduce results
-
----
-
-# For Each step
-
-- scalability
-- quality
-- features
-- 1-clickiness
-
-
-### Old and new both important
-
-
----
-
-
-# Answering Scientific Questions from Big Data
-
-1. Look
-  1. Visualize
-  2. Download
-  3. Upload
-1.  Pre-Process
-  4. Volume Reconstruct
-  1. Histogram Normalize
-  1. Register to Atlas
-1. Annotate
-  1. Label
-  1. Train
-  1. Overlay
-  2. Proofread
-  1. Assess
-  1. Deploy
-1. Analyze
-  1. Query
-  1. Estimate
-  1. Model Check
----
-
-# Look
-
-| the old | the new |
-|--- | --- |
-| test | test | 
 
 
 
