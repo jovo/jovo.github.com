@@ -40,10 +40,9 @@
         float: left;
         width: 47%;
       }
-      .pull-left-bottom {
-        float: left;
+      .pull-center {
+        float: center;
         width: 47%;
-        bottom: 0;
       }
       .pull-right {
         float: right;
@@ -171,8 +170,8 @@
 
 class: center, middle, inverse
 
-# NeuroData:
-## Enabling Petascale Neuroscience
+# NeuroData: 
+# Enabling Petascale Neuroscience
 
 ### Joshua T. Vogelstein
 ### {[BME](http://bme.jhu.edu),[ICM](http://icm.jhu.edu),[CIS](http://cis.jhu.edu),[Kavli](http://kndi.jhu.edu)}@[jhu.edu](http://jhu.edu)
@@ -180,106 +179,94 @@ class: center, middle, inverse
 #### e: [jovo@jhu.edu](mailto:jovo@jhu.edu) | w: [neurodata.io](http://neurodata.io)
 
 
+---
+
+### Please consider the following _Gedankenexperiment_ 
+
+#### Experiment 1:  collect 10 images in a stack (~ 10 MB) &rarr; find all ~100 synapses
+
+1. Look: Open in ImageJ on local computer
+2. Pre-process: Manually align images & adjust contrast
+3. Annotate: Manually label each synapse
+4. Analyze: Plot them all in a 3D scatter plot
+
+
+![](images/Denk04_fig.png "Denk")
 
 ---
 
-## Answering Scientific Questions from Data
+### Please consider another _Gedankenexperiment_ 
 
-.pull-left[
+#### Experiment 2:  collect 10K images in a stack (~10 TB) &rarr; find all 10M synapses
 
-### 4 Steps to Discovery:
+1. Look: Data too large to load into ImageJ on local computer
+2. Pre-process: Takes too long to manually pre-process
+3. Annotate: Takes even longer find  all synapses
+4. Analyze: Can't really see what is going on when plotting 10M synapses
 
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
-]
-
-
-.pull-right[
-
-### 3 Needs to Achieve:
-
-<ol type="A">
-  <li>Computer</li>
-  <li>Software</li>
-  <li>Algorithms</li>
-</ol>
-]
-
-
----
-
-## Answering Scientific Questions from Data
-
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
+![](images/corrected2.png "Image-Stack")
 
 
 ---
 
+### Opportunity: Datasets like this are popping up all over the place
 
-## Answering Scientific Questions from Data
+<!-- # Case Study -->
 
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
+<!-- <object id="flashObj" width="720" height="405" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object> -->
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU" frameborder="0" allowfullscreen></iframe>
+
+- Real Experiment: Serial Electron Microscopy 
+- Resolution: 4 x 4 x 40 nm^3
+- Volume: 350 x 450 x 50 micron^3
+- Size: ~10 TB
+
+Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are discussing are from Bock et al. (Nature, 2011)
 
 
-### What do you need to achieve these things
-
-
-<br></br>
-
-|     | _Need_        | | _Example_  | _Sufficient?_ |
-| --- | :---: | ---    | :----: | :---: |
-| A.   | Computer      | | Dell Workstation    | :) |
-| B.   | Software      | | Local MATLAB        | :) |
-| C.   | Algorithms    | | deconvolution       | :) |
-<!-- | 4   | Data Exchange | | load image, save csv| :) |
- -->
 
 ---
 
-## Answering Scientific Questions from BIG Data
+### Challenge:  Can't perform any of the 4 steps to discovery
 
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
+<img src="https://www.lucidchart.com/publicSegments/view/1ff858db-fb4b-49c7-92c6-087c89644a4d/image.png" alt="Drawing" style="width: 800px;"/>
 
 
 ---
-## Answering Scientific Questions from BIG Data
 
-1. Look
-1. Pre-Process
-1. Annotate
-1. Analyze
-
-### What do you need to achieve these things
+### Challenge:  Can't perform any of the 4 steps to discovery
 
 
-<br></br>
+<img src="https://www.lucidchart.com/publicSegments/view/fd4b2f0c-01f1-4819-9403-32e304ab5569/image.png" alt="Drawing" style="width: 800px;"/>
 
 
-|     | _Need_        | | _Example_  | _Sufficient?_ |
-| --- | :---: | ---    | :----: | :---: |
-| A.   | Computer      | | Dell Workstation | :( |
-| B.   | Software      | | Local MATLAB |        :( |
-| C.   | Algorithms    | | deconvolution |       :( |
-<!-- | 4   | Data Exchange | | load image, save csv |:( | -->
+### Action: Meet needs to achieve each step
+
+- Hardware
+- Software Infrastructure
+- Algorithms
+
+---
+
+# Resolution: NeuroData!
 
 
+### We make the following open science contributions to the community:
+- reference datasets in a variety of modalities
+- reference pipelines for operating on such data
+- Web-services to enable using our data-intensive computing
+- A cloud computing stack to facilitate analysis
+- Detailed specs for plugging in different routines
+- Data derivatives at all stages of analysis
 
-<br></br>
+--
 
-
-I take it as given that everyone here understands *why* we do the first quadruple,
-and why we need the next quadruple to make them happen?
+### It is now easier to:
+- Bridge across scales and modalities 
+- Answer questions the require scale
+- Engage complementary expertise
+- Reproduce results
 
 
 ---
@@ -289,126 +276,131 @@ and why we need the next quadruple to make them happen?
 <br></br>
 
 - A case study
-- For each step, we explain the needs
-- For each need, we explain why the classic approach fails
-- We then provide our approach to filling those needs
+- Explain each need to achieve goal
+- For each step:
+  - Explain failure old way to meet those needs
+  - Explain success of new way to meet those needs
 
 
 ---
 
-# Case Study
 
-<!-- <object id="flashObj" width="720" height="405" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object> -->
+# Case Study
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU" frameborder="0" allowfullscreen></iframe>
 
-- Experiment: Serial Electron Microscopy 
+- Experiment: Serial EM
 - Resolution: 4 x 4 x 40 nm^3
-- Volume: 350 x 450 x 50 micron^3
+- Volume: 8M micron^3
 - Size: ~10 TB
 - Question: Are synapses distributed uniformly in space?
-
-<!-- ```Peter's Rule: the probability of connection between a pair of neurons is determined solely by their relative proximity``` -->
-
-Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are discussing are from Bock et al. (Nature, 2011)
 
 ---
 
 # The numbers
 
-- ~8 million cubic micron
+- ~8 million cubic microns
+--
+
 - => ~8 million synapses
+--
+
 - Manual labeling requires ~10 sec / synapse
+--
+
 - 60 sec x 60 min x 8 hrs x 250 days = 8 million seconds
-- a person can find all million synapses working for a year
-- but i'm inpatient, i want to do it .red[this week]
+--
+
+- a person can find all million synapses working for 10 years
+--
+
+- but i'm impatient, i want to do it .red[this week]
+--
+
 
 ### What would it take to find all synapses in a few days?
 
 ---
 
-# 4 Steps to Discovery
+# 3 Needs to Achieve
+
+
+<img src="https://www.lucidchart.com/publicSegments/view/20a5c6a7-b5e8-4138-b603-c2ef7d0ec993/image.png" alt="Drawing" style="width: 800px;"/>
+
+
+---
+
+
+# Hardware Needs
+
+<br></br>
+
+| _Sub-Need_          | | _Reason_  		| | _Example_ |
+| :---                | ---  | :---- 		| ---| :--- |
+| Data intensive 		| | Store TBs       | | DataScope |
+| High-Performance   	| | Process TBs 	| | MARCC |
+| Local Thin Client   | | Control them 	| | MacBook Air |
+
+<img src="https://www.lucidchart.com/publicSegments/view/8a813f28-cfae-440d-b76f-6f7838702387/image.png" alt="Drawing" style="width: 400px;"/>
+
+
+
+---
+
+# Software Infrastructure Needs
+
+<br></br>
+
+
+| _Sub-Need_          | | _Reason_  |
+| :---                | ---    | :---- |
+| LIM System 					| | Keep track of metadata 		| 
+| Image Database      | | quickly access images 		| 
+| Geometric database  | | quickly access annotations 	| 
+| Input/Output 				| | exchange across hardware 	| 
+| Analytics Stack 		| | Process images 				| 
+
+
+---
+
+# Algorithm Needs
 
 .pull-left[
-
 ### 1. Look (24 fps)
+- Tile Cache
+- Web-Viz
+- Extract Surfaces
+]
+
+--
+.pull-right[
+### 2. Image Process (< 1 day)
 <ol type="i">
-  <li>Pan in X, Y, Z</li>
-  <li>Zoom in & out</li>
-  <li>Overlay labels</li>
+  <li>Volume Reconstruct</li>
+  <li>Histogram Normalize</li>
+  <li>(Register to Atlas)</li>
 </ol>
 ]
 
-
+--
 .pull-left[
-
-### 3. Annotate (< 3 days)
+### 3. Scene Parse (< 3 days)
 <ol type="i">
   <li>Label</li>
   <li>Train</li>
-  <li>Spot check</li>
-  <li>Hyper-parameter sweep</li>
-  <li>Assess</li>
-  <li>Run at scale</li>
-</ol>
-]
-
-.pull-left[
-
-### 2. Pre-Process (< 1 day)
-<ol type="i">
-  <li>Volume reconstruct</li>
-  <li>Histogram normalize</li>
-  <li>(register to atlas)</li>
+  <li>Test</li>
+  <li>Deploy</li>
 </ol>
 ]
 
 
-.pull-left[
+--
+.pull-right[
 ### 4. Analyze (< 1 days)
 <ol type="i">
-  <li>Query synapses</li>
-  <li>Estimate distribution</li>
-  <li>Compute p-value</li>
-</ol>
-]
-
-
----
-
-# 3 Needs to Achieve
-
-.pull-left[
-
-### 1. Computer 
-<ol type="i">
-  <li>Data-Intensive Cluster</li>
-  <li>High-Performance Cluster</li>
-  <li>Local Thin Client</li>
-</ol>
-]
-
-
-.pull-left[
-
-### 2. Software
-<ol type="i">
-  <li>Spatial database</li>
-  <li>Annotation database</li>
-  <li>Data Exchange</li>
-  <li>Distributed Analytics Stack</li>
-</ol>
-]
-
-.pull-left[
-
-### 3. Algorithms
-<ol type="i">
-  <li>Volume reconstruct</li>
-  <li>Histogram normalize</li>
-  <li>(register to atlas)</li>
-  <li>Synapse detection</li>
-  <li>Spatial statistics</li>
+  <li>Query Objects</li>
+  <li>Estimate Statistics</li>
+  <li>Model Check</li>
 </ol>
 ]
 
@@ -416,126 +408,386 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 ---
 
-# Need #1: Computers
+## For each step, we have trade-offs to make
 
-<br></br>
+<br />
 
-|     | _Sub-Need_                | | _Reason_  | _Example_ |
-| --- | :---                     | ---    | :---- | :--- |
-| 1   | Data intensive            | | fast IOPS           | DataScope |
-| 2   | High-Performance   | | fast FLOPS | MARCC |
-| 3   | Local Thin Client         | | Control them | MacBook Air |
+| _Property_    | | _Old_  		| | _New_ |
+| :---          | --- | :---- 	| ---| :--- |
+| Quality   	| | &#10003;	| | &#10007;|
+| Scalability	| | &#10007; 	| | &#10003; |
+| Features   	| | &#10003; 	| | &#10007; |
+| 1-clickiness  | | &#10007; 	| | &#10003;|
 
+--
 
+### Note: The ideal system will include both "old" and "new", as they complement one another
 
-
-<div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://www.lucidchart.com/documents/embeddedchart/d8725eac-b41f-403b-8820-f189483d33b0" id="uMmrHtqX_k1u"></iframe></div>
-
----
-
-# Need #2: Software
-
-<br></br>
-
-
-|     | _Sub-Need_                | | _Reason_  | _Runs On_ |
-| --- | :---                     | ---    | :---- | :--- |
-| 1   | Spatial Database            | | fast IOPS           | Data Intensive |
-| 2   | Distributed Analytics Stack   | | fast FLOPS | HPC |
-| 3   | Terminal/Web-Browser         | | Control them | Thin Client |
-
-
-
-
-<div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://www.lucidchart.com/documents/embeddedchart/d8725eac-b41f-403b-8820-f189483d33b0" id="uMmrHtqX_k1u"></iframe></div>
-
-
-
----
-
-
-### Big Data Challenges
-
-- hardware infrastructure to support data intensive & high performance computing
-- software optimized for these computing models
-- specs to 
-
-each stage is more complicated/difficult
-- classical approaches can be buttressed with modern ones
-- we provide a platform to facilitate
-
----
-
-# NeuroData: Capabilities
-
-### We provide the following:
-1. reference datasets
-2. reference pipelines for operating on such data
-3. Web-services to enable using our data-intensive computing
-4. A cloud computing stack to facilitate analysis
-5. Detailed specs for plugging in different routines
-6. Data derivatives at all stages of analysis
-
-### Implications:
-1. Domain experts can plug-in as appropriate to do their business
-2. Their output can automatically be stored in a fashion appropriate for the next stage of analysis
-
-
----
-
-# Expected Outcomes
-
-
-### Easier to:
-- Bridge across scales and modalities
-- Engage complementary expertise
-- Answer questions the require scale
-- Reproduce results
-
----
-
-# For Each step
-
-- scalability
-- quality
-- features
-- 1-clickiness
-
-
-### Old and new both important
-
-
----
-
-
-# Answering Scientific Questions from Big Data
-
-1. Look
-  1. Visualize
-  2. Download
-  3. Upload
-1.  Pre-Process
-  4. Volume Reconstruct
-  1. Histogram Normalize
-  1. Register to Atlas
-1. Annotate
-  1. Label
-  1. Train
-  1. Overlay
-  2. Proofread
-  1. Assess
-  1. Deploy
-1. Analyze
-  1. Query
-  1. Estimate
-  1. Model Check
 ---
 
 # Look
 
-| the old | the new |
-|--- | --- |
-| test | test | 
+
+.pull-left[
+## Old: [Fiji = ImageJ](http://fiji.sc/Fiji)
+<img src="https://www.ini.uzh.ch/~acardona/img/arealists-brushing.jpg" alt="Drawing" style="width: 300px;"/>
+
+]
+
+.pull-right[
+## New: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
+
+- [annotation overlays](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
+- [multispectral blending](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/)
+- [time-series](http://openconnecto.me/ocp/viz/freeman14/)
+
+### How does it work:
+- NeuroDataViz Uses [Leaflet](http://leafletjs.com/)
+- Calls [Tile Cache](http://docs.neurodata.io/ocptilecache/) which renders and pre-fetches images
+- Which efficiently cuts out cubes from [spatial database](http://docs.neurodata.io/open-connectome/)
+- Fetches metadata using RESTful calls to [LIMS](http://docs.neurodata.io/open-connectome/api/info_api.html) 
+- Will soon also extract geometric objects = {surfaces,skeletons}
+]
+
+
+---
+
+# Look
+
+
+.pull-left[
+## Old: [Fiji = ImageJ](http://fiji.sc/Fiji)
+<img src="https://www.ini.uzh.ch/~acardona/img/arealists-brushing.jpg" alt="Drawing" style="width: 300px;"/>
+
+### Note: CATMAID is also new, it complements ndv
+
+]
+
+.pull-right[
+## New: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
+
+- [annotation overlays](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
+- [multispectral blending](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/)
+- [time-series](http://openconnecto.me/ocp/viz/freeman14/)
+
+### How does it work:
+- NeuroDataViz Uses [Leaflet](http://leafletjs.com/)
+- Calls [Tile Cache](http://docs.neurodata.io/ocptilecache/) which renders and pre-fetches images
+- Which efficiently cuts out cubes from [spatial database](http://docs.neurodata.io/open-connectome/)
+- Fetches metadata using RESTful calls to [LIMS](http://docs.neurodata.io/open-connectome/api/info_api.html) 
+- Will soon also extract geometric objects = {surfaces,skeletons}
+]
+
+
+---
+# Image Process
+
+<br />
+1. Volume Reconstruct
+2. Histogram Normalize
+3. Register to Atlas
+
+
+---
+## I.1: Volume Reconstruct
+
+<img src="images/Denk04_fig.png" alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
+<img src="images/raw.2.png" 	 alt="Drawing" style="height: 200px;"/>
+
+
+.pull-left[
+## Old: Fiji = ImageJ
+]
+.pull-right[
+## New: [Terastitcher](http://abria.github.io/TeraStitcher/)
+]
+
+<br />
+
+### How does it work:
+- I don't know, will find out Friday
+- Historically, we get data after it is aligned
+
+
+---
+## I.2: Histogram Normalize
+
+<img src="images/raw.2.png" 	 alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
+<img src="images/corrected2.png" 	 alt="Drawing" style="height: 200px;"/>
+
+.pull-left[
+## Old: Fiji = ImageJ
+]
+.pull-right[
+## New: [dmg](http://www.cs.jhu.edu/~misha/Code/DMG/Version4.5/) + [gradient domain fusion](http://arxiv.org/pdf/1506.02079v1.pdf)
+]
+
+<br />
+
+### How does it work:
+- Solves a screened Poisson equation to equalize histogram across tiles
+- See misha's papers for more details
+
+
+---
+## I.3: Register to Atlas
+
+<img src="images/Cocaine178ToAllenOverlap.png" 	 alt="Drawing" style="width: 800px;"/>
+
+.pull-left[
+## Old: [MRIStudio](https://www.mristudio.org/)
+]
+.pull-right[
+## New: [ndreg](https://github.com/openconnectome/ndreg)
+]
+
+<br />
+
+### How does it work:
+- Resample CLARITY brain to atlas resolution
+- Semi-automatically learn brain mask
+- Automatically extract altas mask
+- Uses [LDDMM](http://www.cis.jhu.edu/software/lddmm-volume/) to align masks
+
+
+---
+# Scene Parse
+
+<img src="images/raw.2.png" 	 alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
+<img src="images/annotated.2.png" 	 alt="Drawing" style="height: 200px;"/>
+
+
+1. Label
+1. Train
+1. Test
+1. Deploy
+
+---
+## S.1: Label
+
+<img src="http://www.itksnap.org/pmwiki/uploads/Main/Image1.png" 	 alt="Drawing" style="height: 150px;"/>
+
+.pull-left[
+## Old: [ITK-SNAP](http://www.itksnap.org/pmwiki/pmwiki.php)
+]
+.pull-right[
+## New: ITK-SNAP + [manno](docs.neurodata.io/manno)
+]
+
+<br />
+
+### How does it work:
+1. Identify ROI
+2. Use [CAJAL](docs.neurodata.io/CAJAL) to download data
+3. run `manno_getImage.m` to get image
+4. Annotate using ITK-SNAP
+5. Save annotations
+5. run `manno_putAnno.m` to put annotation database
+
+---
+## S: Train
+
+<img src="http://ilastik.org/gallery/Figure2a.png" 	 alt="Drawing" style="height: 150px;"/>
+
+.pull-left[
+## Old: [ilastik](http://ilastik.org/)
+]
+.pull-right[
+## New: ilastic+CAJAL
+]
+
+<br />
+
+### How does it work:
+1. Identify ROI
+2. Use CAJAL to download hdf5 file
+3. Choose features + scales
+4. Run random forest classifier
+5. Save ilastik project
+
+
+
+
+---
+## S: Test
+
+.pull-right[
+<img src="http://docs.neurodata.io/macho/_images/macho_example.png" 	 alt="Drawing" style="height: 150px; position=right"/>]
+
+<br />
+
+.pull-left[
+## Old: Custom MATLAB?
+]
+.pull-right[
+## New: [macho](http://docs.neurodata.io/macho/)
+]
+
+<br />
+
+### How does it work:
+1. Visualize results
+2. Plot ROC curves
+3. Sweep over hyper-parameters
+4. Cross-validate to choose optimal settings
+
+
+
+---
+## S: Deploy
+
+
+.pull-right[
+<img src="http://www.frontiersin.org/files/Articles/609/fninf-03-022/image_m/fninf-03-022-g002.jpg" 	 alt="Drawing" style="height: 150px;"/>
+]
+
+<br />
+
+.pull-left[
+## Old: Horrible bash scripts
+]
+
+
+.pull-right[
+## New: [LONI Pipeline](http://pipeline.bmap.ucla.edu/)
+]
+
+<br />
+
+### How does it work:
+1. GUI to generate workflow connecting modules
+2. Each module calls a single executable
+3. Get Cubes for each worker node
+4. Each node processes data
+5. And spits out its answer
+6. CAJAL then merges them back together
+7. And sends back to database
+
+
+
+
+---
+# Analyze
+
+
+<img src="images/annotated.2.png" 	 alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
+42
+
+1. Query Objects
+2. Estimate Statistics
+3. Model Check
+
+---
+## A.1: Query Objects
+
+<img src="images/rob2.png"    alt="Drawing" style="height: 200px; "/>
+
+.pull-left[
+## Old: Something horrible
+]
+
+
+.pull-right[
+## New: CAJAL
+]
+
+<br />
+
+### How does it work:
+1. Use CAJAL to download all synapses
+
+
+---
+## A.2: Estimate Statistics
+
+<img src="images/3D.png"    alt="Drawing" style="height: 150px; "/>
+<img src="images/2Dproj.png"    alt="Drawing" style="height: 150px; "/>
+
+.pull-left[
+## Old: Spatial Stats
+]
+
+
+.pull-right[
+## New: Same old, same old (but subsample)
+]
+
+<br />
+
+### How does it work:
+1. Subsample
+
+
+---
+## A.3:  Model Check
+<img src="images/3D.png"    alt="Drawing" style="height: 150px; "/>
+<img src="images/2Dproj.png"    alt="Drawing" style="height: 150px; "/>
+
+.pull-left[
+## Old: P-value
+]
+
+
+.pull-right[
+## New: Same old, same old (but subsample)
+]
+
+<br />
+
+### How does it work:
+1. Subsample
+2. p &#8776; 0
+
+
+---
+
+# Next steps
+
+- Put it all together
+- Release rest of code & documentation
+- Apply to other domains & questions
+- We work together!
+
+---
+
+# Sneak Peak
+
+<img src="images/modalities.png"    alt="Drawing" style="width: 800px; "/>
+
+---
+
+
+# Hackathon
+
+<img src="images/hack.png"    alt="Drawing" style="width: 800px; "/>
+
+---
+
+# NeuroData Peeps
+
+<br />
+<img src="https://cloud.githubusercontent.com/assets/4883288/10323718/e724504e-6c52-11e5-864e-832532fd6713.png"    alt="Drawing" style="width: 800px; "/>
+
+---
+class:   inverse
+
+# Appreciation
+
+
+<br />
+
+| | | 
+| --- | --- |
+| Funding | NIH: TRA, NIH/NSF: {BIGDATA, CRCNS}, |
+| | DARPA: {XDATA,GRAPHS,SIMPLEX} |
+| | |
+| Love | yummy, family, friends, earth, universe, multiverse?! | 
+| | |
+| Questions | e: [jovo.me](mailto:jovo@jhu.edu), w: [neurodata.io](http://neurodata.io)|
 
 
 
