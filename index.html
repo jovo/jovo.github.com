@@ -23,6 +23,9 @@
         position: absolute;
         bottom: 3em;
       }
+      .remark-slide-content {
+        font-size: 1.5em;
+      }
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
       .large { font-size: 2em; }
@@ -180,7 +183,7 @@ class: center, middle, inverse
 
 
 
-#### this talk: <https://github.com/jovo/2015-BME-Talk>
+#### this talk: <http://jovo.me/Talks-2015-BME/>
 
 ---
 
@@ -188,6 +191,7 @@ class: center, middle, inverse
 
 #### Experiment 1:  collect 10 images in a stack (~ 10 MB) &rarr; find all ~100 synapses
 
+0. Store: Can store on local harddrive 
 1. Look: Open in ImageJ on local computer
 2. Pre-process: Manually align images & adjust contrast
 3. Annotate: Manually label each synapse
@@ -202,6 +206,7 @@ class: center, middle, inverse
 
 #### Experiment 2:  collect 10K images in a stack (~10 TB) &rarr; find all 10M synapses
 
+0. Store: Data too large to store on local harddrive 
 1. Look: Data too large to load into ImageJ on local computer
 2. Pre-process: Takes too long to manually pre-process
 3. Annotate: Takes even longer find  all synapses
@@ -212,7 +217,7 @@ class: center, middle, inverse
 
 ---
 
-### Opportunity: Datasets like this are popping up all over the place
+### Opportunity: Datasets like this are emerging over the place
 
 <!-- # Case Study -->
 
@@ -231,44 +236,42 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 ---
 
-### Challenge:  Can't perform any of the 4 steps to discovery
+### Challenge:  Can't perform any of the 5 steps to discovery
 
-<img src="https://www.lucidchart.com/publicSegments/view/1ff858db-fb4b-49c7-92c6-087c89644a4d/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="https://www.lucidchart.com/publicSegments/view/66139744-74a7-46ed-bc12-dc3b00ffcfee/image.png" alt="Drawing" style="width: 800px;"/>
 
 
 ---
 
-### Challenge:  Can't perform any of the 4 steps to discovery
+### Challenge:  Can't perform any of the 5 steps to discovery
 
 
-<img src="https://www.lucidchart.com/publicSegments/view/fd4b2f0c-01f1-4819-9403-32e304ab5569/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="https://www.lucidchart.com/publicSegments/view/0212b895-c2e3-4070-8a0d-2bd766f25ce7/image.png" alt="Drawing" style="width: 800px;"/>
 
 
-### Action: Meet needs to achieve each step
+### Action: Meet computational needs to achieve each step
 
-- Hardware
-- Software Infrastructure
-- Algorithms
 
 ---
 
 # Resolution: NeuroData!
 
 
-### We make the following open science contributions to the community:
+### We make the following open science contributions:
 - reference datasets in a variety of modalities
 - reference pipelines for operating on such data
-- Web-services to enable using our data-intensive computing
+- Web-services for data access
+- Cluster configuration
 - A cloud computing stack to facilitate analysis
 - Detailed specs for plugging in different routines
 - Data derivatives at all stages of analysis
 
 --
 
-### It is now easier to:
-- Bridge across scales and modalities 
+#### It is now easier to:
 - Answer questions the require scale
 - Engage complementary expertise
+- Bridge across scales and modalities 
 - Reproduce results
 
 
@@ -334,77 +337,11 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 ---
 
-# 3 Needs to Achieve
+# 5 Steps to Discovery
 
 
-<img src="https://www.lucidchart.com/publicSegments/view/149f8949-fc85-4a88-9116-71683f4a6c67/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="https://www.lucidchart.com/publicSegments/view/0212b895-c2e3-4070-8a0d-2bd766f25ce7/image.png" alt="Drawing" style="width: 800px;"/>
 
-
----
-
-
-# Hardware Needs
-
-<br></br>
-
-| _Sub-Need_          | | _Reason_  		| | _Example_ |
-| :---                | ---  | :---- 		| ---| :--- |
-| Data intensive 		| | Store TBs       | | DataScope |
-| High-Performance   	| | Process TBs 	| | MARCC |
-| Local Thin Client   | | Control them 	| | MacBook Air |
-
-<img src="https://www.lucidchart.com/publicSegments/view/1d7cf99d-78ac-4fd0-a113-0ecd9d0a347e/image.png" alt="Drawing" style="width: 400px;"/>
-
-
-
----
-
-# Software Infrastructure Needs
-
-<br></br>
-
-
-| _Sub-Need_          | | _Reason_  |
-| :---                | ---    | :---- |
-| LIM System 					| | Keep track of metadata 		| 
-| Image Database      | | quickly access images 		| 
-| Geometric database  | | quickly access annotations 	| 
-| Input/Output 				| | exchange across hardware 	| 
-| Analytics Stack 		| | Process images 				| 
-
-
----
-
-# Algorithm Needs
-
-.pull-left[
-### 1. Look (24 fps)
-- Tile Cache
-- Web-Viz
-- Extract Geometries
-- Extract Graphs
-
-### 2. Image Process (< 1 day)
-- Volume Reconstruct
-- Histogram Normalize
-- Register to Atlas
-]
-
---
-.pull-right[
-
-### 3. Scene Parse (< 3 days)
-- Label
-- Train
-- Test
-- Deploy
-
-### 4. Analyze (< 1 days)
-- Query Objects
-- Spatial Statistics
-- Graph Statistics
-- Model Check
-]
 
 
 
@@ -425,38 +362,108 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 ### Note: The ideal system will include both "old" and "new", as they complement one another
 
-### Up next: a whirlwind tour of each algorithmic step
+---
+
+
+# Hardware Platform
+
+<br></br>
+
+| _Sub-Need_          | | _Reason_      | | _Example_ |
+| :---                | ---  | :----    | ---| :--- |
+| Data intensive Cluster  &nbsp;  | | Store TBs       | | DataScope |
+| High-Performance  Cluster &nbsp;&nbsp;  | | Process TBs   | | MARCC |
+| Local Thin Client   | | Control them  &nbsp;&nbsp;| | MacBook Air |
+
+
 
 ---
 
-# Look
+# Store
+
+- LIM System
+- Image DB
+- Geometric DB
+
+---
+
+# S.1: LIM System
 
 
 .pull-left[
-## Old: [Fiji = ImageJ](http://fiji.sc/Fiji)
-<img src="https://www.ini.uzh.ch/~acardona/img/arealists-brushing.jpg" alt="Drawing" style="width: 300px;"/>
-
+## Old: Excel file
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/2000px-Microsoft_Excel_2013_logo.svg.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
-## New: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
-
-- [annotation overlays](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
-- [multispectral blending](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/)
-- [time-series](http://openconnecto.me/ocp/viz/freeman14/)
+## New: [Django Model](http://docs.neurodata.io/open-connectome/sphinx/datamodel.html)
+<img src="http://docs.neurodata.io/open-connectome/_images/datamodel_simple.png" alt="Drawing" style="height: 150px;"/>
+]
 
 ### How does it work:
-- NeuroDataViz Uses [Leaflet](http://leafletjs.com/)
-- Calls [Tile Cache](http://docs.neurodata.io/ocptilecache/) which renders and pre-fetches images
-- Which efficiently cuts out cubes from [spatial database](http://docs.neurodata.io/open-connectome/)
-- Fetches metadata using RESTful calls to [LIMS](http://docs.neurodata.io/open-connectome/api/info_api.html) 
-- Will soon also extract geometric objects = {surfaces,skeletons}
+- Dataset: contains all metadata required to efficiently store, visualize, and analyze data
+- Project: database storing a collection of channels
+- Token:  name for a project with associated permissions
+- Channel: collection of tables, including  images & metadata 
+
+
+---
+
+# S.2: Image DB
+
+.pull-left[
+## Old: Images on a disk
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Crystal_Project_harddrive.png" alt="Drawing" style="height: 150px;"/>
 ]
+
+.pull-right[
+## New: [NeuroData Image DB](http://docs.neurodata.io/open-connectome/)
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
+]
+
+### How does it work:
+- Dense multi-dimensional spatiall array partitioned into cuboids
+- Space filling curve minimizes the number of accesses
+- Multi-resolution pyramid for fast access at any zoom level
+
+
+---
+
+# S.3: Geometry DB
+
+.pull-left[
+### Old: Segmented Images
+<img src="images/annotated.2.png" alt="Drawing" style="height: 150px;"/>
+]
+
+.pull-right[
+### New: [RAMON](http://docs.neurodata.io/nddocs/ramon.html)
+<img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 150px;"/>
+]
+
+### How does it work:
+- Specifies the dictionary of  semantic labels (eg, synapse)
+- Each type has a number of features (eg, confidence) 
+- Types have sub-types and can be hierarchically composed
+- Facilitates efficient spatial+semantic queries 
+
 
 
 ---
 
 # Look
+
+- Tile Cache
+- Web-Viz
+- Extract Geometries
+- Extract Graphs
+
+
+---
+# L.1: Tile Cache
+
+---
+# L.2: Web-Viz
 
 
 .pull-left[
@@ -481,6 +488,17 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 - Fetches metadata using RESTful calls to [LIMS](http://docs.neurodata.io/open-connectome/api/info_api.html) 
 - Will soon also extract geometric objects = {surfaces,skeletons}
 ]
+
+
+---
+# L.3: Extract Geometries
+
+---
+# L.4: Extract Graphs
+
+
+
+
 
 
 ---
