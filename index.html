@@ -173,11 +173,11 @@
 
 class: center, middle, inverse
 
-# NeuroData: 
+# [NeuroData](http://neurodata.io): 
 # Enabling Petascale Neuroscience
 
 ### Joshua T. Vogelstein
-### {[BME](http://bme.jhu.edu),[ICM](http://icm.jhu.edu),[CIS](http://cis.jhu.edu),[Kavli](http://kndi.jhu.edu)}@[jhu.edu](http://jhu.edu)
+### {[BME](http://bme.jhu.edu),[ICM](http://icm.jhu.edu),[CIS](http://cis.jhu.edu),[Kavli](http://kndi.jhu.edu)}@[jhu](http://jhu.edu)
 
 #### e: [jovo@jhu.edu](mailto:jovo@jhu.edu) | w: [neurodata.io](http://neurodata.io)
 
@@ -198,13 +198,14 @@ class: center, middle, inverse
 4. Analyze: Plot them all in a 3D scatter plot
 
 
-![](images/Denk04_fig.png "Denk")
+<img src="images/Denk04_fig.png" alt="Drawing" style="height: 200px;"/>
+
 
 ---
 
 ### Please consider another _Gedankenexperiment_ 
 
-#### Experiment 2:  collect 10K images in a stack (~10 TB) &rarr; find all 10M synapses
+#### Experiment 2:  collect 10 K images in a stack (~10 TB) &rarr; find all 10 M synapses
 
 0. Store: Data too large to store on local harddrive 
 1. Look: Data too large to load into ImageJ on local computer
@@ -212,7 +213,8 @@ class: center, middle, inverse
 3. Annotate: Takes even longer find  all synapses
 4. Analyze: Can't really see what is going on when plotting 10M synapses
 
-![](images/corrected2.png "Image-Stack")
+<img src="images/corrected2.png" alt="Drawing" style="height: 200px;"/>
+
 
 
 ---
@@ -251,28 +253,10 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 ### Action: Meet computational needs to achieve each step
 
-
----
-
-# Resolution: NeuroData!
-
-
-### We make the following open science contributions:
-- reference datasets in a variety of modalities
-- reference pipelines for operating on such data
-- Web-services for data access
-- Cluster configuration
-- A cloud computing stack to facilitate analysis
-- Detailed specs for plugging in different routines
-- Data derivatives at all stages of analysis
-
 --
 
-#### It is now easier to:
-- Answer questions the require scale
-- Engage complementary expertise
-- Bridge across scales and modalities 
-- Reproduce results
+### Resolution: [NeuroData](http://neurodata.io)!
+
 
 
 ---
@@ -282,7 +266,6 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <br></br>
 
 - A case study
-- Explain each need to achieve goal
 - For each step:
   - Explain failure old way to meet those needs
   - Explain success of new way to meet those needs
@@ -320,7 +303,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 - a person can find all million synapses working for 10 years
 --
 
-- but i'm impatient, i want to do it .red[this week]
+- but i'm impatient, i want to do it __this week__
 --
 
 
@@ -417,7 +400,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 ]
 
 .pull-right[
-## New: [NeuroData Image DB](http://docs.neurodata.io/open-connectome/)
+## New: [Image DB](http://docs.neurodata.io/open-connectome/)
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
 ]
 
@@ -461,6 +444,23 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 ---
 # L.1: Tile Cache
+
+.pull-left[
+## Old: Image DB
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
+]
+
+.pull-right[
+## New: [Tile Cache](http://docs.neurodata.io/open-connectome/)
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
+]
+
+### How does it work:
+- Dense multi-dimensional spatiall array partitioned into cuboids
+- Space filling curve minimizes the number of accesses
+- Multi-resolution pyramid for fast access at any zoom level
+
+
 
 ---
 # L.2: Web-Viz
@@ -801,6 +801,29 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 ### How does it work:
 1. Chi-squared test
 2. p &#8776; 0
+
+
+---
+
+# Discussion: NeuroData!
+
+
+### We make the following open science contributions:
+- reference datasets in a variety of modalities
+- reference pipelines for operating on such data
+- Web-services for data access
+- Cluster configuration
+- A cloud computing stack to facilitate analysis
+- Detailed specs for plugging in different routines
+- Data derivatives at all stages of analysis
+
+--
+
+#### It is now easier to:
+- Answer questions the require scale
+- Engage complementary expertise
+- Bridge across scales and modalities 
+- Reproduce results
 
 
 ---
