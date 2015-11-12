@@ -28,6 +28,7 @@
       }
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
+      .yellow { color: #FF00FF; }
       .large { font-size: 2em; }
       a, a > code {
         color: rgb(249, 38, 114);
@@ -174,16 +175,17 @@
 class: center, middle, inverse
 
 # [NeuroData](http://neurodata.io): 
-# Enabling Petascale Neuroscience
+## Enabling Petascale Neuroscience
 
-### Joshua T. Vogelstein
-### {[BME](http://bme.jhu.edu),[ICM](http://icm.jhu.edu),[CIS](http://cis.jhu.edu),[Kavli](http://kndi.jhu.edu)}@[jhu](http://jhu.edu)
+<!-- ### Joshua T. Vogelstein -->
+<!-- ### {[BME](http://bme.jhu.edu),[ICM](http://icm.jhu.edu),[CIS](http://cis.jhu.edu),[Kavli](http://kndi.jhu.edu)}@[jhu](http://jhu.edu) -->
 
-#### e: [jovo@jhu.edu](mailto:jovo@jhu.edu) | w: [neurodata.io](http://neurodata.io)
+<!-- #### e: [jovo@jhu.edu](mailto:jovo@jhu.edu) | w:  -->
+<!-- ### [NeuroData.io](http://neurodata.io) -->
 
 
 
-#### this talk: <http://jovo.me/Talks-2015-BME/>
+#### this talk: <http://docs.neurodata.io/NeuroData-Overview>
 
 ---
 
@@ -191,7 +193,7 @@ class: center, middle, inverse
 
 #### Experiment 1:  collect 10 images in a stack (~ 10 MB) &rarr; find all ~100 synapses
 
-0. Store: Can store on local harddrive 
+0. Store: Can store on local hard drive 
 1. Look: Open in ImageJ on local computer
 2. Pre-process: Manually align images & adjust contrast
 3. Annotate: Manually label each synapse
@@ -207,7 +209,7 @@ class: center, middle, inverse
 
 #### Experiment 2:  collect 10 K images in a stack (~10 TB) &rarr; find all 10 M synapses
 
-0. Store: Data too large to store on local harddrive 
+0. Store: Data too large to store on local hard drive 
 1. Look: Data too large to load into ImageJ on local computer
 2. Pre-process: Takes too long to manually pre-process
 3. Annotate: Takes even longer find  all synapses
@@ -221,18 +223,14 @@ class: center, middle, inverse
 
 ### Opportunity: Datasets like this are emerging over the place
 
-<!-- # Case Study -->
-
-<!-- <object id="flashObj" width="720" height="405" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=4387457748001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object> -->
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU?rel=0" frameborder="0" allowfullscreen></iframe>
 
 - Real Experiment: Serial Electron Microscopy 
-- Resolution: 4 x 4 x 40 nm^3
-- Volume: 350 x 450 x 50 micron^3
-- Size: ~10 TB
+- Resolution: 3 x 3 x 30 nm^3
+- Volume: 40 x 40 x 50 micron^3
+- Size: ~1 TB
 
-Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are discussing are from Bock et al. (Nature, 2011)
+Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 
 
@@ -248,7 +246,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 ### Challenge:  Can't perform any of the 5 steps to discovery
 
 
-<img src="https://www.lucidchart.com/publicSegments/view/0212b895-c2e3-4070-8a0d-2bd766f25ce7/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="http://www.lucidchart.com/publicSegments/view/8ad4c441-67e3-42e5-98ab-2cf9edfa0af5/image.png" alt="Drawing" style="width: 800px;"/>
 
 
 ### Action: Meet computational needs to achieve each step
@@ -267,8 +265,8 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 - A case study
 - For each step:
-  - Explain failure old way to meet those needs
-  - Explain success of new way to meet those needs
+  - Limitations of classical data analysis paradigm
+  - Capabilities of NeuroData analysis paradigm
 
 
 ---
@@ -276,11 +274,11 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 # Case Study
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dS_ONoUrptg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 - Experiment: Serial EM
 - Resolution: 4 x 4 x 40 nm^3
-- Volume: 8M micron^3
+- Volume: 450 x 350 x 50 micron^3
 - Size: ~10 TB
 - Question: Are synapses distributed uniformly in space?
 
@@ -303,7 +301,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 - a person can find all million synapses working for 10 years
 --
 
-- but i'm impatient, i want to do it __this week__
+- but we're impatient, we want to do it .yellow[this week]
 --
 
 
@@ -323,7 +321,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 # 5 Steps to Discovery
 
 
-<img src="https://www.lucidchart.com/publicSegments/view/0212b895-c2e3-4070-8a0d-2bd766f25ce7/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="https://www.lucidchart.com/publicSegments/view/8ad4c441-67e3-42e5-98ab-2cf9edfa0af5/image.png" alt="Drawing" style="width: 800px;"/>
 
 
 
@@ -334,16 +332,16 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 <br />
 
-| _Property_    | | _Old_  		| | _New_ |
-| :---          | --- | :---- 	| ---| :--- |
-| Quality   	| | &#10003;	| | &#10007;|
-| Scalability	| | &#10007; 	| | &#10003; |
-| Features   	| | &#10003; 	| | &#10007; |
-| 1-clickiness  | | &#10007; 	| | &#10003;|
+| _Property_    | _Classical_ &nbsp;	| _NeuroData_ |
+| :---          | :----: 	          |  :---: |
+| Quality   	| &#10003;	          | &#10007;|
+| Scalability	| &#10007; 	| &#10003; |
+| Features   	| &#10003; 	| &#10007; |
+| 1-clickiness| &#10007; 	| &#10003;|
 
 --
 
-### Note: The ideal system will include both "old" and "new", as they complement one another
+### Note: The ideal system will include both classical and novel NeuroData methods, as they complement one another.
 
 ---
 
@@ -352,11 +350,11 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 <br></br>
 
-| _Sub-Need_          | | _Reason_      | | _Example_ |
-| :---                | ---  | :----    | ---| :--- |
-| Data intensive Cluster  &nbsp;  | | Store TBs       | | DataScope |
-| High-Performance  Cluster &nbsp;&nbsp;  | | Process TBs   | | MARCC |
-| Local Thin Client   | | Control them  &nbsp;&nbsp;| | MacBook Air |
+| _Sub-Need_          | | _Reason_      | 
+| :---                | --- | :----    |  
+| Data intensive Cluster  &nbsp;  | | Store TBs       | 
+| High-Performance  Cluster &nbsp;&nbsp;  | | Process TBs   | 
+| Local Thin Client   | | Control them  &nbsp;&nbsp;| 
 
 
 
@@ -364,22 +362,23 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 # Store
 
-- LIM System
+- Data Model
 - Image DB
+- LIM System
 - Geometric DB
 
 ---
 
-# S.1: LIM System
+# S.1: Data Model
 
 
 .pull-left[
-## Old: Excel file
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/2000px-Microsoft_Excel_2013_logo.svg.png" alt="Drawing" style="height: 150px;"/>
+## Pre: Image Stack
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
-## New: [Django Model](http://docs.neurodata.io/open-connectome/sphinx/datamodel.html)
+## ND: [Django Model](http://docs.neurodata.io/open-connectome/sphinx/datamodel.html)
 <img src="http://docs.neurodata.io/open-connectome/_images/datamodel_simple.png" alt="Drawing" style="height: 150px;"/>
 ]
 
@@ -395,32 +394,54 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 # S.2: Image DB
 
 .pull-left[
-## Old: Images on a disk
+## Pre: Images on a disk
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Crystal_Project_harddrive.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
-## New: [Image DB](http://docs.neurodata.io/open-connectome/)
+## ND: [Image DB](http://docs.neurodata.io/open-connectome/)
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 ### How does it work:
-- Dense multi-dimensional spatiall array partitioned into cuboids
+- Dense multi-dimensional spatial array partitioned into cuboids
 - Space filling curve minimizes the number of accesses
 - Multi-resolution pyramid for fast access at any zoom level
 
 
 ---
 
-# S.3: Geometry DB
+# S.3: LIM System
 
 .pull-left[
-### Old: Segmented Images
+## Pre: Excel file
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/2000px-Microsoft_Excel_2013_logo.svg.png" alt="Drawing" style="height: 125px;"/>
+]
+
+.pull-right[
+## ND: [LIMS](https://github.com/openconnectome/ocpmeta)
+<img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 125px;"/>
+]
+
+
+### How does it work:
+- Stores metadata associated with projects/channels
+- Will integrate with Nature's [Scientific Data](http://www.nature.com/sdata/) and [HBP](https://www.humanbrainproject.eu/) 
+
+
+
+
+---
+
+# S.4: Geometry DB
+
+.pull-left[
+### Pre: Segmented Images
 <img src="images/annotated.2.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
-### New: [RAMON](http://docs.neurodata.io/nddocs/ramon.html)
+### ND: [RAMON](http://docs.neurodata.io/nddocs/ramon.html)
 <img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 150px;"/>
 ]
 
@@ -446,12 +467,12 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 # L.1: Tile Cache
 
 .pull-left[
-## Old: Image DB
+## Pre: Image DB
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
-## New: [Tile Cache](http://docs.neurodata.io/open-connectome/)
+## ND: [Tile Cache](http://docs.neurodata.io/open-connectome/)
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
 ]
 
@@ -467,35 +488,41 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 
 .pull-left[
-## Old: [Fiji = ImageJ](http://fiji.sc/Fiji)
+## Pre: [Fiji = ImageJ](http://fiji.sc/Fiji)
 <img src="https://www.ini.uzh.ch/~acardona/img/arealists-brushing.jpg" alt="Drawing" style="width: 300px;"/>
 
-### Note: CATMAID is also new, it complements ndv
 
 ]
 
 .pull-right[
-## New: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
+## ND: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
 
 - [annotation overlays](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
 - [multispectral blending](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/)
 - [time-series](http://openconnecto.me/ocp/viz/freeman14/)
 
+##### Note: [CATMAID](http://catmaid.readthedocs.org/en/latest/) complements NeuroDataViz
+
+]
+
 ### How does it work:
 - NeuroDataViz Uses [Leaflet](http://leafletjs.com/)
-- Calls [Tile Cache](http://docs.neurodata.io/ocptilecache/) which renders and pre-fetches images
-- Which efficiently cuts out cubes from [spatial database](http://docs.neurodata.io/open-connectome/)
+- Can call [Tile Cache](http://docs.neurodata.io/ocptilecache/) or the [Spatial Database](http://docs.neurodata.io/open-connectome/)
 - Fetches metadata using RESTful calls to [LIMS](http://docs.neurodata.io/open-connectome/api/info_api.html) 
-- Will soon also extract geometric objects = {surfaces,skeletons}
-]
+- Will soon also extract geometric objects
+
 
 
 ---
 # L.3: Extract Geometries
 
+TODO(@jovo)
+
+
 ---
 # L.4: Extract Graphs
 
+TODO(@jovo)
 
 
 
@@ -519,10 +546,10 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 
 
 .pull-left[
-## Old: Fiji = ImageJ
+## Pre: Fiji = ImageJ
 ]
 .pull-right[
-## New: [Terastitcher](http://abria.github.io/TeraStitcher/)
+## ND: [Terastitcher](http://abria.github.io/TeraStitcher/)
 ]
 
 <br />
@@ -535,22 +562,22 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 ---
 ## I.2: Histogram Normalize
 
-<img src="images/raw.2.png" 	 alt="Drawing" style="height: 200px;"/>
+<img src="images/raw.2.png" 	 alt="Drawing" style="height: 150px;"/>
 <img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
-<img src="images/corrected2.png" 	 alt="Drawing" style="height: 200px;"/>
+<img src="images/corrected2.png" 	 alt="Drawing" style="height: 150px;"/>
 
 .pull-left[
-## Old: Fiji = ImageJ
+## Pre: Fiji = ImageJ
 ]
 .pull-right[
-## New: [dmg](http://www.cs.jhu.edu/~misha/Code/DMG/Version4.5/) + [gradient domain fusion](http://arxiv.org/pdf/1506.02079v1.pdf)
+## ND: [dmg](http://www.cs.jhu.edu/~misha/Code/DMG/Version4.5/) + [gdf](http://arxiv.org/pdf/1506.02079v1.pdf)
 ]
 
-<br />
 
 ### How does it work:
 - Solves a screened Poisson equation to equalize histogram across tiles
-- See misha's papers for more details
+- Fixes stitching within slices and deals with exposure across slides
+- See misha's papers (linked above) for more details
 
 
 ---
@@ -559,10 +586,10 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="images/Cocaine178ToAllenOverlap.png" 	 alt="Drawing" style="width: 800px;"/>
 
 .pull-left[
-## Old: [MRIStudio](https://www.mristudio.org/)
+## Pre: [MRIStudio](https://www.mristudio.org/)
 ]
 .pull-right[
-## New: [ndreg](https://github.com/openconnectome/ndreg)
+## ND: [ndreg](https://github.com/openconnectome/ndreg)
 ]
 
 <br />
@@ -593,13 +620,12 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="http://www.itksnap.org/pmwiki/uploads/Main/Image1.png" 	 alt="Drawing" style="height: 150px;"/>
 
 .pull-left[
-## Old: [ITK-SNAP](http://www.itksnap.org/pmwiki/pmwiki.php)
+## Pre: [ITK-SNAP](http://www.itksnap.org/pmwiki/pmwiki.php)
 ]
 .pull-right[
-## New: ITK-SNAP + [manno](docs.neurodata.io/manno)
+## ND: ITK-SNAP + [manno](docs.neurodata.io/manno)
 ]
 
-<br />
 
 ### How does it work:
 1. Identify ROI
@@ -615,13 +641,12 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="http://ilastik.org/gallery/Figure2a.png" 	 alt="Drawing" style="height: 150px;"/>
 
 .pull-left[
-## Old: [ilastik](http://ilastik.org/)
+## Pre: [ilastik](http://ilastik.org/)
 ]
 .pull-right[
-## New: ilastic+CAJAL
+## ND: ilastic+CAJAL
 ]
 
-<br />
 
 ### How does it work:
 1. Identify ROI
@@ -642,13 +667,12 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <br />
 
 .pull-left[
-## Old: Custom MATLAB?
+## Pre: Custom MATLAB?
 ]
 .pull-right[
-## New: [macho](http://docs.neurodata.io/macho/)
+## ND: [macho](http://docs.neurodata.io/macho/)
 ]
 
-<br />
 
 ### How does it work:
 1. Visualize results
@@ -669,22 +693,20 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <br />
 
 .pull-left[
-## Old: Horrible bash scripts
+## Pre: Horrible bash
 ]
 
 
 .pull-right[
-## New: [LONI Pipeline](http://pipeline.bmap.ucla.edu/)
+## ND: [LONI Pipeline](http://pipeline.bmap.ucla.edu/)
 ]
 
-<br />
 
 ### How does it work:
 1. GUI to generate workflow connecting modules
 2. Each module calls a single executable
 3. Get Cubes for each worker node
-4. Each node processes data
-5. And spits out its answer
+4. Each node processes data and spits out its answer
 6. CAJAL then merges them back together
 7. And sends back to database
 
@@ -710,15 +732,14 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="images/rob2.png"    alt="Drawing" style="height: 200px; "/>
 
 .pull-left[
-## Old: Something horrible
+## Pre: ?
 ]
 
 
 .pull-right[
-## New: CAJAL
+## ND: CAJAL
 ]
 
-<br />
 
 ### How does it work:
 1. Use CAJAL to download all synapses
@@ -731,17 +752,15 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="images/2Dproj.png"    alt="Drawing" style="height: 150px; "/>
 
 .pull-left[
-## Old: Spatial Stats
+## Pre: Spatial Stats
 ]
 
 
 .pull-right[
-## New: Approximate Spatial Stats
+## ND:  Spatial Stats
 ]
 
-<br />
 
---
 
 ### How does it work:
 1. Mask out regions that cannot have synapses
@@ -762,16 +781,14 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <br />
 
 .pull-left[
-## Old: igraph
+## Pre: igraph
 ]
 
 
 .pull-right[
-## New: FlashGraph
+## ND: FlashGraph
 ]
 
-<br />
---
 
 ### How does it work:
 1. Semi-external memory
@@ -787,16 +804,14 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="images/2Dproj.png"    alt="Drawing" style="height: 150px; "/>
 
 .pull-left[
-## Old: P-value
+## Pre: P-value
 ]
 
 
 .pull-right[
-## New: Same old, same old
+## ND: Same old, same old
 ]
 
-<br />
---
 
 ### How does it work:
 1. Chi-squared test
@@ -849,6 +864,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 <img src="images/hack.png"    alt="Drawing" style="width: 800px; "/>
 
 ---
+class:   center
 
 # NeuroData Peeps
 
@@ -858,24 +874,34 @@ Note: the above video is from Kasthuri et al. (Cell, 2015), but the data we are 
 ---
 class:   inverse, center
 
-# Appreciation
+
+<br /><br>
+
+<!-- ### Funding &nbsp;&nbsp;&nbsp;&nbsp;   -->
 
 
-<br />
+_____
 
-| | | 
-| :---: | :---: |
-| Funding  | NIH: TRA, NIH/NSF: {BIGDATA, CRCNS}, |
-| | DARPA: {XDATA,GRAPHS,SIMPLEX} |
-|. |. |
-| Love | yummy, family, friends, earth, universe, multiverse?! | 
-| | |
+Funding
 
 
+NIH: TRA
 
-### Questions &nbsp;&nbsp;&nbsp;&nbsp;  e: [jovo@jhu.edu](mailto:jovo@jhu.edu) | w: [neurodata.io](http://neurodata.io)
+NIH/NSF:  {BIGDATA, CRCNS} 
+
+DARPA: {XDATA,GRAPHS,SIMPLEX} 
 
 
+____
+
+f: [docs](http://docs.neurodata.io)
+
+e: [support@neurodata.io](mailto:support@neurodata.io) 
+
+w: [neurodata.io](http://neurodata.io)
+
+
+____
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
