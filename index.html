@@ -44,13 +44,18 @@
         float: left;
         width: 47%;
       }
-      .pull-center {
-        float: center;
-        width: 47%;
+      .center {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
       }
       .pull-right {
         float: right;
         width: 47%;
+      }
+      .pull-bottom {
+        position: absolute;
+        bottom: 0;
       }
       .pull-right ~ p {
         clear: both;
@@ -185,7 +190,7 @@ class: center, middle, inverse
 
 
 
-#### this talk: <http://docs.neurodata.io/NeuroData-Overview>
+#### this talk: <http://docs.neurodata.io/intro>
 
 ---
 
@@ -199,10 +204,9 @@ class: center, middle, inverse
 3. Annotate: Manually label each synapse
 4. Analyze: Plot them all in a 3D scatter plot
 
-
+.center[
 <img src="images/Denk04_fig.png" alt="Drawing" style="height: 200px;"/>
-
-
+]
 ---
 
 ### Please consider another _Gedankenexperiment_ 
@@ -215,17 +219,20 @@ class: center, middle, inverse
 3. Annotate: Takes even longer find  all synapses
 4. Analyze: Can't really see what is going on when plotting 10M synapses
 
+.center[
 <img src="images/corrected2.png" alt="Drawing" style="height: 200px;"/>
-
+]
 
 
 ---
 
 ### Opportunity: Datasets like this are emerging over the place
 
+.center[
 <iframe width="420" height="315" src="https://www.youtube.com/embed/1aVNRZtxeIU?rel=0" frameborder="0" allowfullscreen></iframe>
+]
 
-- Real Experiment: Serial Electron Microscopy 
+- Modality: Serial Electron Microscopy 
 - Resolution: 3 x 3 x 30 nm^3
 - Volume: 40 x 40 x 50 micron^3
 - Size: ~1 TB
@@ -263,7 +270,8 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 <br></br>
 
-- A case study
+- 2 case studies
+- Same infrastructure supports both (and many more!)
 - For each step:
   - Limitations of classical data analysis paradigm
   - Capabilities of NeuroData analysis paradigm
@@ -272,19 +280,33 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 ---
 
 
-# Case Study
+# 2 Case Studies
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dS_ONoUrptg?rel=0" frameborder="0" allowfullscreen></iframe>
+.pull-left[
 
-- Experiment: Serial EM
-- Resolution: 4 x 4 x 40 nm^3
-- Volume: 450 x 350 x 50 micron^3
+<iframe width="336" height="189" src="https://www.youtube.com/embed/dS_ONoUrptg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+- TEM Camera Array
+- 4 x 4 x 40 nm^3
+- 450 x 350 x 50 micron^3
 - Size: ~10 TB
 - Question: Are synapses distributed uniformly in space?
+]
+
+.pull-right[
+<iframe width="258" height="189" src="https://www.youtube.com/embed/1aVNRZtxeIU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+- Serial EM
+- 3 x 3 x 30 nm^3
+- 40 x 40 x 50 micron^3
+- Size: ~1 TB
+- Question: It Peter's rule a good model?
+]
+
 
 ---
 
-# The numbers
+# Case Study #1: the numbers
 
 - ~8 million cubic microns
 --
@@ -307,7 +329,44 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 ### What would it take to find all synapses in a few days?
 
+
+
+
+---
+
+# Case Study #2: the numbers
+
+
+TODO(@jovo: fix these numbers)
+
+- ~8 million cubic microns
 --
+
+- => ~8 million synapses
+--
+
+- Manual labeling requires ~10 sec / synapse
+--
+
+- 60 sec x 60 min x 8 hrs x 250 days = 8 million seconds
+--
+
+- a person can find all million synapses working for 10 years
+--
+
+- but we're impatient, we want to do it .yellow[this week]
+--
+
+
+### What would it take to find all synapses in a few days?
+
+
+
+
+---
+
+# Case Study #3: the numbers
+
 
 ### What would it take to estimate a 100 M vertex graph from multiple 1 PB dataset?
 
@@ -362,14 +421,14 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 # Store
 
-- Data Model
+- Image Data Model
 - Image DB
 - LIM System
 - Geometric DB
 
 ---
 
-# S.1: Data Model
+# S.1: Image Data Model
 
 
 .pull-left[
@@ -382,7 +441,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 <img src="http://docs.neurodata.io/open-connectome/_images/datamodel_simple.png" alt="Drawing" style="height: 150px;"/>
 ]
 
-### How does it work:
+### How does ND work?
 - Dataset: contains all metadata required to efficiently store, visualize, and analyze data
 - Project: database storing a collection of channels
 - Token:  name for a project with associated permissions
@@ -403,7 +462,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
 ]
 
-### How does it work:
+### How does ND work?
 - Dense multi-dimensional spatial array partitioned into cuboids
 - Space filling curve minimizes the number of accesses
 - Multi-resolution pyramid for fast access at any zoom level
@@ -424,10 +483,9 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 ]
 
 
-### How does it work:
+### How does ND work?
 - Stores metadata associated with projects/channels
 - Will integrate with Nature's [Scientific Data](http://www.nature.com/sdata/) and [HBP](https://www.humanbrainproject.eu/) 
-
 
 
 
@@ -445,8 +503,9 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 <img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 150px;"/>
 ]
 
-### How does it work:
-- Specifies the dictionary of  semantic labels (eg, synapse)
+### How does ND work?
+- Implementation of object data model
+- Specifies the dictionary of semantic labels (eg, synapse)
 - Each type has a number of features (eg, confidence) 
 - Types have sub-types and can be hierarchically composed
 - Facilitates efficient spatial+semantic queries 
@@ -473,10 +532,10 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 .pull-right[
 ## ND: [Tile Cache](http://docs.neurodata.io/open-connectome/)
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack.png" alt="Drawing" style="height: 150px;"/>
 ]
 
-### How does it work:
+### How does ND work?
 - Dense multi-dimensional spatiall array partitioned into cuboids
 - Space filling curve minimizes the number of accesses
 - Multi-resolution pyramid for fast access at any zoom level
@@ -488,29 +547,22 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 
 .pull-left[
-## Pre: [Fiji = ImageJ](http://fiji.sc/Fiji)
-<img src="https://www.ini.uzh.ch/~acardona/img/arealists-brushing.jpg" alt="Drawing" style="width: 300px;"/>
-
-
+## Pre: [CATMAID](http://catmaid.readthedocs.org/en/latest/)
+<img src="http://catmaid.readthedocs.org/en/latest/_images/ortho_views.jpg" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
 ## ND: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
 
-- [annotation overlays](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
-- [multispectral blending](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/)
-- [time-series](http://openconnecto.me/ocp/viz/freeman14/)
-
-##### Note: [CATMAID](http://catmaid.readthedocs.org/en/latest/) complements NeuroDataViz
+<img src="images/ndviz.png" alt="Drawing" style="height: 150px;"/>
 
 ]
 
-### How does it work:
-- NeuroDataViz Uses [Leaflet](http://leafletjs.com/)
-- Can call [Tile Cache](http://docs.neurodata.io/ocptilecache/) or the [Spatial Database](http://docs.neurodata.io/open-connectome/)
-- Fetches metadata using RESTful calls to [LIMS](http://docs.neurodata.io/open-connectome/api/info_api.html) 
-- Will soon also extract geometric objects
-
+### How does ND work?
+- Uses [Leaflet](http://leafletjs.com/) (so works on mobile)
+- [Volumetric annotation overlays](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
+- [Multispectral blending](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/)
+- [Time-series](http://openconnecto.me/ocp/viz/freeman14/)
 
 
 ---
@@ -531,7 +583,13 @@ TODO(@jovo)
 ---
 # Image Process
 
-<br />
+<img src="images/Denk04_fig.png" alt="Drawing" style="height: 150px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 50px;" top="100px;"/>
+<img src="images/raw.2.png"    alt="Drawing" style="height: 150px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 50px;" top="100px;"/>
+<img src="images/corrected2.png"   alt="Drawing" style="height: 150px;"/>
+
+
 1. Volume Reconstruct
 2. Histogram Normalize
 3. Register to Atlas
@@ -540,61 +598,65 @@ TODO(@jovo)
 ---
 ## I.1: Volume Reconstruct
 
-<img src="images/Denk04_fig.png" alt="Drawing" style="height: 200px;"/>
-<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
-<img src="images/raw.2.png" 	 alt="Drawing" style="height: 200px;"/>
-
 
 .pull-left[
 ## Pre: Fiji = ImageJ
+<img src="http://fiji.sc/_images/b/ba/Aligned-series-crop-512.gif"   alt="Drawing" style="position: fixed; right: 600px; height: 150px;"/>
 ]
+
 .pull-right[
 ## ND: [Terastitcher](http://abria.github.io/TeraStitcher/)
+<img src="https://raw.githubusercontent.com/abria/TeraStitcher/gh-pages/images/overview.png"   alt="Drawing" style="height: 150px;"/>
 ]
 
-<br />
-
-### How does it work:
-- I don't know, will find out Friday
-- Historically, we get data after it is aligned
-
+.pull-bottom[
+### How does ND work?
+- Designed for very large images (TeraByte-sized or more)
+- fast and reliable multi-MIP  3D stitching
+- typical memory requirement 8 GigaBytes
+- 2D stitching also supported (experimental)
+- support for image files bigger than 2 GB
+]
 
 ---
 ## I.2: Histogram Normalize
 
-<img src="images/raw.2.png" 	 alt="Drawing" style="height: 150px;"/>
-<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
-<img src="images/corrected2.png" 	 alt="Drawing" style="height: 150px;"/>
 
 .pull-left[
 ## Pre: Fiji = ImageJ
+<img src="http://fiji.sc/_images/9/90/Brightness_contrast_pic.png"   alt="Drawing" style="height: 150px;"/>
 ]
+
 .pull-right[
 ## ND: [dmg](http://www.cs.jhu.edu/~misha/Code/DMG/Version4.5/) + [gdf](http://arxiv.org/pdf/1506.02079v1.pdf)
+<img src="images/original_zy.jpg" alt="Drawing" style="height: 150px;"/>
+<img src="images/screened_zy.jpg" alt="Drawing" style="height: 150px;"/>
 ]
 
 
-### How does it work:
-- Solves a screened Poisson equation to equalize histogram across tiles
-- Fixes stitching within slices and deals with exposure across slides
-- See misha's papers (linked above) for more details
+### How does ND work?
+- Matches histograms across tiles in plane
+- Removes high frequency flickering
+- Keeps low frequency content
+
 
 
 ---
 ## I.3: Register to Atlas
 
-<img src="images/Cocaine178ToAllenOverlap.png" 	 alt="Drawing" style="width: 800px;"/>
 
 .pull-left[
 ## Pre: [MRIStudio](https://www.mristudio.org/)
+<img src="http://www.mri-resource.kennedykrieger.org/_/rsrc/1359758836283/software/software_roieditor.png"   alt="Drawing" style="height: 200px;"/>
 ]
+
 .pull-right[
 ## ND: [ndreg](https://github.com/openconnectome/ndreg)
+<img src="images/ndreg.png"   alt="Drawing" style="height: 200px;"/>
 ]
 
-<br />
 
-### How does it work:
+### How does ND work?
 - Resample CLARITY brain to atlas resolution
 - Semi-automatically learn brain mask
 - Automatically extract altas mask
@@ -617,17 +679,20 @@ TODO(@jovo)
 ---
 ## S.1: Label
 
-<img src="http://www.itksnap.org/pmwiki/uploads/Main/Image1.png" 	 alt="Drawing" style="height: 150px;"/>
 
 .pull-left[
 ## Pre: [ITK-SNAP](http://www.itksnap.org/pmwiki/pmwiki.php)
+<br /><br /><br /><br />
 ]
+
 .pull-right[
 ## ND: ITK-SNAP + [manno](docs.neurodata.io/manno)
+<img src="http://www.itksnap.org/pmwiki/uploads/Main/Image1.png"   alt="Drawing" style="height: 150px;"/>
 ]
 
 
-### How does it work:
+
+### How does ND work?
 1. Identify ROI
 2. Use [CAJAL](docs.neurodata.io/CAJAL) to download data
 3. run `manno_getImage.m` to get image
@@ -638,17 +703,20 @@ TODO(@jovo)
 ---
 ## S: Train
 
-<img src="http://ilastik.org/gallery/Figure2a.png" 	 alt="Drawing" style="height: 150px;"/>
+
 
 .pull-left[
 ## Pre: [ilastik](http://ilastik.org/)
+<img src="http://ilastik.org/gallery/Figure2a.png"   alt="Drawing" style="height: 150px;"/>
 ]
+
 .pull-right[
-## ND: ilastic+CAJAL
+## ND: ilastic+[CAJAL](docs.neurodata.io/CAJAL) 
+<img src="http://ilastik.org/gallery/Figure2a.png"   alt="Drawing" style="height: 150px;"/>
 ]
 
 
-### How does it work:
+### How does ND work?
 1. Identify ROI
 2. Use CAJAL to download hdf5 file
 3. Choose features + scales
@@ -674,7 +742,7 @@ TODO(@jovo)
 ]
 
 
-### How does it work:
+### How does ND work?
 1. Visualize results
 2. Plot ROC curves
 3. Sweep over hyper-parameters
@@ -702,7 +770,7 @@ TODO(@jovo)
 ]
 
 
-### How does it work:
+### How does ND work?
 1. GUI to generate workflow connecting modules
 2. Each module calls a single executable
 3. Get Cubes for each worker node
@@ -741,7 +809,7 @@ TODO(@jovo)
 ]
 
 
-### How does it work:
+### How does ND work?
 1. Use CAJAL to download all synapses
 
 
@@ -762,7 +830,7 @@ TODO(@jovo)
 
 
 
-### How does it work:
+### How does ND work?
 1. Mask out regions that cannot have synapses
 1. Subsample epsilon balls
 2. Count # of elements per ball
@@ -790,7 +858,7 @@ TODO(@jovo)
 ]
 
 
-### How does it work:
+### How does ND work?
 1. Semi-external memory
 2. Store nodes in RAM, edges on SSDs
 3. Can process 1B vertex & 100B edge graphs
@@ -813,7 +881,7 @@ TODO(@jovo)
 ]
 
 
-### How does it work:
+### How does ND work?
 1. Chi-squared test
 2. p &#8776; 0
 
