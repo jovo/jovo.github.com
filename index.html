@@ -46,7 +46,7 @@
       }
       .center {
         margin: auto;
-        width: 60%;
+        width: 100%;
         padding: 10px;
       }
       .pull-right {
@@ -233,8 +233,8 @@ class: center, middle, inverse
 ]
 
 - Modality: Serial Electron Microscopy 
-- Resolution: 3 x 3 x 30 nm^3
-- Volume: 40 x 40 x 50 micron^3
+- Resolution: 3 x 3 x 30 nm<sup>3</sup>
+- Volume: 40 x 40 x 50 &mu;m<sup>3</sup>
 - Size: ~1 TB
 
 Note: the above video is from Kasthuri et al. (Cell, 2015)
@@ -245,7 +245,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 ### Challenge:  Can't perform any of the 5 steps to discovery
 
-<img src="https://www.lucidchart.com/publicSegments/view/66139744-74a7-46ed-bc12-dc3b00ffcfee/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="https://www.lucidchart.com/publicSegments/view/66139744-74a7-46ed-bc12-dc3b00ffcfee/image.png" alt="Drawing" style="width: 700px;"/>
 
 
 ---
@@ -253,7 +253,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 ### Challenge:  Can't perform any of the 5 steps to discovery
 
 
-<img src="http://www.lucidchart.com/publicSegments/view/8ad4c441-67e3-42e5-98ab-2cf9edfa0af5/image.png" alt="Drawing" style="width: 800px;"/>
+<img src="http://www.lucidchart.com/publicSegments/view/8ad4c441-67e3-42e5-98ab-2cf9edfa0af5/image.png" alt="Drawing" style="width: 750px;"/>
 
 
 ### Action: Meet computational needs to achieve each step
@@ -266,16 +266,22 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 ---
 
-# What this talk is about
+# Outline
 
-<br></br>
 
-- 2 case studies
-- Same infrastructure supports both (and many more!)
+- Motivation
+  - 2 case studies
+  - Same infrastructure supports both (and many more!)
 - For each step:
+  - Overview of the goals
   - Limitations of classical data analysis paradigm
   - Capabilities of NeuroData analysis paradigm
-
+- Outcomes
+  - 2 case studies
+  - EM Image data sets
+  - Volumetric annotation data sets 
+  - Other data sets
+- What next?
 
 ---
 
@@ -286,6 +292,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 <iframe width="336" height="189" src="https://www.youtube.com/embed/dS_ONoUrptg?rel=0" frameborder="0" allowfullscreen></iframe>
 
+- Bock et al. (Science, 2011)
 - TEM Camera Array
 - 4 x 4 x 40 nm^3
 - 450 x 350 x 50 micron^3
@@ -296,6 +303,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 .pull-right[
 <iframe width="258" height="189" src="https://www.youtube.com/embed/1aVNRZtxeIU?rel=0" frameborder="0" allowfullscreen></iframe>
 
+- Kasthuri et al. (Cell, 2015)
 - Serial EM
 - 3 x 3 x 30 nm^3
 - 40 x 40 x 50 micron^3
@@ -306,7 +314,7 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 ---
 
-# Case Study #1: the numbers
+## Case Study #1: Synapse Distribution
 
 - ~8 million cubic microns
 --
@@ -320,12 +328,16 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 - 60 sec x 60 min x 8 hrs x 250 days = 8 million seconds
 --
 
-- a person can find all million synapses working for 10 years
+- A person can find 8 million synapses working for 10 years
 --
 
-- but we're impatient, we want to do it .yellow[this week]
+- But we're impatient, we want to do it .yellow[this week]
 --
 
+- Is the distribution of synapses uniform in space? 
+
+--
+___
 
 ### What would it take to find all synapses in a few days?
 
@@ -334,46 +346,27 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 
 ---
 
-# Case Study #2: the numbers
+# Case Study #2: Peter's Rule
 
 
-TODO(@jovo: fix these numbers)
-
-- ~8 million cubic microns
+- 916 excitatory axons
 --
 
-- => ~8 million synapses
+- 1,036 dendritic spines
 --
 
-- Manual labeling requires ~10 sec / synapse
+- 7,505 spine touches
 --
 
-- 60 sec x 60 min x 8 hrs x 250 days = 8 million seconds
+- 1,037 synapses
 --
 
-- a person can find all million synapses working for 10 years
---
-
-- but we're impatient, we want to do it .yellow[this week]
---
-
-
-### What would it take to find all synapses in a few days?
+- Is the probability of a synapse between an axon and dendrite dictated solely by  proximity?
 
 
 
 
----
 
-# Case Study #3: the numbers
-
-
-### What would it take to estimate a 100 M vertex graph from multiple 1 PB dataset?
-
-
-
-
-#### Note: we are working towards supporting the 2nd question, we currently can do the 1st.
 
 ---
 
@@ -419,12 +412,24 @@ TODO(@jovo: fix these numbers)
 
 ---
 
-# Store
+# Steps 1 & 2
 
-- Image Data Model
-- Image DB
-- LIM System
-- Geometric DB
+.center[
+<img src="https://www.lucidchart.com/publicSegments/view/fba203d1-b641-41fb-9b7a-4465a885a7ec/image.png" style="width: 700px;"/>
+]
+
+---
+
+# Data Intensive Cluster
+
+.center[
+<img src="http://docs.neurodata.io/open-connectome/_images/ocp_cluster.png" style="width: 700px;"/>
+]
+
+- Head node serves as Web proxy and load balance
+- Application Server nodes can perform cutout, propagate, and other Web-services
+- Databases store Image DB and Tile Cache on SSD array
+- All store & look functions run on this cluster
 
 ---
 
@@ -433,8 +438,9 @@ TODO(@jovo: fix these numbers)
 
 .pull-left[
 ## Pre: Image Stack
+.center[
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack.png" alt="Drawing" style="height: 150px;"/>
-]
+]]
 
 .pull-right[
 ## ND: [Django Model](http://docs.neurodata.io/open-connectome/sphinx/datamodel.html)
@@ -454,8 +460,9 @@ TODO(@jovo: fix these numbers)
 
 .pull-left[
 ## Pre: Images on a disk
+.center[
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Crystal_Project_harddrive.png" alt="Drawing" style="height: 150px;"/>
-]
+]]
 
 .pull-right[
 ## ND: [Image DB](http://docs.neurodata.io/open-connectome/)
@@ -474,8 +481,9 @@ TODO(@jovo: fix these numbers)
 
 .pull-left[
 ## Pre: Excel file
+.center[
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/2000px-Microsoft_Excel_2013_logo.svg.png" alt="Drawing" style="height: 125px;"/>
-]
+]]
 
 .pull-right[
 ## ND: [LIMS](https://github.com/openconnectome/ocpmeta)
@@ -495,8 +503,9 @@ TODO(@jovo: fix these numbers)
 
 .pull-left[
 ### Pre: Segmented Images
+.center[
 <img src="images/annotated.2.png" alt="Drawing" style="height: 150px;"/>
-]
+]]
 
 .pull-right[
 ### ND: [RAMON](http://docs.neurodata.io/nddocs/ramon.html)
@@ -510,16 +519,6 @@ TODO(@jovo: fix these numbers)
 - Types have sub-types and can be hierarchically composed
 - Facilitates efficient spatial+semantic queries 
 
-
-
----
-
-# Look
-
-- Tile Cache
-- Web-Viz
-- Extract Geometries
-- Extract Graphs
 
 
 ---
@@ -568,7 +567,25 @@ TODO(@jovo: fix these numbers)
 ---
 # L.3: Extract Geometries
 
-TODO(@jovo)
+
+
+.pull-left[
+## Pre: [Blender](https://www.blender.org/)
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Blender_2.76.png" alt="Drawing" style="height: 150px;"/>
+]
+
+.pull-right[
+## ND: NeuroDataSurf
+
+<img src="images/surf.png" alt="Drawing" style="height: 150px;"/>
+
+]
+
+### How will ND work?
+- Extracts aribtrarily large surfaces/skeletons 
+- Dynamically downsamples appropriate for screen resolution
+
+
 
 
 ---
@@ -578,17 +595,58 @@ TODO(@jovo)
 
 
 
+---
+
+# Steps 3 & 4
+
+.center[
+<img src="https://www.lucidchart.com/publicSegments/view/7f4db298-f954-487c-b57d-3e0594dba1aa/image.png" style="width: 700px;"/>
+]
+
+---
+
+# High Performance Cluster
+
+.center[
+### schematic of braincloud1 + brainstore + brainviz + intel phi + awesomer + awesome
+]
+
+- details for braincloud 1
+- X cores, Y nodes
+- 40 TB storage?
+- Intel Phi?
+- K80?
+
+
+
+
+
+---
+# Data Input/Output
+
+
+<img src="http://docs.neurodata.io/CAJAL/_images/cajal_pipeline.jpg" alt="Drawing" style="height: 150px;"/>
+
+
+<br />
+
+- [CAJAL](docs.neurodata.io/CAJAL) MATLAB Toolbox
+- [ndio](http://docs.neurodata.io/ndio/) Python Library
+- Used to transfer data from Data-Intensive to High Performance Cluster and back
+
+
 
 
 ---
 # Image Process
 
-<img src="images/Denk04_fig.png" alt="Drawing" style="height: 150px;"/>
-<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 50px;" top="100px;"/>
-<img src="images/raw.2.png"    alt="Drawing" style="height: 150px;"/>
-<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 50px;" top="100px;"/>
-<img src="images/corrected2.png"   alt="Drawing" style="height: 150px;"/>
-
+.center[
+<img src="images/Denk04_fig.png" alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 200px; width: 50px " top="100px;"/>
+<img src="images/raw.2.png"    alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 200px; ; width: 50px" top="100px;"/>
+<img src="images/corrected2.png"   alt="Drawing" style="height: 200px;"/>
+]
 
 1. Volume Reconstruct
 2. Histogram Normalize
@@ -611,11 +669,10 @@ TODO(@jovo)
 
 .pull-bottom[
 ### How does ND work?
+- Terastitcher is a 3rd party tool
 - Designed for very large images (TeraByte-sized or more)
-- fast and reliable multi-MIP  3D stitching
-- typical memory requirement 8 GigaBytes
-- 2D stitching also supported (experimental)
-- support for image files bigger than 2 GB
+- Parallel implementations available
+- Web-service coming soon
 ]
 
 ---
@@ -624,7 +681,10 @@ TODO(@jovo)
 
 .pull-left[
 ## Pre: Fiji = ImageJ
+.center[
 <img src="http://fiji.sc/_images/9/90/Brightness_contrast_pic.png"   alt="Drawing" style="height: 150px;"/>
+]
+<br />
 ]
 
 .pull-right[
@@ -638,6 +698,7 @@ TODO(@jovo)
 - Matches histograms across tiles in plane
 - Removes high frequency flickering
 - Keeps low frequency content
+- Web-service coming soon
 
 
 
@@ -666,10 +727,11 @@ TODO(@jovo)
 ---
 # Scene Parse
 
-<img src="images/raw.2.png" 	 alt="Drawing" style="height: 200px;"/>
-<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
-<img src="images/annotated.2.png" 	 alt="Drawing" style="height: 200px;"/>
-
+.center[
+<img src="images/raw.2.png"    alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 200px; width: 50px" top="100px;"/>
+<img src="images/annotated.2.png"    alt="Drawing" style="height: 200px;"/>
+]
 
 1. Label
 1. Train
@@ -682,19 +744,20 @@ TODO(@jovo)
 
 .pull-left[
 ## Pre: [ITK-SNAP](http://www.itksnap.org/pmwiki/pmwiki.php)
-<br /><br /><br /><br />
-]
+.center[
+<img src="http://www.itksnap.org/pmwiki/uploads/Main/Image1.png"   alt="Drawing" style="height: 175px;"/>
+]]
 
 .pull-right[
 ## ND: ITK-SNAP + [manno](docs.neurodata.io/manno)
-<img src="http://www.itksnap.org/pmwiki/uploads/Main/Image1.png"   alt="Drawing" style="height: 150px;"/>
-]
 
+<img src="http://docs.neurodata.io/manno/_images/manno_itk_example.jpg"   alt="Drawing" style="height: 150px;"/>
+]
 
 
 ### How does ND work?
 1. Identify ROI
-2. Use [CAJAL](docs.neurodata.io/CAJAL) to download data
+2. Use CAJAL/ndio to download data
 3. run `manno_getImage.m` to get image
 4. Annotate using ITK-SNAP
 5. Save annotations
@@ -711,14 +774,14 @@ TODO(@jovo)
 ]
 
 .pull-right[
-## ND: ilastic+[CAJAL](docs.neurodata.io/CAJAL) 
+## ND: ilastic+CAJAL/ndio
 <img src="http://ilastik.org/gallery/Figure2a.png"   alt="Drawing" style="height: 150px;"/>
 ]
 
 
 ### How does ND work?
 1. Identify ROI
-2. Use CAJAL to download hdf5 file
+2. Use CAJAL/ndio to download hdf5 file
 3. Choose features + scales
 4. Run random forest classifier
 5. Save ilastik project
@@ -729,24 +792,26 @@ TODO(@jovo)
 ---
 ## S: Test
 
-.pull-right[
-<img src="http://docs.neurodata.io/macho/_images/macho_example.png" 	 alt="Drawing" style="height: 150px; position=right"/>]
 
-<br />
 
 .pull-left[
 ## Pre: Custom MATLAB?
+<br /><br /><br /><br /><br />
+
+
 ]
+
 .pull-right[
 ## ND: [macho](http://docs.neurodata.io/macho/)
+<img src="http://docs.neurodata.io/macho/_images/macho_example.png"    alt="Drawing" style="height: 150px; position=right"/>
 ]
 
 
 ### How does ND work?
-1. Visualize results
-2. Plot ROC curves
-3. Sweep over hyper-parameters
-4. Cross-validate to choose optimal settings
+- Visualize results
+- Plot ROC curves
+- Sweep over hyper-parameters
+- Cross-validate to choose optimal settings
 
 
 
@@ -754,19 +819,16 @@ TODO(@jovo)
 ## S: Deploy
 
 
-.pull-right[
-<img src="http://www.frontiersin.org/files/Articles/609/fninf-03-022/image_m/fninf-03-022-g002.jpg" 	 alt="Drawing" style="height: 150px;"/>
-]
-
-<br />
 
 .pull-left[
 ## Pre: Horrible bash
+<br /><br /><br /><br /><br />
 ]
 
 
 .pull-right[
 ## ND: [LONI Pipeline](http://pipeline.bmap.ucla.edu/)
+<img src="http://www.frontiersin.org/files/Articles/609/fninf-03-022/image_m/fninf-03-022-g002.jpg"    alt="Drawing" style="height: 150px;"/>
 ]
 
 
@@ -784,10 +846,11 @@ TODO(@jovo)
 ---
 # Analyze
 
-
-<img src="images/annotated.2.png" 	 alt="Drawing" style="height: 200px;"/>
-<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif" 	 alt="Drawing" style="height: 50px;" top="100px;"/>
-42
+.center[
+<img src="images/annotated.2.png"    alt="Drawing" style="height: 200px;"/>
+<img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 200px; width: 50px" top="100px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Answer_to_Life.png"    alt="Drawing" style="height: 200px;"/>
+]
 
 1. Query Objects
 2. Spatial Statistics
@@ -797,27 +860,27 @@ TODO(@jovo)
 ---
 ## A.1: Query Objects
 
-<img src="images/rob2.png"    alt="Drawing" style="height: 200px; "/>
 
 .pull-left[
-## Pre: ?
+## Pre: Excel + MATLAB?
+<br /><br /><br /><br /><br /><br /><br />
 ]
 
 
 .pull-right[
-## ND: CAJAL
+## ND: CAJAL/ndio
+<img src="images/vesicle_count.png"    alt="Drawing" style="height: 200px;"/>
 ]
 
 
 ### How does ND work?
-1. Use CAJAL to download all synapses
+1. Use CAJAL/ndio to download & count all synapses
+1. [live ndio binder](http://app.mybinder.org/2805214324/notebooks/kasthuri-statistics/Count%20Vesicles.ipynb)
 
 
 ---
-## A.2: Spatial Statistics
+## A.2: Geometry Statistics
 
-<img src="images/3D.png"    alt="Drawing" style="height: 150px; "/>
-<img src="images/2Dproj.png"    alt="Drawing" style="height: 150px; "/>
 
 .pull-left[
 ## Pre: Spatial Stats
@@ -831,11 +894,6 @@ TODO(@jovo)
 
 
 ### How does ND work?
-1. Mask out regions that cannot have synapses
-1. Subsample epsilon balls
-2. Count # of elements per ball
-3. Normalize by volume of ball not masked
-4. Report normalized distribution of # elements per ball
 
 
 ---
@@ -868,8 +926,6 @@ TODO(@jovo)
 
 ---
 ## A.4:  Model Check
-<img src="images/3D.png"    alt="Drawing" style="height: 150px; "/>
-<img src="images/2Dproj.png"    alt="Drawing" style="height: 150px; "/>
 
 .pull-left[
 ## Pre: P-value
@@ -884,6 +940,41 @@ TODO(@jovo)
 ### How does ND work?
 1. Chi-squared test
 2. p &#8776; 0
+
+
+---
+
+
+# Case Study #1
+
+.pull-right[
+.center[
+<img src="images/rob2.png"    alt="Drawing" style="height: 150px; "/>
+<img src="images/3D.png"    alt="Drawing" style="height: 150px; "/>
+<img src="images/2Dproj.png"    alt="Drawing" style="width: 250px; "/>
+]]
+
+.pull-left[
+1. find all synapses
+2. plot 1% of them in 3D scatter plot
+1. Mask out regions that cannot have synapses
+1. Partition volume into cuboids
+2. Count # of elements / cuboid
+3. Normalize by volume of cuboid not masked
+4. Plot normalized volume in 3D scatter plot
+5. Plot marginals
+6. Report p-value
+1. live python notebook coming soon...
+]
+
+
+
+--- 
+
+# Case Study #2
+
+- live python notebook coming soon...
+
 
 
 ---
@@ -907,6 +998,18 @@ TODO(@jovo)
 - Engage complementary expertise
 - Bridge across scales and modalities 
 - Reproduce results
+
+---
+
+# Case Study #3: the numbers
+
+
+### What would it take to estimate a 100 M vertex graph from multiple 1 PB dataset?
+
+
+
+
+#### Note: we are working towards supporting the 2nd question, we currently can do the 1st.
 
 
 ---
