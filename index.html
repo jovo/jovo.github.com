@@ -29,6 +29,7 @@
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
       .yellow { color: #FF00FF; }
+      .green { color: #00CC00; }
       .large { font-size: 2em; }
       a, a > code {
         color: rgb(249, 38, 114);
@@ -331,12 +332,12 @@ Note: the above video is from Kasthuri et al. (Cell, 2015)
 - A person can find 8 million synapses working for 10 years
 --
 
+- Is the distribution of synapses uniform in space? 
+--
+
 - But we're impatient, we want to do it .yellow[this week]
 --
 
-- Is the distribution of synapses uniform in space? 
-
---
 ___
 
 ### What would it take to find all synapses in a few days?
@@ -384,29 +385,17 @@ ___
 
 <br />
 
-| _Property_    | _Classical_ &nbsp;	| _NeuroData_ |
-| :---          | :----: 	          |  :---: |
-| Quality   	| &#10003;	          | &#10007;|
-| Scalability	| &#10007; 	| &#10003; |
-| Features   	| &#10003; 	| &#10007; |
-| 1-clickiness| &#10007; 	| &#10003;|
+| _Property_    | _Classical_ &nbsp;| _NeuroData_ &nbsp; | _Both_ |
+| :---          | :----: 			| :---: 			| :---: |
+| Quality   	| .green[&check;]	| .red[&cross;] 	| .green[&check;] |
+| Scalability	| .red[&cross;] 	| .green[&check;]	| .green[&check;] |
+| Features   	| .green[&check;] 	| .red[&cross;] 	| .green[&check;] |
+| 1-clickiness 	| .red[&cross;] 	| .green[&check;] 	| .green[&check;] |
+
 
 --
 
 ### Note: The ideal system will include both classical and novel NeuroData methods, as they complement one another.
-
----
-
-
-# Hardware Platform
-
-<br></br>
-
-| _Sub-Need_          | | _Reason_      | 
-| :---                | --- | :----    |  
-| Data intensive Cluster  &nbsp;  | | Store TBs       | 
-| High-Performance  Cluster &nbsp;&nbsp;  | | Process TBs   | 
-| Local Thin Client   | | Control them  &nbsp;&nbsp;| 
 
 
 
@@ -591,7 +580,25 @@ ___
 ---
 # L.4: Extract Graphs
 
-TODO(@jovo)
+
+.pull-left[
+## Pre: ?
+<br /><br /><br /><br /><br />
+]
+
+.pull-right[
+## ND: [Extract Graphs](https://github.com/openconnectome/open-connectome/tree/master/django/ocpgraph)
+
+<img src="http://www.nature.com/polopoly_fs/7.28472.1438282442!/image/1.18105_Kasthurietal.Cell2015_web.jpg_gen/derivatives/landscape_300/1.18105_Kasthurietal.Cell2015_web.jpg" alt="Drawing" style="height: 150px;"/>
+
+]
+
+### How does ND work?
+- Find all syanpses
+- For each, find its partners
+- Traverse down each axon and dendrite
+- Spit out graphml file
+
 
 
 
@@ -617,7 +624,7 @@ TODO(@jovo)
 - Intel Phi?
 - K80?
 
-
+- We have an Amazon Machine Instance on the Marketplace as well.
 
 
 
@@ -660,6 +667,7 @@ TODO(@jovo)
 .pull-left[
 ## Pre: Fiji = ImageJ
 <img src="http://fiji.sc/_images/b/ba/Aligned-series-crop-512.gif"   alt="Drawing" style="position: fixed; right: 600px; height: 150px;"/>
+<br /><br /><br /><br /><br />
 ]
 
 .pull-right[
@@ -667,13 +675,12 @@ TODO(@jovo)
 <img src="https://raw.githubusercontent.com/abria/TeraStitcher/gh-pages/images/overview.png"   alt="Drawing" style="height: 150px;"/>
 ]
 
-.pull-bottom[
 ### How does ND work?
 - Terastitcher is a 3rd party tool
 - Designed for very large images (TeraByte-sized or more)
 - Parallel implementations available
 - Web-service coming soon
-]
+
 
 ---
 ## I.2: Histogram Normalize
@@ -847,15 +854,20 @@ TODO(@jovo)
 # Analyze
 
 .center[
+<img src="https://www.lucidchart.com/publicSegments/view/ce86ae90-ffff-4680-9f53-03edb4fd8bc3/image.png"    alt="Drawing" style="height: 200px;"/>
+]
+
+.center[
 <img src="images/annotated.2.png"    alt="Drawing" style="height: 200px;"/>
 <img src="http://etc.usf.edu/clipart/70300/70317/70317_258_c-2b_s_lg.gif"    alt="Drawing" style="height: 200px; width: 50px" top="100px;"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Answer_to_Life.png"    alt="Drawing" style="height: 200px;"/>
 ]
 
-1. Query Objects
-2. Spatial Statistics
-2. Graph Statistics
-3. Model Check
+
+
+
+
+
 
 ---
 ## A.1: Query Objects
@@ -879,49 +891,56 @@ TODO(@jovo)
 
 
 ---
-## A.2: Geometry Statistics
+## A.2: Geometric Statistics
 
 
 .pull-left[
-## Pre: Spatial Stats
+## Pre: LDDMM
 ]
 
 
 .pull-right[
-## ND:  Spatial Stats
+### ND:  FlashMatrix
 ]
 
-
+<br />
 
 ### How does ND work?
 
+- [Vector Explorer](https://github.com/ikuznet1/data-analytics-website/): Web-service for EDA 
+- FlashMatrix: Eigenvectors, NMF, & k-means for arbitrary large data
+- LDDMM: compute distance between any pair of shapes
 
 ---
 ## A.3: Graph Statistics
 
 
-.pull-right[
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Social_Network_Analysis_Visualization.png"    alt="Drawing" style="height: 150px; "/>
-]
-
-<br />
 
 .pull-left[
-## Pre: igraph
+## Pre: [igraph](http://igraph.org/)
+<br />
+<br />
+<br />
+<br />
 ]
 
 
 .pull-right[
-## ND: FlashGraph
+## ND: [FlashGraph](http://www.flashgraph.net/)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Social_Network_Analysis_Visualization.png"    alt="Drawing" style="height: 150px; "/>
 ]
 
 
 ### How does ND work?
-1. Semi-external memory
-2. Store nodes in RAM, edges on SSDs
-3. Can process 1B vertex & 100B edge graphs
-4. Faster & cheaper than large clusters
-5. Supports graph traversal & matrix operations
+1. [Graph Explorer](http://128.220.176.8/ge/) for Web-analysis (calls igraph)
+2. [FlashR](https://github.com/openconnectome/FlashR) for new statistical methods for graph analysis
+3. [FlashGraph](http://www.flashgraph.net/) for scalable analyses (> 1 B vertices)
+	- Graph traversal algorithms
+	- Eigenvector
+	- NMF
+	- k-means
+	- R bindings
 
 
 ---
@@ -940,6 +959,18 @@ TODO(@jovo)
 ### How does ND work?
 1. Chi-squared test
 2. p &#8776; 0
+
+
+---
+
+# Results
+
+- Case Study 1
+- Case Study 2
+- Other EM datasets
+- Manually Parsed Scenes
+- Other Modalities
+- Graphs
 
 
 ---
@@ -975,6 +1006,45 @@ TODO(@jovo)
 
 - live python notebook coming soon...
 
+
+---
+
+# Other EM Datasets
+
+
+
+---
+
+# Data with Volumetric Annotations
+
+- AC3
+- AC4
+- Kasthuri et al. (Cell, 2015)
+- Harris et al. (Scientific Data, 2015)
+
+---
+
+# Other Modalities
+
+- Array Tomography
+- CLARITY 
+- X-Brain
+- ExM
+- Calcium Imaging
+
+
+---
+
+# Graphs
+
+
+---
+
+# Discussion
+
+- Contributions
+- Implications
+- Next steps
 
 
 ---
@@ -1019,6 +1089,7 @@ TODO(@jovo)
 - Put it all together
 - Release rest of code & documentation
 - Apply to other domains & questions
+- Amazon cluster
 - We work together!
 
 --
