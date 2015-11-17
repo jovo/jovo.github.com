@@ -389,7 +389,7 @@ ___
 | :---          | :----: 			| :---: 			| :---: |
 | Quality   	| .green[&check;]	| .red[&cross;] 	| .green[&check;] |
 | Scalability	| .red[&cross;] 	| .green[&check;]	| .green[&check;] |
-| Features   	| .green[&check;] 	| .red[&cross;] 	| .green[&check;] |
+| Capabilities   	| .green[&check;] 	| .red[&cross;] 	| .green[&check;] |
 | 1-clickiness 	| .red[&cross;] 	| .green[&check;] 	| .green[&check;] |
 
 
@@ -406,6 +406,8 @@ ___
 .center[
 <img src="https://www.lucidchart.com/publicSegments/view/fba203d1-b641-41fb-9b7a-4465a885a7ec/image.png" style="width: 700px;"/>
 ]
+
+
 
 ---
 
@@ -511,23 +513,22 @@ ___
 
 
 ---
-# L.1: Tile Cache
+## L.1: Content Distribution Network
 
 .pull-left[
 ## Pre: Image DB
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Lebesgue-3d-step3.png" alt="Drawing" style="height: 150px;"/>
+<img src="images/NCDN.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 .pull-right[
 ## ND: [Tile Cache](http://docs.neurodata.io/open-connectome/)
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack.png" alt="Drawing" style="height: 150px;"/>
+<img src="images/CDN.png" alt="Drawing" style="height: 150px;"/>
 ]
 
 ### How does ND work?
-- Dense multi-dimensional spatiall array partitioned into cuboids
-- Space filling curve minimizes the number of accesses
-- Multi-resolution pyramid for fast access at any zoom level
-
+- Tile cache loads images on SSDs
+- Pre-fetches data
+- Can cache locally as large as possible
 
 
 ---
@@ -612,7 +613,7 @@ ___
 
 ---
 
-# High Performance Cluster
+# High Performance Computing
 
 .center[
 ### schematic of braincloud1 + brainstore + brainviz + intel phi + awesomer + awesome
@@ -639,7 +640,7 @@ ___
 
 - [CAJAL](docs.neurodata.io/CAJAL) MATLAB Toolbox
 - [ndio](http://docs.neurodata.io/ndio/) Python Library
-- Used to transfer data from Data-Intensive to High Performance Cluster and back
+- Used to transfer data from Data-Intensive to High Performance Computing and back
 
 
 
@@ -1000,7 +1001,7 @@ ___
 
 
 
---- 
+---
 
 # Case Study #2
 
@@ -1015,7 +1016,7 @@ ___
 
 ---
 
-# Data with Volumetric Annotations
+## Data with Volumetric Annotations
 
 - AC3
 - AC4
@@ -1037,6 +1038,16 @@ ___
 
 # Graphs
 
+.center[
+<img src="http://docs.neurodata.io/i2g/_images/i2g_overview.jpg"  alt="Drawing" style="width: 700px; "/>
+]
+
+
+- [Download](http://openconnecto.me/graph-services/download/) 100s of different neurographs
+- [Convert](http://openconnecto.me/graph-services/convert/) graphs between formats
+- [m2g](http://m2g.io/): estimate graphs from diffusion MRI data
+- [i2g](http://i2g.io/): estimate graphs from EM data
+
 
 ---
 
@@ -1056,7 +1067,7 @@ ___
 - reference datasets in a variety of modalities
 - reference pipelines for operating on such data
 - Web-services for data access
-- Cluster configuration
+- Computing configuration
 - A cloud computing stack to facilitate analysis
 - Detailed specs for plugging in different routines
 - Data derivatives at all stages of analysis
