@@ -478,19 +478,46 @@ ___
 
 .pull-right[
 ## ND: [LIMS](https://github.com/openconnectome/ocpmeta)
-<img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 125px;"/>
+<img src="images/LIMS.png" alt="Drawing" style="width: 300px;"/>
 ]
 
 
 ### How does ND work?
 - Stores metadata associated with projects/channels
+- Can get & push data
 - Will integrate with Nature's [Scientific Data](http://www.nature.com/sdata/) and [HBP](https://www.humanbrainproject.eu/) 
 
 
 
 ---
 
-# S.4: Geometry DB
+# S.4: Anno. Object Data Model
+
+.pull-left[
+### Pre: RedCyl...-FINAL...*_?*
+.center[
+<img src="images/bobby.png" alt="Drawing" style="height: 150px;"/>
+]]
+
+.pull-right[
+### ND: [RAMON](http://docs.neurodata.io/nddocs/ramon.html)
+<img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 150px;"/>
+] <br />
+
+
+
+### How does ND work?
+- Specifies the dictionary of semantic labels (eg, synapse)
+- Each type has a number of features (eg, confidence) 
+- Types have sub-types and can be hierarchically composed
+- Stores all desired metadata per object
+- Facilitates efficient spatial+semantic queries 
+
+
+
+---
+
+# S.5: Anno. Object DB
 
 .pull-left[
 ### Pre: Segmented Images
@@ -499,16 +526,16 @@ ___
 ]]
 
 .pull-right[
-### ND: [RAMON](http://docs.neurodata.io/nddocs/ramon.html)
+### ND: [AnnoDB](http://docs.neurodata.io/open-connectome/api/ramon_api.html)
 <img src="http://www.frontiersin.org/files/Articles/149964/fninf-09-00020-HTML/image_m/fninf-09-00020-t001.jpg" alt="Drawing" style="height: 150px;"/>
 ]
 
 ### How does ND work?
-- Implementation of object data model
-- Specifies the dictionary of semantic labels (eg, synapse)
-- Each type has a number of features (eg, confidence) 
-- Types have sub-types and can be hierarchically composed
-- Facilitates efficient spatial+semantic queries 
+- Set and get any field on any object
+- Query for any object type/field
+- Get & post whole annotation objects
+- Merge multiple annotations
+- Undo 
 
 
 
@@ -529,6 +556,7 @@ ___
 - Tile cache loads images on SSDs
 - Pre-fetches data
 - Can cache locally as large as possible
+- Deploy anywhere in the world to achieve 60 Hz rates
 
 
 ---
@@ -542,9 +570,7 @@ ___
 
 .pull-right[
 ## ND: [NeuroDataViz](https://github.com/openconnectome/neurodataviz)
-
 <img src="images/ndviz.png" alt="Drawing" style="height: 150px;"/>
-
 ]
 
 ### How does ND work?
@@ -896,70 +922,73 @@ ___
 
 
 .pull-left[
-## Pre: LDDMM
+## Pre: Rstudio/Anaconda
+<img src="http://www.thinkr.spatialfiltering.com/images/Rlogo.png"    alt="Drawing" style="height: 100px;"/>
+<img src="images/anaconda_logo.png"    alt="Drawing" style="height: 100px;"/>
 ]
 
 
 .pull-right[
-### ND:  FlashMatrix
+## ND:  Scalable Stats
+<img src="http://www.programmableweb.com/sites/default/files/github-jupyter.jpg"    alt="Drawing" style="height: 100px;"/>
+<img src="images/mybinder.png"    alt="Drawing" style="height: 100px;"/>
 ]
 
-<br />
 
 ### How does ND work?
 
 - [Vector Explorer](https://github.com/ikuznet1/data-analytics-website/): Web-service for EDA 
-- FlashMatrix: Eigenvectors, NMF, & k-means for arbitrary large data
-- LDDMM: compute distance between any pair of shapes
+- [Live demo's](http://app.mybinder.org/2473862297/tree) using [mybinder](http://mybinder.org/), [jupyter](http://jupyter.org/), & [github](https://github.com/)
+- Demo's use our & others' open source [R](https://www.r-project.org/) & [Python](https://www.python.org/) libraries 
 
 ---
-## A.3: Graph Statistics
+## A.3:  Graph Statistics
 
 
 
 .pull-left[
 ## Pre: [igraph](http://igraph.org/)
-<br />
-<br />
-<br />
-<br />
+<img src="http://igraph.org/img/igraph3.svg"    alt="Drawing" style="height: 100px; "/>
 ]
 
 
 .pull-right[
-## ND: [FlashGraph](http://www.flashgraph.net/)
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Social_Network_Analysis_Visualization.png"    alt="Drawing" style="height: 150px; "/>
+## ND:  Graph Services
+<img src="images/fg.png"    alt="Drawing" style="height: 100px; "/>
 ]
 
 
 ### How does ND work?
-1. [Graph Explorer](http://128.220.176.8/ge/) for Web-analysis (calls igraph)
-2. [FlashR](https://github.com/openconnectome/FlashR) for new statistical methods for graph analysis
-3. [FlashGraph](http://www.flashgraph.net/) for scalable analyses (> 1 B vertices)
-	- Graph traversal algorithms
-	- Eigenvector
-	- NMF
-	- k-means
-	- R bindings
+- [Download](http://openconnecto.me/graph-services/download/) 100s of different neurographs
+- [Convert](http://openconnecto.me/graph-services/convert/) graphs between formats
+- [m2g](http://m2g.io/) estimates graphs from diffusion MRI data
+- [i2g](http://i2g.io/) estimates graphs from EM data
+- [Graph Explorer](http://128.220.176.8/ge/) for Web-analysis (calls igraph)
+- [FlashR](https://github.com/openconnectome/FlashR) for new statistical methods for graph analysis
+- [FlashGraph](http://www.flashgraph.net/) for scalable analyses (> 1 B vertices)
 
 
 ---
-## A.4:  Model Check
+## A.4:  "Publish"
 
 .pull-left[
-## Pre: P-value
+## Pre: arXiv/FigShare
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Arxiv.png"    alt="Drawing" style="height: 100px; "/>
+<img src="https://pbs.twimg.com/profile_images/1756579306/spiralsticker.png"    alt="Drawing" style="height: 100px; "/>
 ]
 
 
 .pull-right[
-## ND: Same old, same old
+## ND: ND Publish
+<img src="images/ndviz.png" alt="Drawing" style="height: 100px;"/>
+<img src="images/vesicle_count.png"    alt="Drawing" style="height: 100px;"/>
 ]
 
 
 ### How does ND work?
-1. Chi-squared test
-2. p &#8776; 0
+1. Create new dataset/project/channel
+2. Upload all data & metadata
+3. Share jupyter notebook in live binder containing analysis
 
 
 ---
@@ -971,13 +1000,12 @@ ___
 - Other EM datasets
 - Manually Parsed Scenes
 - Other Modalities
-- Graphs
 
 
 ---
 
 
-# Case Study #1
+### Case Study #1: Is synapse distribution uniform in space?
 
 .pull-right[
 .center[
@@ -1003,20 +1031,34 @@ ___
 
 ---
 
-# Case Study #2
+### Case Study #2: Does Peter's rule hold in a cortical graph?
 
-- live python notebook coming soon...
+1. extract attributed graph
+2. define null distribution
+4. determine test statistic
+3. sample from null using igraph
+4. compute test statistic on observed & sampled data
+5. evaluate p-value
+6. visualize samples from null for model checking purposes
+1. live python notebook coming soon...
 
 
 ---
 
 # Other EM Datasets
 
+- [C elegans, herma](http://openconnecto.me/herm-c-elegans) 
+- [C elegans, male](http://openconnecto.me/male-c-elegans) 
+- [C elegans, Pharynx](http://openconnecto.me/bhatla15) (Bhatla et al. Current Biology, 2015)
+- [P pacificus](http://openconnecto.me/bumbarger13) (Bumbarger et al. Cell, 2013)
+- [Drosophila Optic Medulla](http://openconnecto.me/takemura13) (Takemura et al. Nature, 2013)
+- [Drosophila larva](http://openconnecto.me/behaviotypes) (Vogelstein et al., Science, 2014)
+- [Hippocampus Neuropil](http://openconnecto.me/synapseweb) (Harris et al., Scientific Data, 2015)
 
 
----
+--
 
-## Data with Volumetric Annotations
+## With Volumetric Annotations
 
 - AC3
 - AC4
@@ -1027,26 +1069,13 @@ ___
 
 # Other Modalities
 
-- Array Tomography
-- CLARITY 
+- [Array Tomography](http://neurodata.io/modalities/at)
+- [CLARITY](http://neurodata.io/modalities/clarity) 
+- [Multi-modal MRI](http://neurodata.io/modalities/mri)
 - X-Brain
 - ExM
 - Calcium Imaging
 
-
----
-
-# Graphs
-
-.center[
-<img src="http://docs.neurodata.io/i2g/_images/i2g_overview.jpg"  alt="Drawing" style="width: 700px; "/>
-]
-
-
-- [Download](http://openconnecto.me/graph-services/download/) 100s of different neurographs
-- [Convert](http://openconnecto.me/graph-services/convert/) graphs between formats
-- [m2g](http://m2g.io/): estimate graphs from diffusion MRI data
-- [i2g](http://i2g.io/): estimate graphs from EM data
 
 
 ---
@@ -1060,10 +1089,8 @@ ___
 
 ---
 
-# Discussion: NeuroData!
+# Open Science Contributions
 
-
-### We make the following open science contributions:
 - reference datasets in a variety of modalities
 - reference pipelines for operating on such data
 - Web-services for data access
@@ -1074,7 +1101,7 @@ ___
 
 --
 
-#### It is now easier to:
+#### Implications: it is now easier to:
 - Answer questions the require scale
 - Engage complementary expertise
 - Bridge across scales and modalities 
@@ -1085,12 +1112,12 @@ ___
 # Case Study #3: the numbers
 
 
-### What would it take to estimate a 100 M vertex graph from multiple 1 PB dataset?
+### Question: What would it take to estimate a 100 M vertex graph from multiple 1 PB dataset?
+
+### Answer: NeuroData in the Cloud!
 
 
 
-
-#### Note: we are working towards supporting the 2nd question, we currently can do the 1st.
 
 
 ---
@@ -1103,23 +1130,13 @@ ___
 - Amazon cluster
 - We work together!
 
---
-
-<!-- # Sneak Peak -->
 
 <img src="images/modalities.png"    alt="Drawing" style="width: 800px; "/>
 
 ---
-
-
-# Hackathon
-
-<img src="images/hack.png"    alt="Drawing" style="width: 800px; "/>
-
----
 class:   center
 
-# NeuroData Peeps
+# NeuroData Family
 
 <br />
 <img src="https://cloud.githubusercontent.com/assets/4883288/10324878/2c461eca-6c5b-11e5-9735-1dcf6d609c61.png"  alt="Drawing" style="width: 650px; "/>
