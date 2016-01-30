@@ -22,6 +22,14 @@
     <!-- ocp icon -->
     <link rel="shortcut icon" href="ocp_main3.ico">
 
+    <!-- bower:css -->
+    <!-- <link rel="stylesheet" href="/content/themes/jhu_id/bower_components/normalize-css/normalize.css"> -->
+    <link rel="stylesheet" href="fonts/gentona/gentona.css">
+    <link rel="stylesheet" href="fonts/titling-gothic/titling-gothic.css">
+    <link rel="stylesheet" href="fonts/quadon/quadon.css">
+    <link rel="stylesheet" href="fonts/arnhem/arnhem.css">
+    <!-- endbower -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,7 +67,7 @@
                         <a class="page-scroll" href="#philosophy">philosophy</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#projects">projects</a>
+                        <a class="page-scroll" href="#research">research</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#code">code</a>
@@ -126,25 +134,49 @@
         </div>
     </section>
 
-    <!-- projects Section -->
-    <section id="projects" class="generic-section">
+    <!-- research Section -->
+    <section id="research" class="generic-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>projects</h1>
-                    <p>
-                    My research passion lies in the development of inference techniques for scientific discovery from large and complex datasets, typically relating measurements of brain properties (e.g., brain imaging) to mental properties (e.g., aptitude, cognition, perception, memory, etc.). 
-                    Of primal consideration for our group is that these techniques are useful in solving important scientific questions and social problems. 
-                    Our unique contributions follows from the juxtaposition our collective 
-                    domain knowledge (enabling important applied questions to be asked), 
-                    computational aptitude (allowing the tools that enable one to obtain answers from terabytes of data to be built), 
-                    and statistical insight (clarifying the extent to which to trust the answers).  
-                    All projects are motivated by scientific questions, and result in open source code available to the greater scientific community, as well as applications of the methods on state-of-the-art neuroscientific datasets.  For all projects, we primarily search for students who are excited and fun to work with, secondarily, it would be helpful if you had some math/stat skills, some programming skills, and some interest in solving real problems. Below, are a few example projects.
+                    <h1>research</h1>
+                    <p>The fundamental driving force of science is the discovery of latent structure that converts myriad disparate data points into understanding. In the 21st century, the growth of data acquisition has greatly outpaced the growth of data analysis, rendering current computational and statistical tools insufficient for extracting meaning from large datasets. Neuroscience is particularly susceptible to these big data challenges, as neuroexperimentalists have devised methods of collecting terabytes of data per hour. Without statistical and computational frameworks for analysis and organization of these data, the field will be unable to fully reap the benefits of this enormous potential. Our expertise in (i) statistical science (ii) computer science, and (iii) neuroscience  enables us to fill this gap. Below we elaborate on these three threads.
                     </p>
+
+                    <h2>statistical science</h2>
+
+                    <p>Statistical sciences have developed a beautiful corpus of knowledge on inference in various settings over the last 100 years.  However, in recent years, new experimental and data collection methods have yielded datasets that no longer fit within the assumptions upon which that body of literature rests.  We therefore  focus  on building statistical methods for 21st century data, including
+                    <ul>
+                        <li><strong>time-series</strong> sequential monte carlo, non-negative deconovlution, variational inference, and high-dimensional system identification;</li>
+                        <li><strong>graphs</strong> inference of graphs, supervised and unsupervised vertex clustering, similarity and dissimilarity metrics, and population theory including graph classification and joint embedding;</li>
+                        <li><strong>shapes</strong> extending large deformation diffeomorphic metric mapping (<a href="http://cis.jhu.edu/software/">LDDMM</a>) to work on multimodal and big data;</li>
+                        <li><strong>vectors</strong> high-dimensional linear and non-linear classification, optimal design, signal detection, density estimation, two-sample testing, and dependence discovery.</li>
+                    </ul>
+                    </p>
+
+                    <h3>computational science</h3>
+
+                    <p>Statistical methods require computational implementations. Moreover, the raw data of the 21st century is not typically in a form immediately amenable to statistical analysis; rather, various data wrangling/munging/pre-processing is typically beneficial.   We therefore develop computational tools to enable principled statistical inference on such data.  This includes:
+
+                    <ul>
+                        <li><strong>databases</strong> for managing, (i)
+                        <em>spatial databases</em> for petascale 3D, 4D (multispectral or time-series), and 5D data (both);, (ii) <em>metadata databases</em> annotations and metadata, particularly for neuroanatomy; and (iii) <em>grute databases</em> for populations of massive graphs with rich attributes;</li> 
+                        <li><strong>distributed computer vision pipelines</strong> for electron microscopy,  functional magnetic resonance imaging, diffusion tensor imaging, and object detection in both MATLAB and Python;</li>
+                        <li><strong>parallel R</strong> for billion vertex graphs including various graph traversal, vertex clustering, and matrix applications such as svd, pca, k-means, and linear classification;  </li>
+                        <li><strong>interactive visualizations</strong> including for multispectral annotated 3D+ big images, graphs, and vectors.</li>
+                    </ul>
+                    </p>
+
+                    <h3>neuroscience</h3>
+
+                    <p>The above described tools, both statistical and computational, are designed and built in the service of answering fundamental questions in neuroscience, both basic and clinical. In basic research, I have begun deciphering the connectome in various ways [23, 40, 41]. I recently utilized the statistical tools I developed to learn a mapping from Drosophila larva neuron types to learned behaviors [42] (see Figure), and combined our statistical and computational tools to test (and refute) Peters rule governing connections amongst neighboring neurons [35]. Translationally, I have developed tools to detect Alzheimers disease [43] and multiple sclerosis lesions [44]. More generally, I quantified the predictive capacity of personal genome sequencing to discover that for any given disease, personal genomics would often not be very useful, although across genes it could yield utility [45, 46]. This discovery led to a debate on the validity of whole genome sequencing (see here, here, here, and here).</p>
+
 
                     <ul>
                       <li><strong>human connectomics: </strong> Even the simplest questions about human connectomes (brain-graphs) - such what is the mean connectome, and are these two populations of connectomes different - remain unanswered.  In part, this is due to a lack of theoretically justified tools with resulting scalable code and appropriate data to answer them.  We have developed fundamental theory (e.g., <a href="http://arxiv.org/abs/1403.7249" target="_blank">Tang14a</a>), and scalable code (<a href="http://www.flashgraph.net/" target="_blank">FlashGraph</a>), that will now enable us to rigorously answer these questions.  We are looking for students who would like to extend and apply these methods to extant collected and pre-processed human connectomes (available <a href="http://openconnecto.me/data/public/graphs/" target="_blank">here</a>), to get some quantitative answers. A video describing some of the related data can be found <a href="https://www.youtube.com/watch?v=TxlV50P6NEI" target="_blank">here</a>.</li>
 
+                       <li><strong>spike detection</strong> from multi-channel and online e-phys data, as well as calcium imaging data;</li>
+ 
                       <li><strong>synaptic diversity: </strong> All brains are composed of neurons, and the connections between them, called synapses.  All brain function is therefore at least partially determined by these synapses, and yet, we are woefully clueless with regard to their diversity and functional properties. We do know that each synapse is a complex composition of hundreds of proteins, all acting in concert together (read <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3670986/" target="_blank">O'Rourke12a</a> for a nice review).  We have the data, as well as the methodological tools to enable exploring this diversity.  We are looking for students who would like to extend and apply these methods to the extant collected and pre-processed data sets (available <a href="http://www.openconnectomeproject.org/#!array-tomography/c1z9t" target="_blank">here</a>), to reveal previously unknown but fundamental principles of neural computation. Videos describing these datasets can be found <a href="http://smithlab.stanford.edu/Smithlab/AT_Movies.html" target="_blank">here</a>.</li>
 
                       <li><strong>electron microscopy connectomics:</strong> Microcircuits of the brain enable computational capabilities far exceeding our greatest modern supercomputers, yet they fit in little skulls weighing less than a grapefruit.  It is widely believe that cracking the neural circuitry code will reveal mysteries of the brain.  To do so, however, we need petascale computer vision methods, such as three-dimensional scene parsing, as well as statistical tools to analyze these large and complex datasets.  We are looking for students who would like to extend and apply these methods to the extant collected and pre-processed data sets (available <a href="http://www.openconnectomeproject.org/" target="_blank">here</a>).  Videos describing these datasets can be found <a href="http://www.openconnectomeproject.org/#!s1-videos/cn89" target="_blank">here</a> and <a href="http://www.openconnectomeproject.org/#!mouse-v1-video/cloz" target="_blank">here</a>.</li>
@@ -209,7 +241,7 @@
                     <h1>teaching</h1>
                     <ul>
                     
-                    <li><a href="https://github.com/Upward-Spiral-Science/" target="_blank">The Art of Data Science (Spring 2016</a></li>
+                    <li><a href="https://github.com/Upward-Spiral-Science/" target="_blank">The Art of Data Science (Spring 2016)</a></li>
                     
                     <li>Introduction to Computational Medicine I (Fall 2015)</li>
                     

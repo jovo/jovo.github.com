@@ -63,6 +63,8 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+        font-family: 'quadon';
+        font-weight: 400;
 }
 mark {
   color: #000;
