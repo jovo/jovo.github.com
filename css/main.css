@@ -11,6 +11,7 @@ body {
   font-family: 'gentona'; /* Varela Round */
   color:#555555;
   font-weight:400;
+  font-size: 160%;
   background: url(../ocp_wallpaper_light_op.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,8 +21,8 @@ body {
 }
 
 h1 {
-          font-family: 'quadon';
-        font-weight: 400;
+    font-family: 'quadon';
+    font-weight: 400;
 
 }
 
