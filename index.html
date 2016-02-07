@@ -108,9 +108,9 @@
                     </div>
 
                     <div class="desc col-md-10 col-sm-10 col-xs-12">
-                       <h1 class="lineup-hack" style="opacity: 0">me</h1>
-                       <!-- ^ you better look at this comment jovo because this css hack makes it line up -->
-                       <p> I am an Assistant Professor in the Department of <a href="http://www.bme.jhu.edu/">Biomedical Engineering</a> and the <a href="http://www.icm.jhu.edu/">Institute for Computational Medicine</a> at <a href="https://www.jhu.edu/">Johns Hopkins University</a>.  I sit at the <a href="http://cis.jhu.edu/">Center for Imaging Science</a> in Clark Hall at the Homewood campus.  I also have an appointment in the <a href="http://idies.jhu.edu/">Institute for Data Intensive Engineering and Sciences</a>.  My work focuses largely on big and wide data, especially neuroscience, focusing on statistics of brain graphs (connectomes).  I co-founded the <a href="http://ocp.me">Open Connectome Project</a> (OCP) with my brother R. Jacob Vogelstein and <a href="http://hssl.cs.jhu.edu/~randal/">Randal Burns</a>, Associated Professor in the Department of Computer Science at Johns Hopkins University. Recently it has spawned <a href="http://neurodata.io">NeuroData</a> which is the mother of several complementary projects, including  OCP, Open Synaptome Project, and more.
+                     <h1 class="lineup-hack" style="opacity: 0">me</h1>
+                     <!-- ^ you better look at this comment jovo because this css hack makes it line up -->
+                     <p> I am an Assistant Professor in the Department of <a href="http://www.bme.jhu.edu/">Biomedical Engineering</a> and the <a href="http://www.icm.jhu.edu/">Institute for Computational Medicine</a> at <a href="https://www.jhu.edu/">Johns Hopkins University</a>.  I sit at the <a href="http://cis.jhu.edu/">Center for Imaging Science</a> in Clark Hall at the Homewood campus.  I also have an appointment in the <a href="http://idies.jhu.edu/">Institute for Data Intensive Engineering and Sciences</a>.  My work focuses largely on big and wide data, especially neuroscience, focusing on statistics of brain graphs (connectomes).  I co-founded the <a href="http://ocp.me">Open Connectome Project</a> (OCP) with my brother R. Jacob Vogelstein and <a href="http://hssl.cs.jhu.edu/~randal/">Randal Burns</a>, Associated Professor in the Department of Computer Science at Johns Hopkins University. Recently it has spawned <a href="http://neurodata.io">NeuroData</a> which is the mother of several complementary projects, including  OCP, Open Synaptome Project, and more.
                         We run a very vertical group, with people working at all levels of analysis, ranging from data collection to analysis and interpretation.  We are always looking for new collaborators and team members.  Please <a href="mailto:jovo@jhu.edu">inquire</a> if you are interested. 
                     </p>
                 </div>
@@ -140,59 +140,58 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>research</h1>
-                    <p>The fundamental driving force of science is the discovery of latent structure that converts myriad disparate data points into understanding. In the 21st century, the growth of data acquisition has greatly outpaced the growth of data analysis, rendering current computational and statistical tools insufficient for extracting meaning from large datasets. Neuroscience is particularly susceptible to these big data challenges, as neuroexperimentalists have devised methods of collecting terabytes of data per hour. Without statistical and computational frameworks for analysis and organization of these data, the field will be unable to fully reap the benefits of this enormous potential. Our expertise in (i) statistical science (ii) computer science, and (iii) neuroscience  enables us to fill this gap. Below we elaborate on these three threads, and the data involved.
+                    <p>The fundamental driving force of science is the discovery of latent structure that converts myriad disparate data points into understanding. In the 21st century, the growth of data acquisition has greatly outpaced the growth of data analysis, rendering current computational and statistical tools insufficient for extracting meaning from large datasets. Neuroscience is particularly susceptible to these big data challenges, as neuroexperimentalists have devised methods of collecting terabytes of data per hour. Without statistical and computational frameworks for analysis and organization of these data, the field will be unable to fully reap the benefits of this enormous potential. Our expertise in (i)  computer science, (ii) data curation, (iii) statistical science  and (iii) neuroscience  enables us to fill this gap. Below we elaborate on these four threads.
                     </p>
+
+
+                    <h3>computer science</h3>
+
+                    <p>Statistical methods require computational implementations. Moreover, the raw data of the 21st century is not typically in a form immediately amenable to statistical analysis; rather, various data wrangling/munging/pre-processing is typically beneficial.   We therefore develop computational tools to enable principled statistical inference on such data.  This includes:
+
+                        <ul>
+                        <li><strong>petascale data management</strong> including <a href="https://github.com/neurodata/open-connectome"><em>spatial databases</em></a> for 3D+ (multispectral or time-series) image data including voxel-wise metadata, and  <a href="https://github.com/neurodata/m2g"><em>grute databases</em></a>  for populations of massive graphs with rich attributes, as well as MATLAB and Python APIs, a content distribution system, LIMS, and hardware configuration;</li> 
+
+                            <li><strong>interactive visualizations</strong> including for multispectral annotated 3D+ big <a href="https://github.com/neurodata/NeuroDataViz">images</a>, <a href="http://gx.neurodata.io">graphs</a>, and <a href="http://vx.neurodata.io">vectors</a>.</li>
+
+                            <li><strong>streaming image processing</strong> including both <a href="https://github.com/mkazhdan/DMG">2D stitching artifact correction</a>  and <a href="http://www.cs.jhu.edu/~misha/Code/GradientDomainFusion/Version1.0/">3D</a>  histogram normalization;</li>
+
+                            <li><strong>distributed computer vision</strong> including graph inference from <a href="http://i2g.io/">serial electron microscopy</a>, calcium imaging,  <a href="http://fcp-indi.github.io/">functional magnetic resonance imaging</a>, <a href="https://github.com/neurodata/ndmg">diffusion tensor imaging</a> , and object detection in both <a href="http://docs.neurodata.io/vesicle/">MATLAB</a> and <a href="http://docs.neurodata.io/nddocs/#parse">Python</a>;</li>
+
+                            <li><strong>scalable machine learning libraries</strong> (<a href="http://flashx.io">FlashX</a>) including FlashGraph for billion vertex graph analytics using various graph traversal algorithms, FlashMatrix for matrix applications such as svd, pca, k-means, and linear classification, and FlashR for usability;  </li>
+
+
+
+                        </ul>
+                    </p>
+
+                    <h3 id="data">data curation</h3>
+
+                    <p>To answer any of the below questions, using any of the above statistical methods and computational tools, fundamentally requires data.  Much like all of our code is open source, all of our data is open access.  Moreover, we provide it in a fashion immediately amenable to analysis for everyone, including the below data types:
+
+                        <ul>
+                            <li><strong>images</strong> both anatomical including electron microscopy, array tomography, expansion microscopy, x-ray microscopy, CLARITY, histology, as well as  physiological images such as calcium imaging, massively parallel electrophysiology, and multi-modal mri;</li>
+
+                            <li><strong>annotations</strong> including volumetric annotations, skeletonizations, and ROIs;</li>
+
+                            <li><strong><u>g</u>raphs</strong> with <u>r</u>ich attrib<u>ute</u>s ("<em>grutes</em>") derived from a wide variety of experimental techniques and scales.</li>
+
+                        </ul>
+                    </p>                    
 
                     <h2>statistical science</h2>
 
                     <p>Statistical sciences have developed a beautiful corpus of knowledge on inference in various settings over the last 100 years.  However, in recent years, new experimental and data collection methods have yielded datasets that no longer fit within the assumptions upon which that body of literature rests.  We therefore  focus  on building statistical methods for 21st century data, including:
                         <ul>
-                            <li><strong>time-series</strong> sequential monte carlo, non-negative deconovlution, variational inference, and high-dimensional system identification;</li>
-                            <li><strong>graphs</strong> inference of graphs, supervised and unsupervised vertex clustering, similarity and dissimilarity metrics, graph matching, and population theory including graph classification and joint embedding;</li>
+                            <li><strong>time-series</strong> 
+                                <a href="https://github.com/jovo/smc-oopsi">sequential monte carlo</a>, <a href="https://github.com/jovo/oopsi">non-negative deconovlution</a>, <a href="https://github.com/jovo/spike-sorting">dictionary learning</a>, <a href="https://github.com/decarlson/opass">variational inference</a>, and <a href="https://github.com/shachen/PLDS"> high-dimensional system identification</a>;</li>
+                                <li><strong>graphs</strong> inference of graphs, supervised and unsupervised vertex clustering, similarity and dissimilarity metrics, graph matching, and population theory including graph classification and joint embedding;</li>
 
-                            <li><strong>shapes</strong> <a href="https://github.com/mkazhdan/ShapeSPH">non-parametric shape descriptors</a> and  <a href="http://cis.jhu.edu/software/">nonlinear diffeomorphisms</a> for statistical analysis of big shapes;</li>
-
-
-                            <li><strong>vectors</strong> high-dimensional linear and non-linear classification, optimal design, signal detection, density estimation, two-sample testing, and dependence discovery.</li>
-                        </ul>
-                    </p>
-
-                    <h3>computational science</h3>
-
-                    <p>Statistical methods require computational implementations. Moreover, the raw data of the 21st century is not typically in a form immediately amenable to statistical analysis; rather, various data wrangling/munging/pre-processing is typically beneficial.   We therefore develop computational tools to enable principled statistical inference on such data.  This includes:
-
-                        <ul>
-                            <li><strong>petascale databases</strong> for managing, (i)
-                                <em>spatial databases</em> for petascale 3D, 4D (multispectral or time-series), and 5D data (both);, (ii) <em>metadata databases</em> annotations and metadata, particularly for neuroanatomy; and (iii) <em>grute databases</em> for populations of massive graphs with rich attributes;</li> 
-
-                                <li><strong>interactive visualizations</strong> including for multispectral annotated 3D+ big images, graphs, and vectors.</li>
-
-                                <li><strong>streaming image processing</strong> including both 2D and 3D histogram normalization;</li>
-
-                                <li><strong>distributed computer vision</strong> for electron microscopy,  functional magnetic resonance imaging, diffusion tensor imaging, and object detection in both MATLAB and Python;</li>
-
-                                <li><strong>scalable machine learning libraries</strong> for billion vertex graph analytics including various graph traversal, vertex clustering, and matrix applications such as svd, pca, k-means, and linear classification;  </li>
+                                <li><strong>shapes</strong> <a href="https://github.com/mkazhdan/ShapeSPH">non-parametric shape descriptors</a> and  <a href="http://cis.jhu.edu/software/">nonlinear diffeomorphisms</a> for statistical analysis of big shapes;</li>
 
 
-
+                                <li><strong>vectors</strong> high-dimensional <a href="https://github.com/jovo/LOL">linear</a> and <a href="https://github.com/ttomita/RandomerForest">non-linear classification</a>, optimal design, signal detection, <a href="https://nips.cc/Conferences/2013/Schedule?q=vogelstein">density estimation</a>,  and dependence discovery.</li>
                             </ul>
                         </p>
-
-                        <h3 id="data">data curation</h3>
-
-                        <p>To answer any of the below questions, using any of the above statistical methods and computational tools, fundamentally requires data.  Much like all of our code is open source, all of our data is open access.  Moreover, we provide it in a fashion immediately amenable to analysis for everyone, including the below data types:
-
-                            <ul>
-                                <li><strong>anatomical</strong> including molecular scale electron microscopy, synaptic scale array tomography, subcellular scale expansion microscopy, x-ray microscopy, CLARITY, and histology, and morphoscale magnetic resonance imaging (mri);</li>
-
-                                <li><strong>physiological</strong> including calcium imaging, massively parallel electrophysiology, and functional mri;</li>
-
-                                <li><strong>annotations</strong> including volumetric annotations, skeletonizations, and ROIs;</li>
-
-                                <li><strong><u>g</u>raphs</strong> with <u>r</u>ich attrib<u>ute</u>s ("<em>grutes</em>") derived from a wide variety of experimental techniques and scales.</li>
-
-                            </ul>
-                        </p>                    
 
                         <h3>neuroscience</h3>
 
@@ -201,9 +200,9 @@
                           <ul>
                               <li><strong>anatomy</strong> including em connectomics, synaptomics, and mesoscale neuro-architecture; </li>
 
-                              <li><strong>physiology</strong> including spike detection from multi-channel and online e-phys data, as well as    non-negative deconvolution sequential monte carlo,  estimation of connectivity, cell body detection, and analysis of correlations from o-phys data;</li>
+                              <li><strong>physiology</strong> including analysis of correlations from o-phys data;</li>
 
-                              <li><strong>systems</strong> including biomarker discovery from multimodal mri data, and behavioromics;</li>
+                              <li><strong>systems</strong> including <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095753">biomarker discovery</a> from multimodal mri data, and <a href="http://classic.sciencemag.org/content/344/6182/386.abstract">behavioromics</a>;</li>
 
                               <li><strong>connectome coding</strong> is homologous to neural coding, where we learn the rules by which memories & experiences are stored in patterns of connectivity, rather than patterns of activity.</li>
                           </ul>
@@ -223,7 +222,7 @@
                 <div class="col-lg-12">
                     <h1>code</h1>
                     <p>Essentially every project I embark on includes writing some code, if only to buttress the theoretical results with numerical examples.  Moreover, as an adherent to the philosophy of open science, code I write is always open source by the time of submission, and often sooner.  Thus,  <a href="https://github.com/jovo" target="_blank">my personal github account</a> contains many repos including code from publications prior to launching the   
-                        <a href="https://github.com/openconnectome/" target="_blank">Open Connectome Project</a>. We have subsequently migrated everything we are still using to our new organization, <a href="https://github.com/neurodata/" target="_blank">neurodata</a>.  Finally, we also created and continue to develop<a href="http://flashx.io/" target="_blank">FlashX</a>. 
+                        <a href="https://github.com/openconnectome/" target="_blank">Open Connectome Project</a>. We have subsequently migrated everything we are still using to our new organization, <a href="https://github.com/neurodata/" target="_blank">neurodata</a>.  Finally, we also created and continue to develop <a href="http://flashx.io/" target="_blank">FlashX</a>. 
                         <!-- Nevertheless, here I will try to post the codes from various projects that I think are potentially useful for other applications.   -->
                     </p>
 
