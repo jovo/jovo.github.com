@@ -9,14 +9,15 @@ body {
     height: 100%;
     /*font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-family: 'gentona'; /* Varela Round */
-  color:#555555;
+  color:#FFFFFF;
   font-weight:400;
   font-size: 160%;
-  background: url(../ocp_wallpaper_light_op.png) no-repeat center center fixed;
+  /* background: url(../ocp_wallpaper_light_op.png) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: black;
 
 }
 
@@ -57,7 +58,7 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;        
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
@@ -73,12 +74,20 @@ of those sections to manage the look and feel of the site. */
 
 .first-section {
     /*height: 40%;*/
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    float: left;
+    width: 70%;
 }
 
 .generic-section {
     /*height: 40%;*/
     padding-top: 40px;
+}
+
+.main {
+    width: 70%;
+    float: left;
+    text-align: center;
 }
 
 .copyright {
