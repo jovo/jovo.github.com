@@ -54,7 +54,7 @@ html {
   body {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-    background-image: url(../ocp_phone.png);
+    /* background-image: url(../ocp_phone.png); */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -76,8 +76,10 @@ of those sections to manage the look and feel of the site. */
     /*height: 40%;*/
     /* padding-top: 100px; */
     float: left;
-    width: 70%;
+    width: 100%;
 }
+
+.first-section:before { content: "\00a0 "; }
 
 .generic-section {
     /*height: 40%;*/
@@ -85,9 +87,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .main {
-    width: 70%;
+    width: 100%;
     float: left;
-    text-align: center;
+    text-align: left;
 }
 
 .copyright {
