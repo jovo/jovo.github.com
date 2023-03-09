@@ -106,4 +106,5 @@ of those sections to manage the look and feel of the site. */
 img {
     padding-left: 20px;
     padding-bottom: 10px;
+    width: 250px;
 }
