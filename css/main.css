@@ -66,6 +66,14 @@ html {
   .lineup-hack {
     display: none;
   }
+  /* if were to add switch between mobile and web */
+  /* div.web {
+    display: none;
+  }
+  div.mobile {
+    display: inline;
+    width: 100%;
+  } */
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -79,7 +87,8 @@ of those sections to manage the look and feel of the site. */
     width: 100%;
 }
 
-.first-section:before { content: "\00a0 "; }
+/* Adds manual space */
+/* .first-section:before { content: "\00a0 "; } */
 
 .generic-section {
     /*height: 40%;*/
@@ -104,7 +113,24 @@ of those sections to manage the look and feel of the site. */
 }
 
 img {
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     width: 250px;
 }
+
+div.maintext {
+    padding-top: 0px;
+    white-space: pre;
+}
+
+div.mobile {
+    width: 100%;
+    display: none;
+}
+
+div.web {
+    width: 100%;
+    padding-left: 10px;
+}
+
